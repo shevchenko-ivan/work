@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Freight Genie — Case · Ivan Shevchenko</title>
   <meta name="description" content="Multi-role SaaS CRM for freight logistics. Five-star Upwork project — dashboards and complex workflows for dispatchers, drivers and back-office." />
-  <meta name="robots" content="noindex" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -49,10 +49,10 @@
 
     <div class="wrap">
       <div class="case-facts">
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value">2024</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.client">Client</div><div class="fact__value">Upwork (confidential)</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value">Product Designer</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.domain">Domain</div><div class="fact__value">Logistics · Freight</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value" data-i18n="case.fg.fact.year">2024</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.client">Client</div><div class="fact__value" data-i18n="case.fg.fact.client">Upwork (confidential)</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value" data-i18n="case.fg.fact.role">Product Designer</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.domain">Domain</div><div class="fact__value" data-i18n="case.fg.fact.domain">Logistics · Freight</div></div>
       </div>
     </div>
 
@@ -63,10 +63,10 @@
           <h2 class="case-section__title" data-i18n="case.fg.context.title">A freight CRM that had outgrown its early UI.</h2>
         </div>
         <div class="case-section__body">
-          <p>
+          <p data-i18n="case.fg.context.body1">
             The client was scaling a freight management product and ran into a familiar problem — the same screens served too many different roles. Dispatchers needed dense, scannable views; drivers needed a stripped-down, mobile-friendly take; back-office wanted reconciliation and reporting. The original UI tried to be everything to everyone, which meant nobody was happy.
           </p>
-          <p>
+          <p data-i18n="case.fg.context.body2">
             My job was to redesign the SaaS web app around real role flows — and to do it quickly enough to fit a fixed-price Upwork engagement.
           </p>
         </div>
@@ -78,13 +78,13 @@
           <h2 class="case-section__title" data-i18n="case.fg.approach.title">Role flows first, screens second.</h2>
         </div>
         <div class="case-section__body">
-          <p>I started from the workflow side rather than from the screens. For each role I documented the canonical task chain, then asked: what is the smallest interface that supports it?</p>
+          <p data-i18n="case.fg.approach.body">I started from the workflow side rather than from the screens. For each role I documented the canonical task chain, then asked: what is the smallest interface that supports it?</p>
           <ol class="case-list case-list--numbered">
-            <li><div><strong>Role mapping</strong><span class="case-list__sub">Dispatcher, driver, back-office — entry points, primary actions, data needs.</span></div></li>
-            <li><div><strong>Information architecture</strong><span class="case-list__sub">A navigation model that scaled across roles without forcing one to live inside another’s mental model.</span></div></li>
-            <li><div><strong>Dashboard layouts</strong><span class="case-list__sub">Role-specific landing screens — KPI cards for back-office, dispatch board for ops, route view for drivers.</span></div></li>
-            <li><div><strong>Workflow screens</strong><span class="case-list__sub">Order creation, dispatch, status updates, reconciliation — designed as flows, not isolated forms.</span></div></li>
-            <li><div><strong>Hand-off package</strong><span class="case-list__sub">Component states, edge cases, empty states and engineering notes ready for the client’s dev team.</span></div></li>
+            <li><div><strong data-i18n="case.fg.list1.s1">Role mapping</strong><span class="case-list__sub" data-i18n="case.fg.list1.s1sub">Dispatcher, driver, back-office — entry points, primary actions, data needs.</span></div></li>
+            <li><div><strong data-i18n="case.fg.list1.s2">Information architecture</strong><span class="case-list__sub" data-i18n="case.fg.list1.s2sub">A navigation model that scaled across roles without forcing one to live inside another’s mental model.</span></div></li>
+            <li><div><strong data-i18n="case.fg.list1.s3">Dashboard layouts</strong><span class="case-list__sub" data-i18n="case.fg.list1.s3sub">Role-specific landing screens — KPI cards for back-office, dispatch board for ops, route view for drivers.</span></div></li>
+            <li><div><strong data-i18n="case.fg.list1.s4">Workflow screens</strong><span class="case-list__sub" data-i18n="case.fg.list1.s4sub">Order creation, dispatch, status updates, reconciliation — designed as flows, not isolated forms.</span></div></li>
+            <li><div><strong data-i18n="case.fg.list1.s5">Hand-off package</strong><span class="case-list__sub" data-i18n="case.fg.list1.s5sub">Component states, edge cases, empty states and engineering notes ready for the client’s dev team.</span></div></li>
           </ol>
         </div>
       </section>
@@ -96,10 +96,10 @@
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Dispatcher dashboard</strong><span class="case-list__sub">Live ops board with high-density data, filterable by status, region and driver.</span></div></li>
-            <li><div><strong>Driver view</strong><span class="case-list__sub">Mobile-first, stripped to the day’s assignments, route details and one-tap status updates.</span></div></li>
-            <li><div><strong>Back-office tools</strong><span class="case-list__sub">Order management, reconciliation, reporting and exports — built around batch actions and audit trails.</span></div></li>
-            <li><div><strong>Shared component states</strong><span class="case-list__sub">Empty, loading, error and edge states defined for every workflow surface.</span></div></li>
+            <li><div><strong data-i18n="case.fg.what.s1">Dispatcher dashboard</strong><span class="case-list__sub" data-i18n="case.fg.what.s1sub">Live ops board with high-density data, filterable by status, region and driver.</span></div></li>
+            <li><div><strong data-i18n="case.fg.what.s2">Driver view</strong><span class="case-list__sub" data-i18n="case.fg.what.s2sub">Mobile-first, stripped to the day’s assignments, route details and one-tap status updates.</span></div></li>
+            <li><div><strong data-i18n="case.fg.what.s3">Back-office tools</strong><span class="case-list__sub" data-i18n="case.fg.what.s3sub">Order management, reconciliation, reporting and exports — built around batch actions and audit trails.</span></div></li>
+            <li><div><strong data-i18n="case.fg.what.s4">Shared component states</strong><span class="case-list__sub" data-i18n="case.fg.what.s4sub">Empty, loading, error and edge states defined for every workflow surface.</span></div></li>
           </ul>
         </div>
       </section>
@@ -110,13 +110,13 @@
           <h2 class="case-section__title" data-i18n="case.fg.outcome.title">A five-star review that became a proposal template.</h2>
         </div>
         <div class="case-section__body">
-          <p>
+          <p data-i18n="case.fg.outcome.body">
             The client closed the project with a five-star Upwork review — my first one on the platform. The line they wrote back has become the canonical opening I use in proposals for similar briefs.
           </p>
           <div class="outcomes">
-            <div><span class="metric__value">5★</span><span class="metric__label">Upwork rating</span></div>
-            <div><span class="metric__value">3</span><span class="metric__label">User roles redesigned</span></div>
-            <div><span class="metric__value">1</span><span class="metric__label">Fixed-price delivery</span></div>
+            <div><span class="metric__value">5★</span><span class="metric__label" data-i18n="case.fg.outcome.m1">Upwork rating</span></div>
+            <div><span class="metric__value">3</span><span class="metric__label" data-i18n="case.fg.outcome.m2">User roles redesigned</span></div>
+            <div><span class="metric__value">1</span><span class="metric__label" data-i18n="case.fg.outcome.m3">Fixed-price delivery</span></div>
           </div>
         </div>
       </section>
@@ -128,9 +128,9 @@
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Roles, not personas</strong><span class="case-list__sub">In logistics SaaS, the role someone holds at a moment matters more than their persona. Design for the role they’re in right now.</span></div></li>
-            <li><div><strong>Data density is a feature</strong><span class="case-list__sub">For dispatch users, less white space and more visible data is the right answer. Mobile-style spacing is wrong here.</span></div></li>
-            <li><div><strong>Status changes are the product</strong><span class="case-list__sub">The whole CRM is a state machine. Every workflow screen is just a place where a status transitions.</span></div></li>
+            <li><div><strong data-i18n="case.fg.l.s1">Roles, not personas</strong><span class="case-list__sub" data-i18n="case.fg.l.s1sub">In logistics SaaS, the role someone holds at a moment matters more than their persona. Design for the role they’re in right now.</span></div></li>
+            <li><div><strong data-i18n="case.fg.l.s2">Data density is a feature</strong><span class="case-list__sub" data-i18n="case.fg.l.s2sub">For dispatch users, less white space and more visible data is the right answer. Mobile-style spacing is wrong here.</span></div></li>
+            <li><div><strong data-i18n="case.fg.l.s3">Status changes are the product</strong><span class="case-list__sub" data-i18n="case.fg.l.s3sub">The whole CRM is a state machine. Every workflow screen is just a place where a status transitions.</span></div></li>
           </ul>
         </div>
       </section>

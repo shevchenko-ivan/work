@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BOS Design System — Case · Ivan Shevchenko</title>
   <meta name="description" content="Lead Designer on TemaBit's B2B platform DS — BitCore IAM, BitSubscription, BitAuth, Bit Billing. Storybook as source of truth, automation-driven governance." />
-  <meta name="robots" content="noindex" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -49,10 +49,10 @@
 
     <div class="wrap">
       <div class="case-facts">
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value">2026 (active)</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.company">Company</div><div class="fact__value">TemaBit (Fozzy Group)</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value">Lead Designer (solo)</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.products">Products served</div><div class="fact__value">4 B2B products</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value" data-i18n="case.bos.fact.year">2026 (active)</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.company">Company</div><div class="fact__value" data-i18n="case.bos.fact.company">TemaBit (Fozzy Group)</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value" data-i18n="case.bos.fact.role">Lead Designer (solo)</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.products">Products served</div><div class="fact__value" data-i18n="case.bos.fact.products">4 B2B products</div></div>
       </div>
     </div>
 
@@ -63,10 +63,10 @@
           <h2 class="case-section__title" data-i18n="case.bos.context.title">A DS treated as a product, not a Figma library.</h2>
         </div>
         <div class="case-section__body">
-          <p>
+          <p data-i18n="case.bos.context.body1">
             TemaBit is the IT subsidiary of Fozzy Group and writes around 80% of the holding’s software. BOS is its B2B platform — BitCore IAM in production, with BitSubscription, BitAuth and Bit Billing in development. Multiple product teams, a single platform identity, and a small DS team holding it all together.
           </p>
-          <p>
+          <p data-i18n="case.bos.context.body2">
             I lead the design system, currently as a team of one (it used to be two). The job is half craft, half product management: backlog, roadmap, governance, contribution flow, lifecycle.
           </p>
         </div>
@@ -78,13 +78,13 @@
           <h2 class="case-section__title" data-i18n="case.bos.approach.title">Governance first, components second.</h2>
         </div>
         <div class="case-section__body">
-          <p>The hard part of a DS isn’t the components — it’s the process around them. Prioritisation, transparency, releases, change-management, accessibility commitments.</p>
+          <p data-i18n="case.bos.approach.body">The hard part of a DS isn’t the components — it’s the process around them. Prioritisation, transparency, releases, change-management, accessibility commitments.</p>
           <ol class="case-list case-list--numbered">
-            <li><div><strong>Storybook as source of truth</strong><span class="case-list__sub">Component specs, variants, props and code live in Storybook — Figma points to it, not the other way around.</span></div></li>
-            <li><div><strong>Readiness tracker</strong><span class="case-list__sub">A live Confluence table maintained via a custom Claude Skill (bos-ds-tracker) that I built into the team’s rituals.</span></div></li>
-            <li><div><strong>Weekly automation</strong><span class="case-list__sub">A scheduled task surfaces design tasks without FE, and FE tasks missing story points — fed straight into refinement.</span></div></li>
-            <li><div><strong>ADRs for design decisions</strong><span class="case-list__sub">Architecture Decision Records make trade-offs explicit and historical context recoverable.</span></div></li>
-            <li><div><strong>Lifecycle stages</strong><span class="case-list__sub">Planned · In progress · Ready · Deprecated — visible to every product designer, not just the DS team.</span></div></li>
+            <li><div><strong data-i18n="case.bos.list1.s1">Storybook as source of truth</strong><span class="case-list__sub" data-i18n="case.bos.list1.s1sub">Component specs, variants, props and code live in Storybook — Figma points to it, not the other way around.</span></div></li>
+            <li><div><strong data-i18n="case.bos.list1.s2">Readiness tracker</strong><span class="case-list__sub" data-i18n="case.bos.list1.s2sub">A live Confluence table maintained via a custom Claude Skill (bos-ds-tracker) that I built into the team’s rituals.</span></div></li>
+            <li><div><strong data-i18n="case.bos.list1.s3">Weekly automation</strong><span class="case-list__sub" data-i18n="case.bos.list1.s3sub">A scheduled task surfaces design tasks without FE, and FE tasks missing story points — fed straight into refinement.</span></div></li>
+            <li><div><strong data-i18n="case.bos.list1.s4">ADRs for design decisions</strong><span class="case-list__sub" data-i18n="case.bos.list1.s4sub">Architecture Decision Records make trade-offs explicit and historical context recoverable.</span></div></li>
+            <li><div><strong data-i18n="case.bos.list1.s5">Lifecycle stages</strong><span class="case-list__sub" data-i18n="case.bos.list1.s5sub">Planned · In progress · Ready · Deprecated — visible to every product designer, not just the DS team.</span></div></li>
           </ol>
         </div>
       </section>
@@ -96,11 +96,11 @@
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Token foundations</strong><span class="case-list__sub">Colour today; spacing, typography and radius planned. WCAG 2.1 AA encoded at the token layer.</span></div></li>
-            <li><div><strong>New component variants</strong><span class="case-list__sub">Mobile empty state, tab error state, read-only field, Button radius LG (8px), checkbox, filters panel, app switcher, scrollbar.</span></div></li>
-            <li><div><strong>FE-shipped components</strong><span class="case-list__sub">Mobile navigation, MoreWindow, grid popover, Select/Textarea/TimePicker/DatePicker (read-only), navigation bar with nested menu, drawer, templates.</span></div></li>
-            <li><div><strong>Claude Skills</strong><span class="case-list__sub">bos-ds-tracker, jira-create-task, design-clarify — automation built into the team workflow, not separate from it.</span></div></li>
-            <li><div><strong>Mobile patterns as first-class citizens</strong><span class="case-list__sub">Mobile drawer, mobile navigation, calendar bottom sheet, mobile empty states — not desktop stretched.</span></div></li>
+            <li><div><strong data-i18n="case.bos.what.s1">Token foundations</strong><span class="case-list__sub" data-i18n="case.bos.what.s1sub">Colour today; spacing, typography and radius planned. WCAG 2.1 AA encoded at the token layer.</span></div></li>
+            <li><div><strong data-i18n="case.bos.what.s2">New component variants</strong><span class="case-list__sub" data-i18n="case.bos.what.s2sub">Mobile empty state, tab error state, read-only field, Button radius LG (8px), checkbox, filters panel, app switcher, scrollbar.</span></div></li>
+            <li><div><strong data-i18n="case.bos.what.s3">FE-shipped components</strong><span class="case-list__sub" data-i18n="case.bos.what.s3sub">Mobile navigation, MoreWindow, grid popover, Select/Textarea/TimePicker/DatePicker (read-only), navigation bar with nested menu, drawer, templates.</span></div></li>
+            <li><div><strong data-i18n="case.bos.what.s4">Claude Skills</strong><span class="case-list__sub" data-i18n="case.bos.what.s4sub">bos-ds-tracker, jira-create-task, design-clarify — automation built into the team workflow, not separate from it.</span></div></li>
+            <li><div><strong data-i18n="case.bos.what.s5">Mobile patterns as first-class citizens</strong><span class="case-list__sub" data-i18n="case.bos.what.s5sub">Mobile drawer, mobile navigation, calendar bottom sheet, mobile empty states — not desktop stretched.</span></div></li>
           </ul>
         </div>
       </section>
@@ -112,11 +112,11 @@
         </div>
         <div class="case-section__body">
           <div class="outcomes">
-            <div><span class="metric__value">4</span><span class="metric__label">B2B products served</span></div>
-            <div><span class="metric__value">1</span><span class="metric__label">Source of truth (Storybook)</span></div>
-            <div><span class="metric__value">Weekly</span><span class="metric__label">Automated readiness check</span></div>
+            <div><span class="metric__value">4</span><span class="metric__label" data-i18n="case.bos.outcome.m1">B2B products served</span></div>
+            <div><span class="metric__value">1</span><span class="metric__label" data-i18n="case.bos.outcome.m2">Source of truth (Storybook)</span></div>
+            <div><span class="metric__value" data-i18n="case.bos.outcome.m3v">Weekly</span><span class="metric__label" data-i18n="case.bos.outcome.m3">Automated readiness check</span></div>
           </div>
-          <p style="margin-top: 1.5rem;">
+          <p style="margin-top: 1.5rem;" data-i18n="case.bos.outcome.body">
             The bigger outcome is qualitative — the DS now operates as a product with its own roadmap, release rhythm and contribution model. Product designers can see what’s ready, propose changes, and ship without bottlenecking on the DS team for every variant.
           </p>
         </div>
@@ -125,13 +125,13 @@
       <section class="case-section">
         <div class="case-section__head">
           <div class="case-section__eyebrow" data-i18n="case.eyebrow.learnings">Learnings</div>
-          <h2 class="case-section__title">Three lessons I’m carrying forward.</h2>
+          <h2 class="case-section__title" data-i18n="case.bos.learnings.title">Three lessons I’m carrying forward.</h2>
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Storybook beats Figma as source of truth</strong><span class="case-list__sub">Code is the artifact engineers ship. Specs that don’t live in code drift within weeks.</span></div></li>
-            <li><div><strong>Automation is leadership at scale</strong><span class="case-list__sub">A weekly Claude Skill that nudges the team is worth more than the same nudge from me, manually, on Slack.</span></div></li>
-            <li><div><strong>Lifecycle visibility unblocks teams</strong><span class="case-list__sub">When product designers can see status without asking, they stop asking. The DS team gets its focus time back.</span></div></li>
+            <li><div><strong data-i18n="case.bos.l.s1">Storybook beats Figma as source of truth</strong><span class="case-list__sub" data-i18n="case.bos.l.s1sub">Code is the artifact engineers ship. Specs that don’t live in code drift within weeks.</span></div></li>
+            <li><div><strong data-i18n="case.bos.l.s2">Automation is leadership at scale</strong><span class="case-list__sub" data-i18n="case.bos.l.s2sub">A weekly Claude Skill that nudges the team is worth more than the same nudge from me, manually, on Slack.</span></div></li>
+            <li><div><strong data-i18n="case.bos.l.s3">Lifecycle visibility unblocks teams</strong><span class="case-list__sub" data-i18n="case.bos.l.s3sub">When product designers can see status without asking, they stop asking. The DS team gets its focus time back.</span></div></li>
           </ul>
         </div>
       </section>

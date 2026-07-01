@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Silpo App — Case · Ivan Shevchenko</title>
   <meta name="description" content="Consumer Flutter app for Ukraine's #5 retailer. Loyalty, scan-and-shop, store locator and bonuses — accessible by default, fully consistent with the web." />
-  <meta name="robots" content="noindex" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -49,10 +49,10 @@
 
     <div class="wrap">
       <div class="case-facts">
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value">2023</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.company">Company</div><div class="fact__value">Fozzy Group · Silpo</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.platform">Platform</div><div class="fact__value">Flutter (iOS + Android)</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.scope">Scope</div><div class="fact__value">Consumer · loyalty + commerce</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value" data-i18n="case.app.fact.year">2023</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.company">Company</div><div class="fact__value" data-i18n="case.app.fact.company">Fozzy Group · Silpo</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.platform">Platform</div><div class="fact__value" data-i18n="case.app.fact.platform">Flutter (iOS + Android)</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.scope">Scope</div><div class="fact__value" data-i18n="case.app.fact.scope">Consumer · loyalty + commerce</div></div>
       </div>
     </div>
 
@@ -63,10 +63,10 @@
           <h2 class="case-section__title" data-i18n="case.app.context.title">A mobile app for millions of loyalty members.</h2>
         </div>
         <div class="case-section__body">
-          <p>
+          <p data-i18n="case.app.context.body1">
             Silpo serves millions of customers across 800+ stores. The mobile app is how loyal customers carry their relationship with the brand — bonus balance, loyalty card, store locator, in-store assistance. The expectation: native-feel, accessible, and visually coherent with the web shop.
           </p>
-          <p>
+          <p data-i18n="case.app.context.body2">
             The app and the web shop sat on different codebases — Flutter for mobile, traditional web for the shop. The challenge was to make them feel like one product without forcing the same components onto both.
           </p>
         </div>
@@ -79,10 +79,10 @@
         </div>
         <div class="case-section__body">
           <ol class="case-list case-list--numbered">
-            <li><div><strong>Native patterns first</strong><span class="case-list__sub">Bottom sheets, native pickers, gestures, haptics — used where users already expect them.</span></div></li>
-            <li><div><strong>Cross-platform DS as the spine</strong><span class="case-list__sub">Built on the Silpo Design System’s three-abstraction model — full code-reuse inside Flutter, pattern-level alignment with web.</span></div></li>
-            <li><div><strong>Accessibility on the foundation layer</strong><span class="case-list__sub">WCAG 2.1 AA contrast in the colour tokens, focus states encoded at the component level.</span></div></li>
-            <li><div><strong>Loyalty-first information architecture</strong><span class="case-list__sub">The most-used surface for a regular customer is the loyalty card — that drove the navigation.</span></div></li>
+            <li><div><strong data-i18n="case.app.list1.s1">Native patterns first</strong><span class="case-list__sub" data-i18n="case.app.list1.s1sub">Bottom sheets, native pickers, gestures, haptics — used where users already expect them.</span></div></li>
+            <li><div><strong data-i18n="case.app.list1.s2">Cross-platform DS as the spine</strong><span class="case-list__sub" data-i18n="case.app.list1.s2sub">Built on the Silpo Design System’s three-abstraction model — full code-reuse inside Flutter, pattern-level alignment with web.</span></div></li>
+            <li><div><strong data-i18n="case.app.list1.s3">Accessibility on the foundation layer</strong><span class="case-list__sub" data-i18n="case.app.list1.s3sub">WCAG 2.1 AA contrast in the colour tokens, focus states encoded at the component level.</span></div></li>
+            <li><div><strong data-i18n="case.app.list1.s4">Loyalty-first information architecture</strong><span class="case-list__sub" data-i18n="case.app.list1.s4sub">The most-used surface for a regular customer is the loyalty card — that drove the navigation.</span></div></li>
           </ol>
         </div>
       </section>
@@ -94,11 +94,11 @@
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Loyalty card &amp; balance</strong><span class="case-list__sub">The default screen — instant access to the card, bonus balance and recent activity.</span></div></li>
-            <li><div><strong>Scan-and-shop</strong><span class="case-list__sub">Product scanner with quick add to in-store cart.</span></div></li>
-            <li><div><strong>Store locator</strong><span class="case-list__sub">Map-based search with proximity, hours and services per store.</span></div></li>
-            <li><div><strong>Bonuses &amp; partner programmes</strong><span class="case-list__sub">Status, earn rate, history and partner-redemption flows.</span></div></li>
-            <li><div><strong>Onboarding &amp; auth</strong><span class="case-list__sub">First-run flow optimised for one-handed phone use.</span></div></li>
+            <li><div><strong data-i18n="case.app.what.s1">Loyalty card &amp; balance</strong><span class="case-list__sub" data-i18n="case.app.what.s1sub">The default screen — instant access to the card, bonus balance and recent activity.</span></div></li>
+            <li><div><strong data-i18n="case.app.what.s2">Scan-and-shop</strong><span class="case-list__sub" data-i18n="case.app.what.s2sub">Product scanner with quick add to in-store cart.</span></div></li>
+            <li><div><strong data-i18n="case.app.what.s3">Store locator</strong><span class="case-list__sub" data-i18n="case.app.what.s3sub">Map-based search with proximity, hours and services per store.</span></div></li>
+            <li><div><strong data-i18n="case.app.what.s4">Bonuses &amp; partner programmes</strong><span class="case-list__sub" data-i18n="case.app.what.s4sub">Status, earn rate, history and partner-redemption flows.</span></div></li>
+            <li><div><strong data-i18n="case.app.what.s5">Onboarding &amp; auth</strong><span class="case-list__sub" data-i18n="case.app.what.s5sub">First-run flow optimised for one-handed phone use.</span></div></li>
           </ul>
         </div>
       </section>
@@ -110,11 +110,11 @@
         </div>
         <div class="case-section__body">
           <div class="outcomes">
-            <div><span class="metric__value">Flutter</span><span class="metric__label">Cross-platform framework</span></div>
-            <div><span class="metric__value">Top-5</span><span class="metric__label">Ukrainian retailer</span></div>
-            <div><span class="metric__value">Web + App</span><span class="metric__label">Unified brand experience</span></div>
+            <div><span class="metric__value">Flutter</span><span class="metric__label" data-i18n="case.app.outcome.m1">Cross-platform framework</span></div>
+            <div><span class="metric__value">Top-5</span><span class="metric__label" data-i18n="case.app.outcome.m2">Ukrainian retailer</span></div>
+            <div><span class="metric__value">Web + App</span><span class="metric__label" data-i18n="case.app.outcome.m3">Unified brand experience</span></div>
           </div>
-          <p style="margin-top: 1.5rem;">
+          <p style="margin-top: 1.5rem;" data-i18n="case.app.outcome.body">
             The bigger outcome was qualitative — the app stopped feeling like a separate product. Same brand voice, same components, same loyalty flow as the web. The design system did its job: it travelled.
           </p>
         </div>
@@ -127,9 +127,9 @@
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Default screens earn their slot</strong><span class="case-list__sub">For a loyalty app, the card is the home screen. Don’t make it the “Loyalty” tab.</span></div></li>
-            <li><div><strong>Native is the default, custom is a choice</strong><span class="case-list__sub">Use the picker the OS provides — until you can prove a custom one materially improves the task.</span></div></li>
-            <li><div><strong>Accessibility on day one is cheap; on day 90 it’s a project</strong><span class="case-list__sub">Token-layer contrast, focus states, motion prefs — bake them in early.</span></div></li>
+            <li><div><strong data-i18n="case.app.l.s1">Default screens earn their slot</strong><span class="case-list__sub" data-i18n="case.app.l.s1sub">For a loyalty app, the card is the home screen. Don’t make it the “Loyalty” tab.</span></div></li>
+            <li><div><strong data-i18n="case.app.l.s2">Native is the default, custom is a choice</strong><span class="case-list__sub" data-i18n="case.app.l.s2sub">Use the picker the OS provides — until you can prove a custom one materially improves the task.</span></div></li>
+            <li><div><strong data-i18n="case.app.l.s3">Accessibility on day one is cheap; on day 90 it’s a project</strong><span class="case-list__sub" data-i18n="case.app.l.s3sub">Token-layer contrast, focus states, motion prefs — bake them in early.</span></div></li>
           </ul>
         </div>
       </section>

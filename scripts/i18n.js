@@ -147,6 +147,10 @@ const TRANSLATIONS = {
     'foot.copy':               '© Іван Шевченко · Senior Product Designer',
     'foot.otherVariations':    'Інші варіації →',
 
+    // ── Freelance closing block (Upwork-safe, no contacts) ─
+    'fl.close.title':          'Знайшли мене через <em>Upwork</em>?',
+    'fl.close.body':           'Тоді ви вже знаєте, де мене знайти. Надішліть бриф через ваш Upwork job post або інвайт — зазвичай відповідаю протягом робочого дня.',
+
     // ── Section titles & descriptions ────────────────────
     'sec.fl-saas.workTitle':   'П\'ять проєктів, що показують, як я працюю над SaaS.',
     'sec.fl-saas.workDesc':    'Кожен кейс нижче — те, що я вів або вів спільно end-to-end: ресерч, IA, UI, дизайн-система і передача в інженерію.',

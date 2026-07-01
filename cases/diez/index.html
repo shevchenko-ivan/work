@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Diez — Case · Ivan Shevchenko</title>
   <meta name="description" content="A mobile-first chord and progression app for guitar players. My own MVP — indie product thinking, unit economics, full design ↔ engineering ownership." />
-  <meta name="robots" content="noindex" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -47,10 +47,10 @@
 
     <div class="wrap">
       <div class="case-facts">
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value">2026 (MVP Q2)</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value">Founder, designer, builder</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.stage">Stage</div><div class="fact__value">MVP</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.stack">Stack</div><div class="fact__value">Next.js · mobile-first</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value" data-i18n="case.diez.fact.year">2026 (MVP Q2)</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value" data-i18n="case.diez.fact.role">Founder, designer, builder</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.stage">Stage</div><div class="fact__value" data-i18n="case.diez.fact.stage">MVP</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.stack">Stack</div><div class="fact__value" data-i18n="case.diez.fact.stack">Next.js · mobile-first</div></div>
       </div>
     </div>
 
@@ -58,13 +58,13 @@
       <section class="case-section">
         <div class="case-section__head">
           <div class="case-section__eyebrow" data-i18n="case.eyebrow.context">Context</div>
-          <h2 class="case-section__title">Why I’m building this.</h2>
+          <h2 class="case-section__title" data-i18n="case.diez.context.title">Why I’m building this.</h2>
         </div>
         <div class="case-section__body">
-          <p>
+          <p data-i18n="case.diez.context.body1">
             I play guitar. The tools I use to learn songs and build chord progressions are either heavy desktop software or ad-soaked mobile sites. There’s a gap for a quiet, focused, mobile-first chord app — and I’m close enough to the user that I can make decisions without a research panel.
           </p>
-          <p>
+          <p data-i18n="case.diez.context.body2">
             Beyond the product itself, Diez is my way of practising what I preach: a designer can — and should — own a full product loop at least once. Strategy, research, design, build, ship, monetise, learn.
           </p>
         </div>
@@ -77,10 +77,10 @@
         </div>
         <div class="case-section__body">
           <ol class="case-list case-list--numbered">
-            <li><div><strong>Unit economics first</strong><span class="case-list__sub">Modelled on the framework I learned at Projector’s Unit Economics course — CAC, LTV, ARPU, retention cohorts, monetisation paths.</span></div></li>
-            <li><div><strong>Mobile-first by default</strong><span class="case-list__sub">A guitar player reaches for their phone, not a laptop, when they need a chord.</span></div></li>
-            <li><div><strong>Tiny, opinionated scope</strong><span class="case-list__sub">An MVP that does one thing — chord library + simple progression builder — and does it well.</span></div></li>
-            <li><div><strong>Design ↔ engineering as one loop</strong><span class="case-list__sub">I’m both. No hand-offs. Decisions in Figma get tested in the browser the same day.</span></div></li>
+            <li><div><strong data-i18n="case.diez.list1.s1">Unit economics first</strong><span class="case-list__sub" data-i18n="case.diez.list1.s1sub">Modelled on the framework I learned at Projector’s Unit Economics course — CAC, LTV, ARPU, retention cohorts, monetisation paths.</span></div></li>
+            <li><div><strong data-i18n="case.diez.list1.s2">Mobile-first by default</strong><span class="case-list__sub" data-i18n="case.diez.list1.s2sub">A guitar player reaches for their phone, not a laptop, when they need a chord.</span></div></li>
+            <li><div><strong data-i18n="case.diez.list1.s3">Tiny, opinionated scope</strong><span class="case-list__sub" data-i18n="case.diez.list1.s3sub">An MVP that does one thing — chord library + simple progression builder — and does it well.</span></div></li>
+            <li><div><strong data-i18n="case.diez.list1.s4">Design ↔ engineering as one loop</strong><span class="case-list__sub" data-i18n="case.diez.list1.s4sub">I’m both. No hand-offs. Decisions in Figma get tested in the browser the same day.</span></div></li>
           </ol>
         </div>
       </section>
@@ -92,10 +92,10 @@
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Chord library</strong><span class="case-list__sub">Browse, search, and bookmark chords with clear fingering diagrams.</span></div></li>
-            <li><div><strong>Progression builder</strong><span class="case-list__sub">Drag chords into a sequence, save it, share it.</span></div></li>
-            <li><div><strong>Mobile-first interface</strong><span class="case-list__sub">One-handed use, comfortable while holding a guitar.</span></div></li>
-            <li><div><strong>Monetisation hypothesis</strong><span class="case-list__sub">Modelled but unproven — a subscription paywall on richer features, with a generous free tier.</span></div></li>
+            <li><div><strong data-i18n="case.diez.what.s1">Chord library</strong><span class="case-list__sub" data-i18n="case.diez.what.s1sub">Browse, search, and bookmark chords with clear fingering diagrams.</span></div></li>
+            <li><div><strong data-i18n="case.diez.what.s2">Progression builder</strong><span class="case-list__sub" data-i18n="case.diez.what.s2sub">Drag chords into a sequence, save it, share it.</span></div></li>
+            <li><div><strong data-i18n="case.diez.what.s3">Mobile-first interface</strong><span class="case-list__sub" data-i18n="case.diez.what.s3sub">One-handed use, comfortable while holding a guitar.</span></div></li>
+            <li><div><strong data-i18n="case.diez.what.s4">Monetisation hypothesis</strong><span class="case-list__sub" data-i18n="case.diez.what.s4sub">Modelled but unproven — a subscription paywall on richer features, with a generous free tier.</span></div></li>
           </ul>
         </div>
       </section>
@@ -103,15 +103,15 @@
       <section class="case-section">
         <div class="case-section__head">
           <div class="case-section__eyebrow" data-i18n="case.eyebrow.outcomeSo">Outcome (so far)</div>
-          <h2 class="case-section__title">It’s real, it’s coming, and I’m learning.</h2>
+          <h2 class="case-section__title" data-i18n="case.diez.outcome.title">It’s real, it’s coming, and I’m learning.</h2>
         </div>
         <div class="case-section__body">
           <div class="outcomes">
-            <div><span class="metric__value">MVP · Q2</span><span class="metric__label">Target ship</span></div>
-            <div><span class="metric__value">1</span><span class="metric__label">Person team</span></div>
-            <div><span class="metric__value">Indie</span><span class="metric__label">Product model</span></div>
+            <div><span class="metric__value">MVP · Q2</span><span class="metric__label" data-i18n="case.diez.outcome.m1">Target ship</span></div>
+            <div><span class="metric__value">1</span><span class="metric__label" data-i18n="case.diez.outcome.m2">Person team</span></div>
+            <div><span class="metric__value" data-i18n="case.diez.outcome.m3v">Indie</span><span class="metric__label" data-i18n="case.diez.outcome.m3">Product model</span></div>
           </div>
-          <p style="margin-top: 1.5rem;">
+          <p style="margin-top: 1.5rem;" data-i18n="case.diez.outcome.body">
             The headline outcome is honest: it’s still pre-launch. What it gives me — and what it would give a team that hires me — is an inside view of indie product economics, monetisation trade-offs and the cost of every “small” design decision when you’re the one paying the engineering bill.
           </p>
         </div>
@@ -124,9 +124,9 @@
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Scope is the design</strong><span class="case-list__sub">Every screen costs me engineering time. Cutting is design, not laziness.</span></div></li>
-            <li><div><strong>Mobile-first is a discipline, not a buzzword</strong><span class="case-list__sub">Designing for one-handed phone use forces clarity. The desktop version usually inherits it well.</span></div></li>
-            <li><div><strong>Monetisation is part of UX</strong><span class="case-list__sub">Where the paywall sits is a design decision with retention consequences.</span></div></li>
+            <li><div><strong data-i18n="case.diez.l.s1">Scope is the design</strong><span class="case-list__sub" data-i18n="case.diez.l.s1sub">Every screen costs me engineering time. Cutting is design, not laziness.</span></div></li>
+            <li><div><strong data-i18n="case.diez.l.s2">Mobile-first is a discipline, not a buzzword</strong><span class="case-list__sub" data-i18n="case.diez.l.s2sub">Designing for one-handed phone use forces clarity. The desktop version usually inherits it well.</span></div></li>
+            <li><div><strong data-i18n="case.diez.l.s3">Monetisation is part of UX</strong><span class="case-list__sub" data-i18n="case.diez.l.s3sub">Where the paywall sits is a design decision with retention consequences.</span></div></li>
           </ul>
         </div>
       </section>
