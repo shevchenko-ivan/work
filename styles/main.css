@@ -1080,3 +1080,34 @@ a.case:hover::after { transform: translate(3px, -3px); }
 @media print {
   .contact, .nav, .foot { background: var(--bg) !important; color: var(--text) !important; }
 }
+
+/* ── Upwork Skill Certification badge (freelance only) ───────────────── */
+.cert {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: var(--space-5);
+  padding: 14px 20px;
+  border: 1px solid var(--text);
+  background: var(--bg);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform .18s var(--ease-out-quart), box-shadow .18s var(--ease-out-quart);
+}
+.cert:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--text); }
+.cert:active { transform: none; box-shadow: 2px 2px 0 var(--text); }
+.cert:focus-visible { outline: 2px solid #14a800; outline-offset: 3px; }
+.cert__mark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: #14a800; color: #fff;
+  font-size: 17px; font-weight: 700; flex: none;
+}
+.cert__body { display: flex; flex-direction: column; line-height: 1.15; }
+.cert__eyebrow {
+  font-family: var(--font-mono); font-size: var(--fs-xs);
+  text-transform: uppercase; letter-spacing: .08em; color: #14a800;
+}
+.cert__title { font-family: var(--font-serif); font-size: 1.35rem; }
+.cert__arrow { color: var(--text); transition: transform .18s var(--ease-out-quart); }
+.cert:hover .cert__arrow { transform: translate(2px, -2px); }

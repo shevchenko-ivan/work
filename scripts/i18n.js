@@ -150,6 +150,7 @@ const TRANSLATIONS = {
     // ── Freelance closing block (Upwork-safe, no contacts) ─
     'fl.close.title':          'Знайшли мене через <em>Upwork</em>?',
     'fl.close.body':           'Тоді ви вже знаєте, де мене знайти. Надішліть бриф через ваш Upwork job post або інвайт — зазвичай відповідаю протягом робочого дня.',
+    'fl.close.cta':            'Мій Upwork-профіль ↗',
 
     // ── Section titles & descriptions ────────────────────
     'sec.fl-saas.workTitle':   'П\'ять проєктів, що показують, як я працюю над SaaS.',
