@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Silpo Design System — Case · Ivan Shevchenko</title>
+  <meta name="description" content="Self-initiated cross-platform DS for Ukraine's top-5 retailer. RICE prioritisation, WCAG 2.1 AA from day one, three abstraction levels, web + Flutter." />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/main.css?v=clean9" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="../../" class="nav__brand">
+        <span class="nav__brand-mark">IS</span>
+        <span>Ivan Shevchenko</span>
+      </a>
+      <div class="nav__right">
+        <a href="../../" class="nav__meta nav__back" data-i18n="nav.allVariations">← All variations</a>
+        <button class="lang-switch" type="button" aria-label="Language">
+          <span class="lang-switch__opt" data-lang="en">EN</span>
+          <span class="lang-switch__opt" data-lang="ua">UA</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero wrap">
+      <div class="case-hero__meta">
+        <span>2023</span><span>Fozzy Group · Silpo</span><span>Self-initiated</span><span>Web + Flutter</span>
+      </div>
+      <h1 class="case-hero__title" data-i18n="case.sds.title">Silpo Design System — founded without a top-down mandate.</h1>
+      <p class="case-hero__sub" data-i18n="case.sds.sub">
+        A cross-platform DS for Silpo’s consumer products covering web and a Flutter mobile app. Started from guerrilla interviews, validated with C-level stakeholders, shipped with WCAG 2.1 AA on day one and three abstraction levels designed to travel across very different codebases.
+      </p>
+    </section>
+
+    <section class="case-cover">
+      <div class="wrap">
+        <div class="case-cover__inner">
+          <img src="../../assets/cases/silpo-design-system/cover.jpg" alt="Silpo Design System overview" />
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="case-facts">
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value">2023</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.company">Company</div><div class="fact__value">Fozzy Group · Silpo</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value">Senior PD (acting DS lead)</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.platforms">Platforms</div><div class="fact__value">Web + Flutter mobile</div></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.context">Context</div>
+          <h2 class="case-section__title" data-i18n="case.sds.context.title">My initiative — not an assignment.</h2>
+        </div>
+        <div class="case-section__body">
+          <p>
+            Silpo had two surfaces that mattered to customers — a web shop and a Flutter mobile app — but every team was rebuilding the same components, twice, in slightly different ways. There was no top-down mandate to fix that. There was just visible friction, slow Time to Market, and an obvious opening.
+          </p>
+          <p>
+            I framed the system as a way to <strong>improve Time to Market for product features</strong>, with a side-effect dividend: designers would get research time back. That framing got buy-in from the C-level. The actual work started.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.approach">Approach</div>
+          <h2 class="case-section__title" data-i18n="case.sds.approach.title">Two-stage research, then RICE, then ship.</h2>
+        </div>
+        <div class="case-section__body">
+          <ol class="case-list case-list--numbered">
+            <li><div><strong>Guerrilla interviews</strong><span class="case-list__sub">Fast quality-of-life feedback from designers and front-end engineers — what works today, what doesn’t.</span></div></li>
+            <li><div><strong>Stakeholder interviews</strong><span class="case-list__sub">Structured conversations with CTO, Solution Architect, Front-end Architect, Flutter Architect and Head of Design — to lock in requirements and constraints.</span></div></li>
+            <li><div><strong>Reference scan</strong><span class="case-list__sub">Google Material, Amazon Cloudscape, IBM Carbon, Shopify Polaris — for IA patterns and governance.</span></div></li>
+            <li><div><strong>RICE prioritisation</strong><span class="case-list__sub">Reach × Impact × Confidence / Effort. Made the roadmap defensible to anyone who asked.</span></div></li>
+            <li><div><strong>WCAG 2.1 AA at the start</strong><span class="case-list__sub">A hard requirement from day one — not a final-stage checklist.</span></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.architecture">Architecture</div>
+          <h2 class="case-section__title" data-i18n="case.sds.architecture.title">Three abstraction levels, each for a different reality.</h2>
+        </div>
+        <div class="case-section__body">
+          <p>The system was structured around three abstraction levels so it could travel across very different codebases without forcing the same artefacts onto every team.</p>
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Lowest — code reuse</strong><span class="case-list__sub">Full code reuse for products on the same platform (e.g. all Flutter apps). Maximum efficiency where stacks align.</span></div></li>
+            <li><div><strong>Middle — components + patterns</strong><span class="case-list__sub">Shared visual components and patterns across web and mobile, implemented per-platform.</span></div></li>
+            <li><div><strong>Highest — patterns only</strong><span class="case-list__sub">Pattern-level alignment where codebases diverge too much. Keeps the brand consistent without forcing component-level lock-in.</span></div></li>
+          </ul>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-design-system/levels.png" alt="Three levels of abstraction" loading="lazy">
+            <figcaption class="case-image__caption">Three abstraction levels — pattern-only at the top, full code reuse at the bottom.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.what">What I shipped</div>
+          <h2 class="case-section__title" data-i18n="case.sds.what.title">A documented, accessible, workshop-supported system.</h2>
+        </div>
+        <div class="case-section__body">
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Documentation</strong><span class="case-list__sub">Zeroheight for foundations and patterns. Storybook for the live component reality. Figma as the design tooling.</span></div></li>
+            <li><div><strong>Workshops &amp; training</strong><span class="case-list__sub">Run for both designers and engineers. A dedicated channel for knowledge exchange and Q&amp;A.</span></div></li>
+            <li><div><strong>WCAG 2.1 AA compliance</strong><span class="case-list__sub">Token-level colour contrast, focus states, motion preferences — baked into the foundation layer.</span></div></li>
+            <li><div><strong>Governance for change</strong><span class="case-list__sub">Monthly changelog ritual, version-history saves before publishing, opt-in patterns over mandatory ones.</span></div></li>
+            <li><div><strong>Six design principles</strong><span class="case-list__sub">Clarity, Consistency, Scalability, Research, Collaboration, Beautiful expression.</span></div></li>
+          </ul>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-design-system/workflow.png" alt="Design System workflow" loading="lazy">
+            <figcaption class="case-image__caption">The workflow that kept the system alive — contribution flow, review, release, adoption.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.outcomes">Outcomes</div>
+          <h2 class="case-section__title" data-i18n="case.sds.outcome.title">Faster shipping, fewer mistakes, happier teams.</h2>
+        </div>
+        <div class="case-section__body">
+          <div class="outcomes">
+            <div><span class="metric__value">WCAG AA</span><span class="metric__label">From day one</span></div>
+            <div><span class="metric__value">2</span><span class="metric__label">Platforms unified</span></div>
+            <div><span class="metric__value">3</span><span class="metric__label">Abstraction levels</span></div>
+          </div>
+          <p style="margin-top: 1.5rem;">
+            The visible outcomes were faster delivery of new product features, fewer consistency errors between web and mobile, and a happier design + engineering team. The invisible one — that I now know matters most — was that designers got research time back.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.learnings">Learnings</div>
+          <h2 class="case-section__title" data-i18n="case.sds.learnings.title">What I took into BOS DS three years later.</h2>
+        </div>
+        <div class="case-section__body">
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Stakeholder alignment is non-negotiable</strong><span class="case-list__sub">A DS without C-level buy-in is just a Figma library that ages quickly.</span></div></li>
+            <li><div><strong>Iterate over perfecting</strong><span class="case-list__sub">A v1 that ships and gets used beats a v3 still in review. Versioning is part of the design.</span></div></li>
+            <li><div><strong>Designers and engineers are both users</strong><span class="case-list__sub">QA and BA, too. Designing for one group at the expense of another rots adoption.</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.related">Related</div>
+          <h2 class="case-section__title" data-i18n="case.related.also">If you liked this, also see…</h2>
+        </div>
+        <div class="related">
+          <a class="related__card" href="../bos-design-system/">
+            <div class="related__kicker">B2B platform DS</div>
+            <div class="related__title">BOS Design System</div>
+          </a>
+          <a class="related__card" href="../silpo-app/">
+            <div class="related__kicker">Consumer · Flutter</div>
+            <div class="related__title">Silpo App — the mobile side of the system</div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    </main>
+
+  <footer class="wrap foot">
+    <span data-i18n="foot.copy">© Ivan Shevchenko · Senior Product Designer</span>
+    <span><a href="../../" data-i18n="foot.otherVariations">Other variations →</a></span>
+  </footer>
+
+  <script src="../../scripts/anim.js?v=anim4" defer></script>
+  <script src="../../scripts/i18n.js?v=luch2"></script>
+</body>
+</html>

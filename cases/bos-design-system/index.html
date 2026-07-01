@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BOS Design System — Case · Ivan Shevchenko</title>
+  <meta name="description" content="Lead Designer on TemaBit's B2B platform DS — BitCore IAM, BitSubscription, BitAuth, Bit Billing. Storybook as source of truth, automation-driven governance." />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/main.css?v=clean9" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="../../" class="nav__brand">
+        <span class="nav__brand-mark">IS</span>
+        <span>Ivan Shevchenko</span>
+      </a>
+      <div class="nav__right">
+        <a href="../../" class="nav__meta nav__back" data-i18n="nav.allVariations">← All variations</a>
+        <button class="lang-switch" type="button" aria-label="Language">
+          <span class="lang-switch__opt" data-lang="en">EN</span>
+          <span class="lang-switch__opt" data-lang="ua">UA</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero wrap">
+      <div class="case-hero__meta">
+        <span>2026</span><span>TemaBit · Fozzy Group</span><span>Lead Designer</span><span>Active</span>
+      </div>
+      <h1 class="case-hero__title" data-i18n="case.bos.title">BOS Design System — the DS behind a B2B platform.</h1>
+      <p class="case-hero__sub" data-i18n="case.bos.sub">
+        The active design system serving TemaBit’s B2B platform: BitCore IAM (in production), BitSubscription, BitAuth and Bit Billing. Storybook as source of truth, weekly readiness rituals, Claude-Skills automations and a governance model built for cross-team velocity.
+      </p>
+    </section>
+
+    <section class="case-cover">
+      <div class="wrap">
+        <div class="case-cover__inner case-cover__inner--placeholder case-cover__inner--bos">BOS</div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="case-facts">
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value">2026 (active)</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.company">Company</div><div class="fact__value">TemaBit (Fozzy Group)</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value">Lead Designer (solo)</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.products">Products served</div><div class="fact__value">4 B2B products</div></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.context">Context</div>
+          <h2 class="case-section__title" data-i18n="case.bos.context.title">A DS treated as a product, not a Figma library.</h2>
+        </div>
+        <div class="case-section__body">
+          <p>
+            TemaBit is the IT subsidiary of Fozzy Group and writes around 80% of the holding’s software. BOS is its B2B platform — BitCore IAM in production, with BitSubscription, BitAuth and Bit Billing in development. Multiple product teams, a single platform identity, and a small DS team holding it all together.
+          </p>
+          <p>
+            I lead the design system, currently as a team of one (it used to be two). The job is half craft, half product management: backlog, roadmap, governance, contribution flow, lifecycle.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.approach">Approach</div>
+          <h2 class="case-section__title" data-i18n="case.bos.approach.title">Governance first, components second.</h2>
+        </div>
+        <div class="case-section__body">
+          <p>The hard part of a DS isn’t the components — it’s the process around them. Prioritisation, transparency, releases, change-management, accessibility commitments.</p>
+          <ol class="case-list case-list--numbered">
+            <li><div><strong>Storybook as source of truth</strong><span class="case-list__sub">Component specs, variants, props and code live in Storybook — Figma points to it, not the other way around.</span></div></li>
+            <li><div><strong>Readiness tracker</strong><span class="case-list__sub">A live Confluence table maintained via a custom Claude Skill (bos-ds-tracker) that I built into the team’s rituals.</span></div></li>
+            <li><div><strong>Weekly automation</strong><span class="case-list__sub">A scheduled task surfaces design tasks without FE, and FE tasks missing story points — fed straight into refinement.</span></div></li>
+            <li><div><strong>ADRs for design decisions</strong><span class="case-list__sub">Architecture Decision Records make trade-offs explicit and historical context recoverable.</span></div></li>
+            <li><div><strong>Lifecycle stages</strong><span class="case-list__sub">Planned · In progress · Ready · Deprecated — visible to every product designer, not just the DS team.</span></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.what">What I shipped</div>
+          <h2 class="case-section__title" data-i18n="case.bos.what.title">Foundations, components, automation.</h2>
+        </div>
+        <div class="case-section__body">
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Token foundations</strong><span class="case-list__sub">Colour today; spacing, typography and radius planned. WCAG 2.1 AA encoded at the token layer.</span></div></li>
+            <li><div><strong>New component variants</strong><span class="case-list__sub">Mobile empty state, tab error state, read-only field, Button radius LG (8px), checkbox, filters panel, app switcher, scrollbar.</span></div></li>
+            <li><div><strong>FE-shipped components</strong><span class="case-list__sub">Mobile navigation, MoreWindow, grid popover, Select/Textarea/TimePicker/DatePicker (read-only), navigation bar with nested menu, drawer, templates.</span></div></li>
+            <li><div><strong>Claude Skills</strong><span class="case-list__sub">bos-ds-tracker, jira-create-task, design-clarify — automation built into the team workflow, not separate from it.</span></div></li>
+            <li><div><strong>Mobile patterns as first-class citizens</strong><span class="case-list__sub">Mobile drawer, mobile navigation, calendar bottom sheet, mobile empty states — not desktop stretched.</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.outcomes">Outcomes</div>
+          <h2 class="case-section__title" data-i18n="case.bos.outcome.title">A system that ships and a process that holds.</h2>
+        </div>
+        <div class="case-section__body">
+          <div class="outcomes">
+            <div><span class="metric__value">4</span><span class="metric__label">B2B products served</span></div>
+            <div><span class="metric__value">1</span><span class="metric__label">Source of truth (Storybook)</span></div>
+            <div><span class="metric__value">Weekly</span><span class="metric__label">Automated readiness check</span></div>
+          </div>
+          <p style="margin-top: 1.5rem;">
+            The bigger outcome is qualitative — the DS now operates as a product with its own roadmap, release rhythm and contribution model. Product designers can see what’s ready, propose changes, and ship without bottlenecking on the DS team for every variant.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.learnings">Learnings</div>
+          <h2 class="case-section__title">Three lessons I’m carrying forward.</h2>
+        </div>
+        <div class="case-section__body">
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Storybook beats Figma as source of truth</strong><span class="case-list__sub">Code is the artifact engineers ship. Specs that don’t live in code drift within weeks.</span></div></li>
+            <li><div><strong>Automation is leadership at scale</strong><span class="case-list__sub">A weekly Claude Skill that nudges the team is worth more than the same nudge from me, manually, on Slack.</span></div></li>
+            <li><div><strong>Lifecycle visibility unblocks teams</strong><span class="case-list__sub">When product designers can see status without asking, they stop asking. The DS team gets its focus time back.</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <div class="case-section__eyebrow" data-i18n="case.eyebrow.related">Related</div>
+          <h2 class="case-section__title" data-i18n="case.related.also">If you liked this, also see…</h2>
+        </div>
+        <div class="related">
+          <a class="related__card" href="../silpo-design-system/">
+            <div class="related__kicker">Cross-platform DS</div>
+            <div class="related__title">Silpo Design System — web + Flutter</div>
+          </a>
+          <a class="related__card" href="../silpo-erm/">
+            <div class="related__kicker">Enterprise · 9 modules</div>
+            <div class="related__title">Silpo ERM — −34% operational errors</div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    </main>
+
+  <footer class="wrap foot">
+    <span data-i18n="foot.copy">© Ivan Shevchenko · Senior Product Designer</span>
+    <span><a href="../../" data-i18n="foot.otherVariations">Other variations →</a></span>
+  </footer>
+
+  <script src="../../scripts/anim.js?v=anim4" defer></script>
+  <script src="../../scripts/i18n.js?v=luch2"></script>
+</body>
+</html>
