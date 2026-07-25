@@ -1088,3 +1088,193 @@ a.case:hover::after { transform: translate(3px, -3px); }
 .cert:focus-visible { outline: 2px solid #14a800; outline-offset: 4px; border-radius: 50%; }
 .cert img { width: 150px; height: auto; display: block; }
 @media (max-width: 700px) { .cert img { width: 128px; height: auto; } }
+
+/* ================================================================
+   FINTECH RE-THEME v1 (override layer) — rounded bento · olive + lime
+   Revert: `git checkout styles/main.css` or delete from this banner to EOF.
+   ================================================================ */
+:root {
+  --bg: #ffffff;
+  --surface: #f5f2e9;
+  --surface-alt: #eef1e7;
+  --text: #2b3218;
+  --text-soft: #4a5238;
+  --text-muted: #767c63;
+  --border: #e4e7db;
+  --border-soft: #eef1e8;
+  --accent: #c8f24a;
+  --accent-hover: #d6f56e;
+  --accent-soft: #eef8cc;
+  --accent-ink: #566a1f;
+  --ink: #37431d;
+  --sage: #e0ead2;
+  --lavender: #e7e7f7;
+  --radius: 22px;
+  --radius-sm: 14px;
+  --radius-lg: 32px;
+  --radius-pill: 999px;
+  --font-serif: 'Schibsted Grotesk','Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --font-mono: 'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+
+html { scroll-padding-top: 96px; }
+body {
+  background:
+    radial-gradient(130% 90% at 50% -20%, #d6e6e5 0%, rgba(214,230,229,0) 55%),
+    linear-gradient(180deg, #e6efe6 0%, #edf1e8 45%, #f3f1ea 100%);
+  background-attachment: fixed;
+  color: var(--text);
+}
+::selection { background: var(--accent); color: var(--ink); }
+a:hover { color: var(--accent-ink); }
+
+/* Typography → geometric sans, no italics */
+h1,h2,h3,h4 { font-weight: 600; letter-spacing: -0.025em; }
+.hero__title, .landing__title, .case-hero__title, .section__title,
+.contact__title { line-height: 1.02; }
+.hero__title em, .section__title em, .contact__title em, .landing__title-accent,
+.metric__value, .fact__value, .case__title, .case-list strong, .pillar__title,
+.related__title, .quote__text, .case-cover__inner--placeholder,
+.case__thumb--placeholder { font-style: normal; }
+.hero__title em, .section__title em, .landing__title-accent { color: var(--accent-ink); }
+.quote__text { font-family: var(--font-serif); }
+
+/* Label/eyebrow typefaces → sans */
+.nav__brand, .nav__meta, .nav__back, .pill, .fact__label, .section__eyebrow,
+.case-section__eyebrow, .case__meta, .pillar__num, .landing__card-kicker,
+.related__kicker, .quote__cite, .metric__label, .foot, .landing__foot,
+.case-image__caption, .landing__group-label, .case-hero__meta, .hero__cta,
+.contact__link, .hero__cta-secondary, .nav__brand-mark, .lang-switch {
+  font-family: var(--font-sans);
+}
+
+/* Nav → floating translucent pill */
+.nav { background: transparent; border-bottom: none; padding: 14px 0; }
+.nav__inner {
+  background: rgba(255,255,255,0.72); backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px); border: 1px solid var(--border);
+  border-radius: var(--radius-pill); padding: 9px 12px 9px 16px;
+}
+.nav__brand-mark { border-radius: 9px; background: var(--ink); color: var(--accent); }
+.nav__back:hover { color: var(--accent-ink); }
+
+/* Eyebrows / list markers / arrows → readable green; drop editorial brackets */
+.section__eyebrow, .case-section__eyebrow, .pillar__num, .landing__card-kicker,
+.related__kicker { color: var(--accent-ink); }
+.section__eyebrow::before, .section__eyebrow::after,
+.case-section__eyebrow::before, .case-section__eyebrow::after { content: none; }
+.case-list--numbered li::before, .case-list--bullets li::before { color: var(--accent-ink); }
+a.case::after, .related__card::after, .landing__card::after { color: var(--accent-ink); }
+.quote__text::before, .quote__text::after { color: var(--accent-ink); }
+.case-image__caption { border-left-color: var(--accent-ink); text-transform: none; letter-spacing: 0; }
+
+/* Kicker pill */
+.pill { background: var(--sage); color: var(--ink); border-radius: var(--radius-pill);
+  text-transform: none; letter-spacing: 0; font-weight: 600; padding: 7px 14px; }
+
+/* Buttons → pill */
+.hero__cta { background: var(--accent); color: var(--ink); border: none;
+  border-radius: var(--radius-pill); padding: 14px 26px; text-transform: none;
+  letter-spacing: -0.01em; font-weight: 600; box-shadow: none; }
+.hero__cta:hover { background: var(--accent-hover); color: var(--ink);
+  transform: translateY(-2px); box-shadow: 0 12px 26px rgba(55,67,29,0.18); }
+.hero__cta:active { transform: translateY(0); box-shadow: none; }
+.hero__cta-secondary { border-bottom: none; text-transform: none; letter-spacing: -0.01em;
+  color: var(--ink); background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius-pill); padding: 13px 22px; margin-left: 12px; }
+.hero__cta-secondary:hover { color: var(--ink); background: var(--surface); border-color: var(--border); }
+
+/* Language switch → pill */
+.lang-switch { background: rgba(255,255,255,0.6); border: 1px solid var(--border);
+  border-radius: var(--radius-pill); overflow: hidden; }
+.lang-switch__opt { border-right-color: var(--border); }
+.lang-switch__opt--active { background: var(--ink); color: var(--accent); }
+
+/* Facts → one rounded card with dividers */
+.facts, .case-facts { border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; background: var(--bg); box-shadow: 0 1px 2px rgba(55,67,29,0.04); }
+.fact { border-right: 1px solid var(--border); }
+.fact:last-child { border-right: none; }
+
+/* Bento card grids: gaps + rounded cards */
+.cases, .pillars, .related { border: none; background: transparent; gap: 14px; }
+.case, .pillar, .related__card, .landing__card {
+  border: 1px solid var(--border) !important; border-radius: var(--radius);
+  background: var(--bg); box-shadow: 0 1px 2px rgba(55,67,29,0.04); overflow: hidden;
+  transition: transform 0.22s var(--ease), box-shadow 0.22s var(--ease), background-color 0.22s var(--ease); }
+.case:hover, .related__card:hover, .landing__card:hover, .pillar:hover {
+  transform: translateY(-4px); box-shadow: 0 16px 34px rgba(55,67,29,0.10); background: var(--bg); }
+.case:hover .case__title { color: var(--accent-ink); }
+.case__thumb { border-bottom: 1px solid var(--border); }
+.case__thumb--placeholder { background: var(--ink); color: var(--accent); font-weight: 700; }
+.case__thumb--placeholder.case__thumb--diez { background: var(--sage); color: var(--ink); }
+
+/* Landing cards: lift instead of invert */
+.landing__card:hover { background: var(--bg); color: inherit; }
+.landing__card:hover::after { color: var(--accent-ink); }
+.landing__group-label { color: var(--text-muted); }
+.landing__group-label::after { background: var(--border); }
+
+/* Outcomes → dark olive rounded panel, lime numbers */
+.outcomes { background: var(--ink); color: #fff; border: none; border-radius: var(--radius); overflow: hidden; }
+.outcomes > div { border-right: 1px solid rgba(255,255,255,0.12); }
+.outcomes > div:last-child { border-right: none; }
+.outcomes .metric__value { color: var(--accent); }
+.outcomes .metric__label { color: rgba(255,255,255,0.7); }
+
+/* Soft dividers everywhere */
+.section, .case-section + .case-section, .foot, .landing__foot,
+.landing__header, .case-list, .case-list li { border-color: var(--border); }
+
+/* Contact / closing → floating dark olive panel */
+.contact { background: var(--ink); color: #fff; border-top: none;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+.contact__title em { color: var(--accent); }
+.contact__link { border: 1px solid rgba(255,255,255,0.35); color: #fff;
+  border-radius: var(--radius-pill); text-transform: none; letter-spacing: -0.01em; }
+.contact__link:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
+
+/* Footer → sentence case */
+.foot, .landing__foot { text-transform: none; letter-spacing: 0; }
+.foot a:hover, .landing__foot a:hover { color: var(--accent-ink); }
+
+/* Case detail media → rounded */
+.case-cover__inner { border: 1px solid var(--border); border-radius: var(--radius); }
+.case-cover__inner--placeholder { background: var(--ink); color: var(--accent); }
+.case-cover__inner--diez { background: var(--sage); color: var(--ink); }
+.case-image img { border: 1px solid var(--border); border-radius: var(--radius-sm); }
+
+/* ---- FINTECH v2: floating sheet + pastel bento ---------------------- */
+main {
+  background: #faf8f1;
+  border-radius: 34px;
+  margin: 8px clamp(10px,1.6vw,22px) clamp(18px,2.4vw,34px);
+  box-shadow: 0 30px 80px -28px rgba(45,55,20,0.30);
+  overflow: hidden;
+}
+.landing { align-items: center; }
+.landing__inner {
+  background: #faf8f1;
+  border-radius: 34px;
+  padding: clamp(28px,4.5vw,64px);
+  box-shadow: 0 30px 80px -28px rgba(45,55,20,0.30);
+}
+
+/* pastel bento — pillars (mint / lavender / dark-olive) */
+.pillar { border-radius: 20px; }
+.pillars .pillar:nth-child(1) { background: var(--sage);     border-color: transparent !important; }
+.pillars .pillar:nth-child(2) { background: var(--lavender);  border-color: transparent !important; }
+.pillars .pillar:nth-child(3) { background: var(--ink);       border-color: transparent !important; color: #fff; }
+.pillars .pillar:nth-child(3) .pillar__num  { color: var(--accent); }
+.pillars .pillar:nth-child(3) .pillar__body { color: rgba(255,255,255,0.82); }
+
+/* pastel bento — landing variation cards */
+.landing__grid .landing__card:nth-child(1) { background: var(--sage);    border-color: transparent !important; }
+.landing__grid .landing__card:nth-child(2) { background: var(--lavender); border-color: transparent !important; }
+.landing__grid .landing__card:hover { background: #fff; }
+
+/* contact / closing panel flush to the sheet bottom */
+.contact { border-radius: 30px 30px 0 0; margin-top: var(--space-4); }
+
+/* footer sits on the backdrop below the sheet */
+.foot { background: transparent; border-top: none; padding-top: var(--space-4); }
