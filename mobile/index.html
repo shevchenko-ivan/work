@@ -6,13 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ivan Shevchenko — Senior Product Designer · Mobile Apps</title>
   <meta name="description" content="Senior Product Designer for mobile-first products. Flutter consumer app, cross-platform design systems, accessibility from day one." />
+  <meta name="theme-color" content="#37431d" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ivan Shevchenko — Senior Product Designer · Mobile Apps" />
+  <meta property="og:description" content="Senior Product Designer for mobile-first products. Flutter consumer app, cross-platform design systems, accessibility from day one." />
+  <meta property="og:image" content="https://shevchenko-ivan.github.io/work/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/main.css?v=fv2" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Schibsted+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css?v=b6e23ff1" />
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
 
   <header class="nav">
     <div class="wrap nav__inner">
@@ -24,7 +32,7 @@
         <div class="nav__meta">
           <span class="nav__status"><span class="nav__dot"></span><span data-i18n="status.available">Available · 5h overlap with EU/US-East</span></span>
         </div>
-        <button class="lang-switch" type="button" aria-label="Language">
+        <button class="lang-switch" type="button" aria-label="Українська версія">
           <span class="lang-switch__opt" data-lang="en">EN</span>
           <span class="lang-switch__opt" data-lang="ua">UA</span>
         </button>
@@ -32,9 +40,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" class="sheet">
     <section class="hero wrap">
-      <span class="pill hero__kicker" data-i18n="hero.fl-mob.kicker">Freelance · Mobile applications</span>
       <h1 class="hero__title" data-i18n="hero.fl-mob.title">I design <em>mobile products</em> that respect the platform and the user.</h1>
       <p class="hero__lede">
         Senior Product Designer with 7+ years across consumer mobile and cross-platform design systems.
@@ -46,7 +53,7 @@
 
     <section class="wrap">
       <div class="facts">
-        <div class="fact"><div class="fact__label" data-i18n="fact.basedIn">Based in</div><div class="fact__value">Valencia, Spain 🇪🇸</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="fact.basedIn">Based in</div><div class="fact__value">Valencia, Spain</div></div>
         <div class="fact"><div class="fact__label" data-i18n="fact.platforms">Platforms</div><div class="fact__value">iOS · Android · Flutter</div></div>
         <div class="fact"><div class="fact__label" data-i18n="fact.upwork">Upwork</div><div class="fact__value">★★★★★ · 4 reviews</div></div>
         <div class="fact"><div class="fact__label" data-i18n="fact.bestFit">Best fit</div><div class="fact__value">Consumer app · DS · A11y</div></div>
@@ -62,14 +69,13 @@
     <section id="work" class="section">
       <div class="wrap">
         <div class="section__head">
-          <div class="section__eyebrow" data-i18n="section.selectedWork">Selected mobile work</div>
           <h2 class="section__title" data-i18n="sec.fl-mob.workTitle">Four projects, all with a mobile heart.</h2>
           <p class="section__desc" data-i18n="sec.fl-mob.workDesc">Mobile patterns I actually shipped — not exploration files. Consumer Flutter, enterprise mobile patterns, an indie app of my own.</p>
         </div>
 
         <div class="cases cases--featured">
           <a class="case" href="../cases/silpo-app/">
-            <div class="case__thumb"><img src="../assets/cases/silpo-app/cover.png" alt="Silpo App" loading="lazy"></div>
+            <div class="case__thumb"><img src="../assets/cases/silpo-app/cover.webp" srcset="../assets/cases/silpo-app/cover-800.webp 800w, ../assets/cases/silpo-app/cover.webp 1600w" sizes="(min-width: 1000px) 640px, 100vw" width="1600" height="1112" alt="Silpo App" loading="lazy" decoding="async"></div>
             <div class="case__meta"><span>2023 · Fozzy Group</span><span>Lead PD</span><span>Flutter · Consumer</span></div>
             <h3 class="case__title">Silpo App — design system for the consumer Flutter app</h3>
             <p class="case__sub">
@@ -77,22 +83,22 @@
               Three abstraction levels — patterns, components, full code-reuse — let one design language ship across very different stacks.
             </p>
             <div class="case__metrics">
-              <div><span class="metric__value">Web + Flutter</span><span class="metric__label">Platforms unified</span></div>
-              <div><span class="metric__value">WCAG AA</span><span class="metric__label">From day one</span></div>
+              <div><span class="metric__value metric__value--text">Web + Flutter</span><span class="metric__label">Platforms unified</span></div>
+              <div><span class="metric__value metric__value--text">WCAG AA</span><span class="metric__label">From day one</span></div>
               <div><span class="metric__value">3</span><span class="metric__label">Abstraction levels</span></div>
             </div>
           </a>
 
           <a class="case" href="../cases/silpo-design-system/">
-            <div class="case__thumb"><img src="../assets/cases/silpo-design-system/cover.jpg" alt="Silpo Design System" loading="lazy"></div>
+            <div class="case__thumb"><img src="../assets/cases/silpo-design-system/cover.webp" srcset="../assets/cases/silpo-design-system/cover-800.webp 800w, ../assets/cases/silpo-design-system/cover.webp 1600w" sizes="(min-width: 1000px) 640px, 100vw" width="1600" height="835" alt="Silpo Design System" loading="lazy" decoding="async"></div>
             <div class="case__meta"><span>2023 · Fozzy Group</span><span>Cross-platform DS</span></div>
             <h3 class="case__title">Silpo Design System — patterns that travel</h3>
             <p class="case__sub">
               The system behind the app. Bottom sheets, native calendar fallbacks, mobile navigation patterns — researched and documented in Zeroheight + Storybook.
             </p>
             <div class="case__metrics">
-              <div><span class="metric__value">Material + HIG</span><span class="metric__label">Reference systems</span></div>
-              <div><span class="metric__value">RICE</span><span class="metric__label">Prioritisation</span></div>
+              <div><span class="metric__value metric__value--text">Material + HIG</span><span class="metric__label">Reference systems</span></div>
+              <div><span class="metric__value metric__value--text">RICE</span><span class="metric__label">Prioritisation</span></div>
             </div>
           </a>
 
@@ -104,8 +110,8 @@
               Mobile drawer, mobile navigation, calendar bottom sheet, mobile empty states — all designed as first-class citizens of a B2B platform DS, not a desktop afterthought.
             </p>
             <div class="case__metrics">
-              <div><span class="metric__value">Mobile-first patterns</span><span class="metric__label">Approach</span></div>
-              <div><span class="metric__value">Storybook</span><span class="metric__label">Source of truth</span></div>
+              <div><span class="metric__value metric__value--text">Mobile-first patterns</span><span class="metric__label">Approach</span></div>
+              <div><span class="metric__value metric__value--text">Storybook</span><span class="metric__label">Source of truth</span></div>
             </div>
           </a>
 
@@ -118,8 +124,8 @@
               Indie product thinking, monetisation modelling and full ownership of design ↔ engineering.
             </p>
             <div class="case__metrics">
-              <div><span class="metric__value">MVP · Q2 2026</span><span class="metric__label">Stage</span></div>
-              <div><span class="metric__value">Next.js · Mobile-first</span><span class="metric__label">Stack</span></div>
+              <div><span class="metric__value metric__value--text">MVP · Q2 2026</span><span class="metric__label">Stage</span></div>
+              <div><span class="metric__value metric__value--text">Next.js · Mobile-first</span><span class="metric__label">Stack</span></div>
             </div>
           </a>
         </div>
@@ -129,24 +135,20 @@
     <section class="section">
       <div class="wrap">
         <div class="section__head">
-          <div class="section__eyebrow" data-i18n="section.howIApproachMobile">How I approach mobile</div>
           <h2 class="section__title" data-i18n="sec.fl-mob.howTitle">Three principles I bring to every mobile project.</h2>
         </div>
         <div class="pillars">
           <div class="pillar">
-            <div class="pillar__num">01</div>
             <h3 class="pillar__title" data-i18n="pillar.respectPlatform.title">Respect the platform</h3>
             <p class="pillar__body" data-i18n="pillar.body.respectPlatform">Native gestures, native pickers, native haptics. The best “custom” solution is usually the one that follows iOS HIG or Material — and knows when to break the rule on purpose.</p>
           </div>
           <div class="pillar">
-            <div class="pillar__num">02</div>
             <h3 class="pillar__title" data-i18n="pillar.crossPlatform.title">Cross-platform fluency</h3>
             <p class="pillar__body">
               I’ve shipped on Flutter and worked with React Native teams. I think in shared patterns first and platform-specific deltas second.
             </p>
           </div>
           <div class="pillar">
-            <div class="pillar__num">03</div>
             <h3 class="pillar__title" data-i18n="pillar.a11y.title">Accessibility as a default</h3>
             <p class="pillar__body">
               WCAG 2.1 AA isn’t a final-stage checklist for me — it’s baked into colour tokens, touch targets and motion specs from the first component.
@@ -158,9 +160,7 @@
 
     <section class="section">
       <div class="wrap">
-        <div class="section__head">
-          <div class="section__eyebrow" data-i18n="section.testimonial">Testimonial</div>
-        </div>
+        <h2 class="sr-only" data-i18n="section.testimonial">Testimonial</h2>
         <blockquote class="quote">
           <p class="quote__text" data-i18n="quote.anna">“Ivan deeply analyses the material and clearly articulates his thoughts. He easily adapts to different tasks and quickly comes up with interesting solutions.”</p>
           <p class="quote__cite" data-i18n="quote.anna.cite">Anna Ezhel · UX/UI Designer, course instructor</p>
@@ -171,7 +171,7 @@
       <section class="contact">
       <div class="wrap">
         <h2 class="contact__title" data-i18n="fl.close.title">Found this through <em>Upwork</em>?</h2>
-        <p style="max-width: 52ch; color: rgba(250, 249, 246, 0.7);" data-i18n="fl.close.body">Then you already know where to reach me. Send the brief through your Upwork job post or an invite — I usually reply within a working day.</p>
+        <p class="contact__lede" data-i18n="fl.close.body">Then you already know where to reach me. Send the brief through your Upwork job post or an invite — I usually reply within a working day.</p>
         <div class="contact__row">
           <a class="contact__link" href="https://www.upwork.com/freelancers/~0138a475970ec656ad" target="_blank" rel="noopener" data-i18n="fl.close.cta">My Upwork profile ↗</a>
         </div>
@@ -184,7 +184,7 @@
     <span><a href="../" data-i18n="foot.otherVariations">Other variations →</a></span>
   </footer>
 
-  <script src="../scripts/anim.js?v=anim4" defer></script>
-  <script src="../scripts/i18n.js?v=luch3"></script>
+  <script src="../scripts/anim.js?v=c6ee49bf" defer></script>
+  <script src="../scripts/i18n.js?v=722ee56b" defer></script>
 </body>
 </html>

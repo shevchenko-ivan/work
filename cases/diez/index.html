@@ -6,13 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Diez — Case · Ivan Shevchenko</title>
   <meta name="description" content="A mobile-first chord and progression app for guitar players. My own MVP — indie product thinking, unit economics, full design ↔ engineering ownership." />
+  <meta name="theme-color" content="#37431d" />
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Diez — Case · Ivan Shevchenko" />
+  <meta property="og:description" content="A mobile-first chord and progression app for guitar players. My own MVP — indie product thinking, unit economics, full design ↔ engineering ownership." />
+  <meta property="og:image" content="https://shevchenko-ivan.github.io/work/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../styles/main.css?v=fv2" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Schibsted+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/main.css?v=b6e23ff1" />
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
 
   <header class="nav">
     <div class="wrap nav__inner">
@@ -22,7 +30,7 @@
       </a>
       <div class="nav__right">
         <a href="../../" class="nav__meta nav__back" data-i18n="nav.allVariations">← All variations</a>
-        <button class="lang-switch" type="button" aria-label="Language">
+        <button class="lang-switch" type="button" aria-label="Українська версія">
           <span class="lang-switch__opt" data-lang="en">EN</span>
           <span class="lang-switch__opt" data-lang="ua">UA</span>
         </button>
@@ -30,7 +38,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" class="sheet">
     <section class="case-hero wrap">
       <div class="case-hero__meta">
         <span>2026</span><span>Personal MVP</span><span>Founder</span><span>Mobile-first</span>
@@ -57,7 +65,6 @@
     <div class="wrap">
       <section class="case-section">
         <div class="case-section__head">
-          <div class="case-section__eyebrow" data-i18n="case.eyebrow.context">Context</div>
           <h2 class="case-section__title" data-i18n="case.diez.context.title">Why I’m building this.</h2>
         </div>
         <div class="case-section__body">
@@ -72,7 +79,6 @@
 
       <section class="case-section">
         <div class="case-section__head">
-          <div class="case-section__eyebrow" data-i18n="case.eyebrow.approach">Approach</div>
           <h2 class="case-section__title" data-i18n="case.diez.approach.title">Indie product thinking, not “app design”.</h2>
         </div>
         <div class="case-section__body">
@@ -87,7 +93,6 @@
 
       <section class="case-section">
         <div class="case-section__head">
-          <div class="case-section__eyebrow">What I’m shipping</div>
           <h2 class="case-section__title" data-i18n="case.diez.what.title">An MVP, then real-world signal.</h2>
         </div>
         <div class="case-section__body">
@@ -102,16 +107,15 @@
 
       <section class="case-section">
         <div class="case-section__head">
-          <div class="case-section__eyebrow" data-i18n="case.eyebrow.outcomeSo">Outcome (so far)</div>
           <h2 class="case-section__title" data-i18n="case.diez.outcome.title">It’s real, it’s coming, and I’m learning.</h2>
         </div>
         <div class="case-section__body">
           <div class="outcomes">
-            <div><span class="metric__value">MVP · Q2</span><span class="metric__label" data-i18n="case.diez.outcome.m1">Target ship</span></div>
+            <div><span class="metric__value metric__value--text">MVP · Q2</span><span class="metric__label" data-i18n="case.diez.outcome.m1">Target ship</span></div>
             <div><span class="metric__value">1</span><span class="metric__label" data-i18n="case.diez.outcome.m2">Person team</span></div>
             <div><span class="metric__value" data-i18n="case.diez.outcome.m3v">Indie</span><span class="metric__label" data-i18n="case.diez.outcome.m3">Product model</span></div>
           </div>
-          <p style="margin-top: 1.5rem;" data-i18n="case.diez.outcome.body">
+          <p class="outcomes__note" data-i18n="case.diez.outcome.body">
             The headline outcome is honest: it’s still pre-launch. What it gives me — and what it would give a team that hires me — is an inside view of indie product economics, monetisation trade-offs and the cost of every “small” design decision when you’re the one paying the engineering bill.
           </p>
         </div>
@@ -119,7 +123,6 @@
 
       <section class="case-section">
         <div class="case-section__head">
-          <div class="case-section__eyebrow" data-i18n="case.eyebrow.learningsSoFar">Learnings so far</div>
           <h2 class="case-section__title" data-i18n="case.diez.learnings.title">What building Diez is teaching me.</h2>
         </div>
         <div class="case-section__body">
@@ -133,7 +136,6 @@
 
       <section class="case-section">
         <div class="case-section__head">
-          <div class="case-section__eyebrow" data-i18n="case.eyebrow.related">Related</div>
           <h2 class="case-section__title" data-i18n="case.related.also">If you liked this, also see…</h2>
         </div>
         <div class="related">
@@ -156,7 +158,7 @@
     <span><a href="../../" data-i18n="foot.otherVariations">Other variations →</a></span>
   </footer>
 
-  <script src="../../scripts/anim.js?v=anim4" defer></script>
-  <script src="../../scripts/i18n.js?v=luch3"></script>
+  <script src="../../scripts/anim.js?v=c6ee49bf" defer></script>
+  <script src="../../scripts/i18n.js?v=722ee56b" defer></script>
 </body>
 </html>

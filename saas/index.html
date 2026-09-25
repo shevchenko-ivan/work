@@ -6,13 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ivan Shevchenko — Senior Product Designer · SaaS & Design Systems</title>
   <meta name="description" content="Senior Product Designer specializing in SaaS dashboards and design systems. 7+ years of enterprise B2B experience. 5★ on Upwork." />
+  <meta name="theme-color" content="#37431d" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ivan Shevchenko — Senior Product Designer · SaaS &amp; Design Systems" />
+  <meta property="og:description" content="Senior Product Designer specializing in SaaS dashboards and design systems. 7+ years of enterprise B2B experience. 5★ on Upwork." />
+  <meta property="og:image" content="https://shevchenko-ivan.github.io/work/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/main.css?v=fv2" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Schibsted+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css?v=b6e23ff1" />
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
 
   <header class="nav">
     <div class="wrap nav__inner">
@@ -24,7 +32,7 @@
         <div class="nav__meta">
           <span class="nav__status"><span class="nav__dot"></span><span data-i18n="status.available">Available · 5h overlap with EU/US-East</span></span>
         </div>
-        <button class="lang-switch" type="button" aria-label="Language">
+        <button class="lang-switch" type="button" aria-label="Українська версія">
           <span class="lang-switch__opt" data-lang="en">EN</span>
           <span class="lang-switch__opt" data-lang="ua">UA</span>
         </button>
@@ -32,9 +40,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" class="sheet">
     <section class="hero wrap">
-      <span class="pill hero__kicker" data-i18n="hero.fl-saas.kicker">Freelance · SaaS &amp; design systems</span>
       <h1 class="hero__title" data-i18n="hero.fl-saas.title">I design <em>multi-role SaaS</em> products that ship and stay consistent.</h1>
       <p class="hero__lede" data-i18n="hero.fl-saas.lede">Senior Product Designer with 7+ years in enterprise B2B — dashboards, admin panels, multi-role CRMs, and the design systems that keep them coherent. Five-star Upwork track record. Currently leading the BOS design system at TemaBit (Fozzy Group).</p>
       <a class="hero__cta" href="#work" data-i18n="hero.cta.work">See selected work →</a>
@@ -42,7 +49,7 @@
 
     <section class="wrap">
       <div class="facts">
-        <div class="fact"><div class="fact__label" data-i18n="fact.basedIn">Based in</div><div class="fact__value">Valencia, Spain 🇪🇸</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="fact.basedIn">Based in</div><div class="fact__value">Valencia, Spain</div></div>
         <div class="fact"><div class="fact__label" data-i18n="fact.workingHours">Working hours</div><div class="fact__value">CET · async-friendly</div></div>
         <div class="fact"><div class="fact__label" data-i18n="fact.upwork">Upwork</div><div class="fact__value">★★★★★ · 4 reviews</div></div>
         <div class="fact"><div class="fact__label" data-i18n="fact.bestFit">Best fit</div><div class="fact__value">SaaS · CRM · Admin · DS</div></div>
@@ -58,14 +65,13 @@
     <section id="work" class="section">
       <div class="wrap">
         <div class="section__head">
-          <div class="section__eyebrow" data-i18n="section.selectedWork">Selected work</div>
           <h2 class="section__title" data-i18n="sec.fl-saas.workTitle">Five projects that show how I work on SaaS.</h2>
           <p class="section__desc" data-i18n="sec.fl-saas.workDesc">Each case below is something I led or co-led end-to-end — research, IA, UI, design system, and hand-off with engineering.</p>
         </div>
 
         <div class="cases cases--featured">
           <a class="case" href="../cases/freight-genie/">
-            <div class="case__thumb"><img src="../assets/cases/freight-genie/cover.jpg" alt="Freight Genie" loading="lazy"></div>
+            <div class="case__thumb"><img src="../assets/cases/freight-genie/cover.webp" srcset="../assets/cases/freight-genie/cover-800.webp 800w, ../assets/cases/freight-genie/cover.webp 1600w" sizes="(min-width: 1000px) 640px, 100vw" width="1600" height="1186" alt="Freight Genie" loading="lazy" decoding="async"></div>
             <div class="case__meta"><span>2024 · Upwork</span><span>★★★★★</span><span>Multi-role SaaS CRM</span></div>
             <h3 class="case__title">Freight Genie — SaaS CRM for freight logistics</h3>
             <p class="case__sub">
@@ -75,12 +81,12 @@
             <div class="case__metrics">
               <div><span class="metric__value">5★</span><span class="metric__label">Upwork rating</span></div>
               <div><span class="metric__value">3</span><span class="metric__label">User roles</span></div>
-              <div><span class="metric__value">Dashboards · Workflows</span><span class="metric__label">Scope</span></div>
+              <div><span class="metric__value metric__value--text">Dashboards · Workflows</span><span class="metric__label">Scope</span></div>
             </div>
           </a>
 
           <a class="case" href="../cases/silpo-erm/">
-            <div class="case__thumb"><img src="../assets/cases/silpo-erm/cover.jpg" alt="Silpo ERM" loading="lazy"></div>
+            <div class="case__thumb"><img src="../assets/cases/silpo-erm/cover.webp" srcset="../assets/cases/silpo-erm/cover-800.webp 800w, ../assets/cases/silpo-erm/cover.webp 1600w" sizes="(min-width: 1000px) 640px, 100vw" width="1600" height="1186" alt="Silpo ERM" loading="lazy" decoding="async"></div>
             <div class="case__meta"><span>2023 · Fozzy Group</span><span>Lead PD</span></div>
             <h3 class="case__title">Silpo ERM — 9-module enterprise platform</h3>
             <p class="case__sub">
@@ -101,25 +107,25 @@
             </p>
             <div class="case__metrics">
               <div><span class="metric__value">4</span><span class="metric__label">Products served</span></div>
-              <div><span class="metric__value">Tokens · Storybook · ADR</span><span class="metric__label">Foundations</span></div>
+              <div><span class="metric__value metric__value--text">Tokens · Storybook · ADR</span><span class="metric__label">Foundations</span></div>
             </div>
           </a>
 
           <a class="case" href="../cases/silpo-design-system/">
-            <div class="case__thumb"><img src="../assets/cases/silpo-design-system/cover.jpg" alt="Silpo Design System" loading="lazy"></div>
+            <div class="case__thumb"><img src="../assets/cases/silpo-design-system/cover.webp" srcset="../assets/cases/silpo-design-system/cover-800.webp 800w, ../assets/cases/silpo-design-system/cover.webp 1600w" sizes="(min-width: 1000px) 640px, 100vw" width="1600" height="835" alt="Silpo Design System" loading="lazy" decoding="async"></div>
             <div class="case__meta"><span>2023 · Fozzy Group</span><span>Self-initiated</span></div>
             <h3 class="case__title">Silpo Design System — web + Flutter</h3>
             <p class="case__sub">
               Started without a top-down mandate. RICE prioritisation, WCAG 2.1 AA from day one, three abstraction levels, Zeroheight + Storybook.
             </p>
             <div class="case__metrics">
-              <div><span class="metric__value">WCAG AA</span><span class="metric__label">From day one</span></div>
+              <div><span class="metric__value metric__value--text">WCAG AA</span><span class="metric__label">From day one</span></div>
               <div><span class="metric__value">2</span><span class="metric__label">Platforms unified</span></div>
             </div>
           </a>
 
           <a class="case" href="../cases/miele-audit/">
-            <div class="case__thumb"><img src="../assets/cases/miele-audit/cover.jpg" alt="Miele Ukraine UX audit" loading="lazy"></div>
+            <div class="case__thumb"><img src="../assets/cases/miele-audit/cover.webp" srcset="../assets/cases/miele-audit/cover-800.webp 800w, ../assets/cases/miele-audit/cover.webp 1600w" sizes="(min-width: 1000px) 640px, 100vw" width="1600" height="1064" alt="Miele Ukraine UX audit" loading="lazy" decoding="async"></div>
             <div class="case__meta"><span>2024 · Freelance</span><span>UX audit</span></div>
             <h3 class="case__title">Miele Ukraine — UX/UI audit of shop.miele.ua</h3>
             <p class="case__sub">
@@ -127,7 +133,7 @@
             </p>
             <div class="case__metrics">
               <div><span class="metric__value">4</span><span class="metric__label">Critical surfaces audited</span></div>
-              <div><span class="metric__value">Nielsen 10 + RICE</span><span class="metric__label">Method</span></div>
+              <div><span class="metric__value metric__value--text">Nielsen 10 + RICE</span><span class="metric__label">Method</span></div>
             </div>
           </a>
         </div>
@@ -137,22 +143,18 @@
     <section class="section">
       <div class="wrap">
         <div class="section__head">
-          <div class="section__eyebrow" data-i18n="section.howIWork">How I work</div>
           <h2 class="section__title" data-i18n="sec.fl-saas.howTitle">Three things I bring to every SaaS engagement.</h2>
         </div>
         <div class="pillars">
           <div class="pillar">
-            <div class="pillar__num">01</div>
             <h3 class="pillar__title" data-i18n="pillar.multiRole.title">Multi-role SaaS thinking</h3>
             <p class="pillar__body" data-i18n="pillar.body.multiRole">I treat dashboards as workflows, not screens. Roles, permissions, edge states and data density are designed first — pixels follow.</p>
           </div>
           <div class="pillar">
-            <div class="pillar__num">02</div>
             <h3 class="pillar__title" data-i18n="pillar.dsShips.title">Design systems that actually ship</h3>
             <p class="pillar__body" data-i18n="pillar.body.dsShips">Tokens, Storybook, governance and contribution flows — built so engineers can ship faster, not so designers can admire Figma libraries.</p>
           </div>
           <div class="pillar">
-            <div class="pillar__num">03</div>
             <h3 class="pillar__title" data-i18n="pillar.metrics.title">Metrics-driven prioritisation</h3>
             <p class="pillar__body" data-i18n="pillar.body.metrics">RICE, heuristics and stakeholder interviews drive scope. I will tell you what to cut, not only what to design.</p>
           </div>
@@ -162,9 +164,7 @@
 
     <section class="section">
       <div class="wrap">
-        <div class="section__head">
-          <div class="section__eyebrow" data-i18n="section.testimonial">Testimonial</div>
-        </div>
+        <h2 class="sr-only" data-i18n="section.testimonial">Testimonial</h2>
         <blockquote class="quote">
           <p class="quote__text" data-i18n="quote.dana">“An excellent specialist — balanced, receptive to criticism, and able to argue his position. The soft skills a designer actually needs.”</p>
           <p class="quote__cite" data-i18n="quote.dana.cite">Dana Zhelezniak · Data-driven product designer</p>
@@ -175,7 +175,7 @@
       <section class="contact">
       <div class="wrap">
         <h2 class="contact__title" data-i18n="fl.close.title">Found this through <em>Upwork</em>?</h2>
-        <p style="max-width: 52ch; color: rgba(250, 249, 246, 0.7);" data-i18n="fl.close.body">Then you already know where to reach me. Send the brief through your Upwork job post or an invite — I usually reply within a working day.</p>
+        <p class="contact__lede" data-i18n="fl.close.body">Then you already know where to reach me. Send the brief through your Upwork job post or an invite — I usually reply within a working day.</p>
         <div class="contact__row">
           <a class="contact__link" href="https://www.upwork.com/freelancers/~0138a475970ec656ad" target="_blank" rel="noopener" data-i18n="fl.close.cta">My Upwork profile ↗</a>
         </div>
@@ -188,7 +188,7 @@
     <span><a href="../" data-i18n="foot.otherVariations">Other variations →</a></span>
   </footer>
 
-  <script src="../scripts/anim.js?v=anim4" defer></script>
-  <script src="../scripts/i18n.js?v=luch3"></script>
+  <script src="../scripts/anim.js?v=c6ee49bf" defer></script>
+  <script src="../scripts/i18n.js?v=722ee56b" defer></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
 const TRANSLATIONS = {
   ua: {
     // ── Nav ───────────────────────────────────────────────
+    'a11y.skip':               'Перейти до змісту',
     'nav.available':           'Доступний · 5 год перетин з ЄС / США-Схід',
     'nav.openToRoles':         'Відкритий до senior / lead ролей · віддалено / Валенсія',
     'nav.allVariations':       '← Усі варіації',
@@ -642,43 +643,54 @@ const TRANSLATIONS = {
 };
 
 const LANG_STORAGE_KEY = 'ivansh-lang';
+const SWITCH_LABEL = { en: 'Українська версія', ua: 'English version' };
+
+// localStorage throws in some privacy modes; the language still works per page.
+function readLang() {
+  try { return localStorage.getItem(LANG_STORAGE_KEY); } catch (e) { return null; }
+}
+function saveLang(lang) {
+  try { localStorage.setItem(LANG_STORAGE_KEY, lang); } catch (e) { /* ignore */ }
+}
 
 function detectInitialLang() {
-  const saved = localStorage.getItem(LANG_STORAGE_KEY);
+  const saved = readLang();
   if (saved === 'en' || saved === 'ua') return saved;
   const nav = (navigator.language || 'en').toLowerCase();
   return nav.startsWith('uk') || nav.startsWith('ru') ? 'ua' : 'en';
 }
 
 function snapshotEnglish() {
-  // Cache the original English text so we can restore on toggle back.
+  // Cache the original English markup so we can restore it on toggle back.
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     if (!el.dataset.i18nEn) el.dataset.i18nEn = el.innerHTML;
   });
 }
 
+let currentLang = 'en';
+
 function applyLang(lang) {
+  currentLang = lang;
   document.documentElement.lang = lang === 'ua' ? 'uk' : 'en';
 
   document.querySelectorAll('[data-i18n]').forEach((el) => {
-    const key = el.dataset.i18n;
     if (lang === 'ua') {
-      const t = TRANSLATIONS.ua[key];
+      const t = TRANSLATIONS.ua[el.dataset.i18n];
       if (t !== undefined) el.innerHTML = t;
-    } else {
-      // restore the cached original
-      if (el.dataset.i18nEn !== undefined) el.innerHTML = el.dataset.i18nEn;
+    } else if (el.dataset.i18nEn !== undefined) {
+      el.innerHTML = el.dataset.i18nEn;
     }
   });
 
+  document.querySelectorAll('.lang-switch').forEach((btn) => {
+    btn.setAttribute('aria-label', SWITCH_LABEL[lang]);
+  });
   document.querySelectorAll('.lang-switch__opt').forEach((opt) => {
     opt.classList.toggle('lang-switch__opt--active', opt.dataset.lang === lang);
+    opt.setAttribute('aria-hidden', 'true');
   });
 
-  document.body.classList.toggle('lang-ua', lang === 'ua');
-  document.body.classList.toggle('lang-en', lang === 'en');
-
-  localStorage.setItem(LANG_STORAGE_KEY, lang);
+  saveLang(lang);
 }
 
 function initI18n() {
@@ -686,10 +698,7 @@ function initI18n() {
   applyLang(detectInitialLang());
 
   document.querySelectorAll('.lang-switch').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const current = localStorage.getItem(LANG_STORAGE_KEY) || 'en';
-      applyLang(current === 'en' ? 'ua' : 'en');
-    });
+    btn.addEventListener('click', () => applyLang(currentLang === 'en' ? 'ua' : 'en'));
   });
 }
 
