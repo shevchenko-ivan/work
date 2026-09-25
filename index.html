@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Schibsted+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css?v=b6e23ff1" />
+  <link rel="stylesheet" href="styles/main.css?v=ce4e31c9" />
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -31,28 +31,26 @@
             <span class="nav__brand-mark">IS</span>
             <span>Ivan Shevchenko</span>
           </div>
-          <button class="lang-switch" type="button" aria-label="Українська версія">
-            <span class="lang-switch__opt" data-lang="en">EN</span>
-            <span class="lang-switch__opt" data-lang="ua">UA</span>
-          </button>
+          <button class="lang-switch" type="button">
+          <span class="lang-switch__opt" data-lang="en">EN</span>
+          <span class="lang-switch__opt" data-lang="ua">UA</span>
+          <span class="sr-only lang-switch__hint"> — Українська версія</span>
+        </button>
         </div>
         <h1 class="landing__title"><span data-i18n="landing.title.line1">Four angles.</span><br><span class="landing__title-accent" data-i18n="landing.title.line2">One person.</span></h1>
-        <p class="landing__lede" data-i18n="landing.lede">
-          The right way to introduce me depends on the conversation.
-          Pick the variation that fits, share that link, and skip the “let me explain my background again” intro.
-        </p>
+        <p class="landing__lede" data-i18n="landing.lede">Senior Product Designer in Valencia: enterprise SaaS, design systems and mobile. Pick the portfolio that matches why you are here.</p>
       </header>
 
-      <div class="landing__group-label" data-i18n="landing.group.freelance">Freelance — Upwork &amp; project work</div>
+      <h2 class="landing__group-label" data-i18n="landing.group.freelance">Have an Upwork brief?</h2>
       <div class="landing__grid">
         <a class="landing__card" href="saas/">
           <div class="landing__card-kicker">/saas</div>
-          <div class="landing__card-title" data-i18n="landing.card.fl-saas.title">SaaS &amp; Design Systems</div>
+          <h3 class="landing__card-title" data-i18n="landing.card.fl-saas.title">SaaS &amp; Design Systems</h3>
           <p class="landing__card-desc" data-i18n="landing.card.fl-saas.desc">For Upwork SaaS, CRM, dashboard and admin briefs. Leads with Freight Genie (5★) and Silpo ERM.</p>
         </a>
         <a class="landing__card" href="mobile/">
           <div class="landing__card-kicker">/mobile</div>
-          <div class="landing__card-title" data-i18n="landing.card.fl-mob.title">Mobile Applications</div>
+          <h3 class="landing__card-title" data-i18n="landing.card.fl-mob.title">Mobile Applications</h3>
           <p class="landing__card-desc" data-i18n="landing.card.fl-mob.desc">For Upwork mobile and cross-platform briefs. Leads with the Silpo Flutter app and BOS mobile patterns.</p>
         </a>
       </div>
@@ -66,7 +64,7 @@
     </div>
   </main>
 
-  <script src="scripts/anim.js?v=c6ee49bf" defer></script>
-  <script src="scripts/i18n.js?v=722ee56b" defer></script>
+  <script src="scripts/anim.js?v=e52e3bde" defer></script>
+  <script src="scripts/i18n.js?v=a47b8028" defer></script>
 </body>
 </html>

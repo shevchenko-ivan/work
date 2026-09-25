@@ -8,13 +8,20 @@ const TRANSLATIONS = {
     'nav.available':           'Доступний · 5 год перетин з ЄС / США-Схід',
     'nav.openToRoles':         'Відкритий до senior / lead ролей · віддалено / Валенсія',
     'nav.allVariations':       '← Усі варіації',
+    'spec.m.erm':              'операційних помилок після редизайну ERM',
+    'spec.m.upwork':           'рейтинг від клієнтів на Upwork',
+    'spec.m.levels':           'рівні абстракції, одна система для вебу і Flutter',
+    'spec.m.wcag':             'WCAG 2.1 зашитий у токени з першого дня',
+    'nav.back':                '← Портфоліо',
+    'nav.cta':                 'Зв’язатися',
+    'nav.ctaUpwork':           'Найняти на Upwork ↗',
 
     // ── Landing ───────────────────────────────────────────
     'landing.title.line1':     'Чотири кути.',
     'landing.title.line2':     'Одна людина.',
-    'landing.lede':            'Як саме мене представити — залежить від розмови. Вибери варіацію, що підходить, поділись посиланням і пропусти «дай я знов розкажу свій бекграунд».',
-    'landing.group.freelance': 'Фріланс — Upwork &amp; разові проєкти',
-    'landing.group.fulltime':  'Full-time — senior &amp; lead ролі',
+    'landing.lede':            'Senior Product Designer у Валенсії: enterprise SaaS, дизайн-системи і мобайл. Обери портфоліо під свою задачу.',
+    'landing.group.freelance': 'Маєте бриф на Upwork?',
+    'landing.group.fulltime':  'Шукаєте дизайнера в штат?',
 
     'landing.card.fl-saas.title':  'SaaS і дизайн-системи',
     'landing.card.fl-saas.desc':   'Для Upwork-брифів на SaaS, CRM, дашборди та адмінки. Веде Freight Genie (5★) і Silpo ERM.',
@@ -29,7 +36,7 @@ const TRANSLATIONS = {
 
     // ── Hero: Freelance / SaaS ────────────────────────────
     'hero.fl-saas.kicker':     'Фріланс · SaaS і дизайн-системи',
-    'hero.fl-saas.title':      'Я проектую <em>мульти-рольні SaaS</em>, які виходять і залишаються консистентними.',
+    'hero.fl-saas.title':      'Я проектую <em>мульти&#8209;рольні SaaS</em>, які виходять і залишаються консистентними.',
     'hero.fl-saas.lede':       'Senior Product Designer з 7+ роками в enterprise B2B — дашборди, адмінки, мульти-рольні CRM і дизайн-системи, що їх тримають разом. П\'ять зірок на Upwork. Зараз веду BOS design system у TemaBit (Fozzy Group).',
     'hero.cta.work':           'Подивитись роботи →',
     'hero.cta.contactSecondary': 'або перейти до контактів',
@@ -67,7 +74,7 @@ const TRANSLATIONS = {
     'fact.specialty':          'Спеціалізація',
     'fact.mobilePlatforms':    'Мобільні платформи',
 
-    'fact.val.spain':          'Валенсія, Іспанія 🇪🇸',
+    'fact.val.spain':          'Валенсія, Іспанія',
     'fact.val.cet':            'CET · async-friendly',
     'fact.val.upwork':         '★★★★★ · 4 відгуки',
     'fact.val.saasFit':        'SaaS · CRM · Адмінки · DS',
@@ -636,6 +643,91 @@ const TRANSLATIONS = {
     'contact.app.title':       'Шипаєш <em>consumer mobile app</em>?',
     'contact.miele.title':     '<em>UX-аудит</em> перед редизайном?',
     'contact.diez.title':      'Цікаво про <em>Diez</em>?',
+
+    // ── Case cards, facts, related (auto-keyed by EN text) ──
+    't.03d5e5f7': 'Система за застосунком. Bottom sheets, native-календарі як запасний варіант, патерни мобільної навігації — досліджено й задокументовано в Zeroheight + Storybook.',
+    't.07782c22': 'Фреймворк',
+    't.08bc3591': 'З першого дня',
+    't.09fceba8': 'Рівні абстракції',
+    't.0da8500f': 'Застосунок, що перевірив DS на міцність. Картка лояльності, scan-and-shop, пошук магазинів і бонуси — усе на Flutter, доступне й узгоджене з веб-версією.',
+    't.0f28fe83': 'Фріланс',
+    't.1145080a': 'Фундамент',
+    't.193d237b': 'UX-аудит',
+    't.2187e102': 'Стек',
+    't.21c3a7a8': 'Silpo ERM — −34% операційних помилок',
+    't.25ea361f': 'Евристична оцінка (Nielsen 10), бенчмарк конкурентів Bosch/Siemens/AEG/Gaggenau/Smeg, рекомендації з пріоритетами за RICE.',
+    't.29f00d9f': 'Операційні помилки',
+    't.2e80ac7b': 'Silpo ERM — 9-модульна enterprise-платформа',
+    't.396acece': 'ритейлер України',
+    't.3eb38c39': 'Пріоритизація',
+    't.40a68b5d': 'Підхід',
+    't.4436277d': 'Мій власний mobile-first продукт. Бібліотека акордів, конструктор прогресій, модель монетизації. Роблю те, що раджу іншим: indie-продуктове мислення, повна відповідальність, дизайн ↔ розробка.',
+    't.455fb505': 'Мобільний drawer, навігація, календарний bottom sheet, мобільні empty states — усе спроєктовано як повноцінні частини DS B2B-платформи, а не десктоп, підігнаний у кінці.',
+    't.48db8c14': 'UX-аудит',
+    't.4c3880bb': 'Метод',
+    't.4d3d769b': 'Триває',
+    't.53f28d13': 'Diez — застосунок акордів для гітаристів',
+    't.55c24095': "Незалежне підтвердження, що enterprise-навички працюють і поза Fozzy: п'ятизірковий Upwork-проєкт — CRM для вантажної логістики з мульти‑рольними дашбордами.",
+    't.575ee4a7': "Заснував DS без мандата згори. Три рівні абстракції: патерни (максимальна гнучкість), компоненти + патерни (cross-platform), повне перевикористання коду (під платформу). Веб жив у стилі Bootstrap, Flutter — з native-відчуттям. Одна мова їх об'єднала.",
+    't.5d113f20': 'Обсяг',
+    't.5f754da2': 'BOS Design System — DS для B2B-платформи',
+    't.64c6da24': 'Стадія',
+    't.65ef5598': "Одна ERM, що координує маркетологів, бухгалтерів, кур'єрів, BA і PO в дев'яти модулях: E-commerce, GEO, Billing, CORE, Payments, Loyalty, CityRyder, DAMS, Profile. Інтерв'ю зі стейкхолдерами → сценарні карти → єдина дизайн-система → доставка разом з інженерами.",
+    't.6ab794e1': "Інтерв'ю з CTO, Solution Architect, Flutter Architect і Head of Design. Пріоритизація за RICE, WCAG 2.1 AA з першого дня, три рівні абстракції, документація в Zeroheight + Storybook, воркшопи для дизайнерів та інженерів.",
+    't.6cb1f8e6': 'Спроєктував мобільний drawer, навігацію, empty states і календарні bottom sheets як повноцінні частини DS — а не розтягнуті десктопні екрани. Governance, lifecycle, щотижневий readiness-трекер, Storybook як джерело правди.',
+    't.71750523': 'Silpo App — мобільний бік системи',
+    't.74c847d0': 'BOS DS — мобільні патерни всередині enterprise-системи',
+    't.794efed3': 'Топ-5',
+    't.7a59ed11': 'Storybook · ADR · Токени',
+    't.7b73273d': 'Власний MVP',
+    't.7ba4d620': 'Miele Україна — UX/UI-аудит shop.miele.ua',
+    't.7c074998': 'Enterprise · 9 модулів',
+    't.7e8b2e16': 'Freight Genie — мульти‑рольна SaaS CRM',
+    't.823af5aa': "Єдина система для замовлень, білінгу, лояльності, кур'єрської логістики і DAMS — координує маркетологів, бухгалтерів, кур'єрів і BA.",
+    't.8a93f0c6': 'Diez — застосунок акордів для гітаристів',
+    't.8d062ce5': 'Мульти-рольна SaaS CRM',
+    't.8d74ff36': 'CET · зручно асинхронно',
+    't.8eabbbe9': 'Рейтинг на Upwork',
+    't.918275a7': 'Mobile-first патерни',
+    't.93ad9aaa': 'компанія в Україні',
+    't.93bb0e91': 'Власний мобільний MVP',
+    't.95d427aa': 'Governance · ADR · Токени',
+    't.96de087a': 'Мульти-роль · Workflow',
+    't.9ac63227': 'Silpo Design System — одна система, дві платформи',
+    't.9b3f6c38': "Мульти-рольні дашборди і складні workflow для диспетчерів, водіїв і бек-офісу. П'ятизірковий відгук на Upwork — і формулювання, які клієнти потім цитують мені у своїх запитах.",
+    't.9dccfd47': 'Дашборди · Workflow',
+    't.9f8cdc48': 'Silpo ERM — єдина платформа для цілого ритейлера',
+    't.a0fb65dc': 'Преміум e-commerce',
+    't.a53be538': 'Мій власний продукт — mobile-first застосунок акордів і прогресій для гітаристів. Indie-продуктове мислення, модель монетизації і повна відповідальність за дизайн ↔ розробку.',
+    't.ad5b1a22': 'Засновник',
+    't.b551755b': 'Токени · Storybook · ADR',
+    't.b556a64b': 'Джерело правди',
+    't.b6bec687': 'Silpo Design System — веб + Flutter',
+    't.bc49c2ce': 'Freight Genie — SaaS CRM для вантажної логістики',
+    't.c0124c48': 'Silpo App — consumer-бік системи',
+    't.c152ef96': 'B2B-продукти на системі',
+    't.c1a23518': 'BOS DS — мобільні патерни в enterprise-масштабі',
+    't.c26dc6cd': 'DS для B2B-платформи',
+    't.c690efe2': '2024 · Фріланс',
+    't.c6bb6b21': 'Критичні поверхні в аудиті',
+    't.cb261b32': 'Платформи в одній системі',
+    't.cc00d9dd': 'Власна ініціатива',
+    't.cd29d9fe': '2026 · Власний MVP',
+    't.d9cf9217': '★ Проєкт з Upwork',
+    't.dc4a0d6a': 'Лід-дизайнер',
+    't.dce5306d': 'Silpo Design System — патерни, що мандрують між платформами',
+    't.dd6a69f3': "Об'єднав досвід Сільпо на вебі та у Flutter-застосунку для мільйонів покупців. Три рівні абстракції — патерни, компоненти, повне перевикористання коду — дали одній дизайн-мові працювати на дуже різних стеках.",
+    't.e0e3c35c': 'Silpo Design System — заснована без мандата згори',
+    't.e259ece2': 'Продукти на системі',
+    't.e31f0298': 'Silpo App — система в дії на мобайлі',
+    't.e82f01ae': 'Лід-роль у дизайн-системі для BitCore IAM (у продакшені), BitSubscription, BitAuth і Bit Billing. Storybook як джерело правди, щотижневий readiness-трекер у Confluence, автоматизації на Claude Skills для крос-командних ритуалів.',
+    't.eaf71a87': 'Референсні системи',
+    't.ec3c3ea6': 'Почав без мандата згори. Пріоритизація за RICE, WCAG 2.1 AA з першого дня, три рівні абстракції, Zeroheight + Storybook.',
+    't.ed49a36c': 'Платформи',
+    't.f4040f71': 'Ролі користувачів',
+    't.f6f12757': 'Модулів запущено',
+    't.f8d6ee84': 'Silpo App — дизайн-система для consumer-застосунку на Flutter',
+    't.fe82214c': 'Governance, lifecycle і Storybook як джерело правди для BitCore IAM, BitSubscription, BitAuth і Bit Billing.',
   },
 
   en: {
@@ -643,7 +735,7 @@ const TRANSLATIONS = {
 };
 
 const LANG_STORAGE_KEY = 'ivansh-lang';
-const SWITCH_LABEL = { en: 'Українська версія', ua: 'English version' };
+const SWITCH_HINT = { en: ' — Українська версія', ua: ' — English version' };
 
 // localStorage throws in some privacy modes; the language still works per page.
 function readLang() {
@@ -682,12 +774,12 @@ function applyLang(lang) {
     }
   });
 
-  document.querySelectorAll('.lang-switch').forEach((btn) => {
-    btn.setAttribute('aria-label', SWITCH_LABEL[lang]);
+  // accessible name = visible "EN UA" + what the click does (WCAG 2.5.3)
+  document.querySelectorAll('.lang-switch__hint').forEach((hint) => {
+    hint.textContent = SWITCH_HINT[lang];
   });
   document.querySelectorAll('.lang-switch__opt').forEach((opt) => {
     opt.classList.toggle('lang-switch__opt--active', opt.dataset.lang === lang);
-    opt.setAttribute('aria-hidden', 'true');
   });
 
   saveLang(lang);

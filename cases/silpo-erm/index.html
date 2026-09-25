@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Schibsted+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../styles/main.css?v=b6e23ff1" />
+  <link rel="stylesheet" href="../../styles/main.css?v=ce4e31c9" />
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -24,15 +24,17 @@
 
   <header class="nav">
     <div class="wrap nav__inner">
-      <a href="../../" class="nav__brand">
+      <a href="../../" class="nav__brand" data-home>
         <span class="nav__brand-mark">IS</span>
         <span>Ivan Shevchenko</span>
       </a>
       <div class="nav__right">
-        <a href="../../" class="nav__meta nav__back" data-i18n="nav.allVariations">← All variations</a>
-        <button class="lang-switch" type="button" aria-label="Українська версія">
+        <a href="../../" class="nav__meta nav__back" data-home data-i18n="nav.back">← Portfolio</a>
+        <a class="nav__cta" href="https://www.upwork.com/freelancers/~0138a475970ec656ad" target="_blank" rel="noopener" data-i18n="nav.ctaUpwork">Hire on Upwork ↗</a>
+        <button class="lang-switch" type="button">
           <span class="lang-switch__opt" data-lang="en">EN</span>
           <span class="lang-switch__opt" data-lang="ua">UA</span>
+          <span class="sr-only lang-switch__hint"> — Українська версія</span>
         </button>
       </div>
     </div>
@@ -41,7 +43,7 @@
   <main id="main" class="sheet">
     <section class="case-hero wrap">
       <div class="case-hero__meta">
-        <span>2023</span><span>Fozzy Group</span><span>Lead PD</span><span>Enterprise · 9 modules</span>
+        <span>2023</span><span>Fozzy Group</span><span>Lead PD</span><span data-i18n="t.7c074998">Enterprise · 9 modules</span>
       </div>
       <h1 class="case-hero__title" data-i18n="case.erm.title">Silpo ERM — a 9-module enterprise platform.</h1>
       <p class="case-hero__sub" data-i18n="case.erm.sub">
@@ -134,7 +136,7 @@
           <div class="outcomes">
             <div><span class="metric__value">−34%</span><span class="metric__label" data-i18n="case.erm.outcome.m1">Operational errors</span></div>
             <div><span class="metric__value">9</span><span class="metric__label" data-i18n="case.erm.outcome.m2">Modules shipped</span></div>
-            <div><span class="metric__value metric__value--text">Top-5</span><span class="metric__label" data-i18n="case.erm.outcome.m3">Ukrainian company</span></div>
+            <div><span class="metric__value metric__value--text" data-i18n="t.794efed3">Top-5</span><span class="metric__label" data-i18n="case.erm.outcome.m3">Ukrainian company</span></div>
           </div>
           <ul class="case-list case-list--bullets outcomes__note">
             <li><div><strong data-i18n="case.erm.kpi.s1">CR — Conversion Rate</strong><span class="case-list__sub" data-i18n="case.erm.kpi.s1sub">Order conversion up after checkout optimisation.</span></div></li>
@@ -167,24 +169,32 @@
         <div class="related">
           <a class="related__card" href="../silpo-design-system/">
             <div class="related__kicker">Cross-platform DS</div>
-            <div class="related__title">Silpo Design System — web + Flutter</div>
+            <div class="related__title" data-i18n="t.b6bec687">Silpo Design System — web + Flutter</div>
           </a>
           <a class="related__card" href="../bos-design-system/">
-            <div class="related__kicker">B2B platform DS</div>
+            <div class="related__kicker" data-i18n="t.c26dc6cd">B2B platform DS</div>
             <div class="related__title">BOS Design System</div>
           </a>
         </div>
       </section>
     </div>
 
-    </main>
+      <section id="contact" class="contact">
+      <div class="wrap">
+        <h2 class="contact__title" data-i18n="fl.close.title">Found this through <em>Upwork</em>?</h2>
+        <p class="contact__lede" data-i18n="fl.close.body">Then you already know where to reach me. Send the brief through your Upwork job post or an invite — I usually reply within a working day.</p>
+        <div class="contact__row">
+          <a class="contact__link" href="https://www.upwork.com/freelancers/~0138a475970ec656ad" target="_blank" rel="noopener" data-i18n="fl.close.cta">My Upwork profile ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="wrap foot">
     <span data-i18n="foot.copy">© Ivan Shevchenko · Senior Product Designer</span>
-    <span><a href="../../" data-i18n="foot.otherVariations">Other variations →</a></span>
   </footer>
 
-  <script src="../../scripts/anim.js?v=c6ee49bf" defer></script>
-  <script src="../../scripts/i18n.js?v=722ee56b" defer></script>
+  <script src="../../scripts/anim.js?v=e52e3bde" defer></script>
+  <script src="../../scripts/i18n.js?v=a47b8028" defer></script>
 </body>
 </html>
