@@ -1234,3 +1234,12 @@ a.case:hover .case__title { color: var(--accent-ink); }
 .case-table td:first-child { font-weight: 600; color: var(--text); white-space: nowrap; }
 .case-image--diagram img { background: #fff; }
 @media (max-width: 560px) { .case-table td:first-child { white-space: normal; } }
+
+/* Brand mark: Ivan's photo instead of the "IS" monogram */
+.nav__brand-mark {
+  border-radius: 50%;
+  background: var(--ink) url("../assets/avatar-96.webp") center / cover no-repeat;
+  color: transparent;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px var(--border);
+}
