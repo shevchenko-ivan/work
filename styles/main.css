@@ -1243,3 +1243,8 @@ a.case:hover .case__title { color: var(--accent-ink); }
   overflow: hidden;
   box-shadow: 0 0 0 1px var(--border);
 }
+
+/* Contrast ratios in case text: failing values vs targets (colours pass 4.5:1 on sheet, card and surface) */
+.ratio { font-style: italic; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ratio--fail { color: #a84400; }
+.ratio--target { color: #1e7a3c; }
