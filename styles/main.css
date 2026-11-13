@@ -1259,3 +1259,9 @@ a.case:hover .case__title { color: var(--accent-ink); }
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.85);
   pointer-events: none;
 }
+
+/* Hero card variant: a real summary of recent work instead of a demo grid */
+.spec__skills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.spec__skills span { padding: 3px 9px; border-radius: var(--radius-pill); border: 1px solid var(--border); color: var(--text-soft); }
+.spec__grid--work .spec__row { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) auto; }
+.spec__grid--work .spec__row > span:first-child { font-weight: 600; }
