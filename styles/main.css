@@ -1218,3 +1218,9 @@ a.case:hover .case__title { color: var(--accent-ink); }
 /* Pair of phone screenshots side by side in a case figure */
 .case-image--pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
 .case-image--pair .case-image__caption { grid-column: 1 / -1; margin-top: 0; }
+.case-image--trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; align-items: start; }
+.case-image--trio .case-image__caption { grid-column: 1 / -1; margin-top: 0; }
+.case-image--narrow { max-width: 360px; }
+@media (max-width: 560px) {
+  .case-image--trio { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
