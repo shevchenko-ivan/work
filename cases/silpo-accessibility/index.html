@@ -117,6 +117,10 @@
           <h2 class="case-section__title">What the audit found.</h2>
         </div>
         <div class="case-section__body">
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-accessibility/audit-mosaic.webp" srcset="../../assets/cases/silpo-accessibility/audit-mosaic-1000.webp 1000w, ../../assets/cases/silpo-accessibility/audit-mosaic.webp 2012w" sizes="(min-width: 820px) 760px, 100vw" width="2012" height="1068" alt="A grid of 153 small screenshots from the audit pages: website sections and mobile app screens" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">All 153 screenshots from the ten audit pages: six website criteria and four app areas. Each one sits next to a written finding with the current value and the target.</figcaption>
+          </figure>
           <ul class="case-list case-list--bullets">
             <li><div><strong>Brand colours fail contrast (1.4.3)</strong><span class="case-list__sub">White text on Silpo’s orange and green gave 2.44 : 1 instead of 4.5 : 1 — on discounts, loyalty points, bonuses, promo labels and order statuses. Grey secondary text sat at 3.58 : 1. On the app, a disabled “Go to payment” button in self-checkout dropped to 1.64 : 1.</span></div></li>
             <li><div><strong>Colour as the only signal (1.4.1)</strong><span class="case-list__sub">A green dot marked personal offers, a second price in green had no explanation, order statuses and “In stock / Running low” differed only by colour, and the active tab in the tab bar changed colour only.</span></div></li>
@@ -138,6 +142,32 @@
             <img src="../../assets/cases/silpo-accessibility/app-contrast-exclusive-discounts.webp" width="640" height="798" alt="Silpo app exclusive discounts: product cards with a grey Retail badge and a second price in green" loading="lazy" decoding="async">
             <img src="../../assets/cases/silpo-accessibility/app-contrast-vilnokasa.webp" width="640" height="1000" alt="Silpo app self-checkout screen with a disabled Go to payment button at the bottom" loading="lazy" decoding="async">
             <figcaption class="case-image__caption">Left to right: the green personal-offer dot with no text meaning; the grey-on-grey “Retail” badge (1.54 : 1) and the green price (3.82 : 1); the disabled “Go to payment” button in self-checkout (1.64 : 1).</figcaption>
+          </figure>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-accessibility/web-banner-contrast.webp" width="1400" height="300" alt="Website home banner with a View button over a photo" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Home banner: the “View” button text measured 1 : 1 — it disappears into the background.</figcaption>
+          </figure>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-accessibility/web-certificates-contrast.webp" width="1400" height="452" alt="Gift certificates block: a Mastercard promo note and certificate cards with orange bonus labels" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Gift certificates: bonus labels at 2.44 : 1 fail AA. The Mastercard note at 6.07 : 1 passes AA but misses the AAA target of 7 : 1.</figcaption>
+          </figure>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-accessibility/web-recipes-contrast.webp" width="1400" height="354" alt="Recipes carousel with All ingredients to cart buttons under each recipe" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Recipes: “All ingredients to cart” at 6.14 : 1 — one of the AAA findings in the brand blue.</figcaption>
+          </figure>
+          <figure class="case-image case-image--pair">
+            <img src="../../assets/cases/silpo-accessibility/web-delivery-time.webp" width="1040" height="828" alt="Website delivery time picker: Today, Tomorrow and day-after buttons and time slots" loading="lazy" decoding="async">
+            <img src="../../assets/cases/silpo-accessibility/app-addresses-contrast.webp" width="1038" height="842" alt="App address list with saved delivery addresses in light grey text" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Left: the active “Today” button at 6.15 : 1 against the AAA target. Right: saved addresses in the app at 2.3 : 1 against the AA target of 4.5 : 1.</figcaption>
+          </figure>
+          <figure class="case-image case-image--pair">
+            <img src="../../assets/cases/silpo-accessibility/app-catalogue-count.webp" width="780" height="1606" alt="App catalogue filter screen with product counts next to each option in pale grey" loading="lazy" decoding="async">
+            <img src="../../assets/cases/silpo-accessibility/app-address-links.webp" width="640" height="1136" alt="App delivery address screen with Choose delivery address and Choose store links in blue text" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Left: product counts in the catalogue at 1.64 : 1. Right: “Choose delivery address” and “Choose store address” look interactive only through colour — the fix adds an underline or a button style.</figcaption>
+          </figure>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-accessibility/app-tabbar-colour.webp" width="640" height="144" alt="App tab bar: Home, Catalogue, Stores, Purchases, with Home active in blue" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Tab bar: the active tab differs only by colour. The fix is a filled icon for the active state.</figcaption>
           </figure>
         </div>
       </section>
@@ -167,6 +197,15 @@
             <figcaption class="case-image__caption">Small targets on narrow screens. Website at mobile width: breadcrumbs at 16–20 px and the “+” button. App filter: checkboxes, “Show all”, the price fields and the disabled “Show results” button at 1.62 : 1.</figcaption>
           </figure>
           <figure class="case-image">
+            <img src="../../assets/cases/silpo-accessibility/web-header-targets.webp" width="640" height="224" alt="Website header at mobile width with the delivery address control and navigation icons" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Header at mobile width: the delivery-address control grows from 32 to 44 px, navigation icons from 24 × 24 to 44 × 44.</figcaption>
+          </figure>
+          <figure class="case-image case-image--pair">
+            <img src="../../assets/cases/silpo-accessibility/app-target-access.webp" width="640" height="1136" alt="App screen asking for location access with a Grant access button" loading="lazy" decoding="async">
+            <img src="../../assets/cases/silpo-accessibility/app-target-profile.webp" width="686" height="578" alt="App profile screen with Date of birth and Gender rows" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Left: the “Grant access” button needs a 44 px height here and everywhere it is reused. Right: profile rows for date of birth and gender grow to 44 px.</figcaption>
+          </figure>
+          <figure class="case-image">
             <img src="../../assets/cases/silpo-accessibility/app-target-size-chips.webp" width="640" height="96" alt="Row of category chips from the Silpo app home screen" loading="lazy" decoding="async">
             <figcaption class="case-image__caption">App category chips: an invisible 44 px-high container makes them easy to tap without changing the visual size.</figcaption>
           </figure>
@@ -177,6 +216,15 @@
           <figure class="case-image">
             <img src="../../assets/cases/silpo-accessibility/web-delivery-block.webp" srcset="../../assets/cases/silpo-accessibility/web-delivery-block-800.webp 800w, ../../assets/cases/silpo-accessibility/web-delivery-block.webp 1600w" sizes="(min-width: 820px) 760px, 100vw" width="1600" height="338" alt="Silpo website delivery block with delivery options and date and time buttons" loading="lazy" decoding="async">
             <figcaption class="case-image__caption">Delivery block: 36 px buttons and no focus state on any delivery option.</figcaption>
+          </figure>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-accessibility/web-focus-categories.webp" width="1400" height="298" alt="Website You may be interested in block with category cards" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">“You may be interested in”: every category card needs a visible focus state. The website audit lists such elements section by section, from header to footer.</figcaption>
+          </figure>
+          <figure class="case-image case-image--pair">
+            <img src="../../assets/cases/silpo-accessibility/app-focus-buttons.webp" width="640" height="1136" alt="App home screen with product cards, quantity buttons, category chips, a QR button and the tab bar" loading="lazy" decoding="async">
+            <img src="../../assets/cases/silpo-accessibility/app-focus-inputs.webp" width="640" height="1136" alt="App screen with text input fields" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">The app focus inventory is grouped by component type — buttons, input fields, navigation, links, checkboxes and radio buttons — so each gets one focus pattern in the design system.</figcaption>
           </figure>
           <figure class="case-image case-image--pair">
             <img src="../../assets/cases/silpo-accessibility/app-focus-home-services.webp" width="640" height="1065" alt="Silpo app home screen top: delivery address field, profile, Our services tiles and a banner" loading="lazy" decoding="async">
@@ -239,7 +287,7 @@
           <div class="outcomes">
             <div><span class="metric__value">78</span><span class="metric__label">WCAG 2.1 criteria documented for web</span></div>
             <div><span class="metric__value">52</span><span class="metric__label">Mobile practices for iOS and Android</span></div>
-            <div><span class="metric__value">2</span><span class="metric__label">Products audited: website and app</span></div>
+            <div><span class="metric__value">153</span><span class="metric__label">Annotated screenshots across 10 audit pages</span></div>
           </div>
           <p class="outcomes__note">
             The work ran alongside the Silpo Design System, where WCAG 2.1 AA was a requirement from day one. The guidelines gave designers and developers one shared reference instead of personal readings of WCAG.
