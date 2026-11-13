@@ -1224,3 +1224,13 @@ a.case:hover .case__title { color: var(--accent-ink); }
 @media (max-width: 560px) {
   .case-image--trio { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Data tables inside case studies */
+.case-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--card); }
+.case-table { width: 100%; border-collapse: collapse; font-size: var(--fs-xs); line-height: 1.45; }
+.case-table caption { caption-side: top; text-align: left; padding: 14px 16px 10px; font-size: var(--fs-xs); color: var(--text-muted); }
+.case-table th, .case-table td { padding: 10px 16px; text-align: left; vertical-align: top; border-top: 1px solid var(--border); }
+.case-table th { font-weight: 600; color: var(--text); background: var(--surface); }
+.case-table td:first-child { font-weight: 600; color: var(--text); white-space: nowrap; }
+.case-image--diagram img { background: #fff; }
+@media (max-width: 560px) { .case-table td:first-child { white-space: normal; } }
