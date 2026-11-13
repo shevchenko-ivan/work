@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif">
+  <rect width="800" height="470" rx="0" fill="#faf8f1"/>
+  <text x="40" y="50" fill="#566a1f" font-size="14" font-weight="600" letter-spacing="1.5">PROMO TYPES THE GUEST SIDE HAD TO SUPPORT</text>
+
+  <!-- columns -->
+  <g font-size="13.5">
+    <rect x="40" y="80" width="230" height="350" rx="22" fill="#e0ead2"/>
+    <text x="64" y="118" fill="#37431d" font-size="18" font-weight="600">Item-level</text>
+    <g fill="#37431d" fill-opacity=".85">
+      <text x="64" y="156">Reduced price · ₴ or %</text>
+      <text x="64" y="186">“From X pcs” bulk discount</text>
+      <text x="64" y="216">Fixed set of items</text>
+      <text x="64" y="246">Main item + gift of choice</text>
+      <text x="64" y="276">Mix-and-match set</text>
+      <text x="64" y="306">Guest-built set</text>
+      <text x="64" y="336">Offline: 7+3, bundles</text>
+    </g>
+
+    <rect x="285" y="80" width="230" height="350" rx="22" fill="#e7e7f7"/>
+    <text x="309" y="118" fill="#37431d" font-size="18" font-weight="600">Basket-level</text>
+    <g fill="#37431d" fill-opacity=".85">
+      <text x="309" y="156">Spend X → delivery for ₴1</text>
+      <text x="309" y="186">Spend X → cashback</text>
+      <text x="309" y="216">Spend X → discount</text>
+      <text x="309" y="246">Spend X → items at</text>
+      <text x="309" y="266">a reduced price</text>
+    </g>
+
+    <rect x="530" y="80" width="230" height="350" rx="22" fill="#37431d"/>
+    <text x="554" y="118" fill="#ffffff" font-size="18" font-weight="600">Personal offers</text>
+    <g fill="#ffffff" fill-opacity=".8">
+      <text x="554" y="156">Discount or points on</text>
+      <text x="554" y="176">a specific item</text>
+      <text x="554" y="206">Bonus / multiplied points</text>
+      <text x="554" y="236">Delivery for ₴1 above</text>
+      <text x="554" y="256">a basket threshold</text>
+    </g>
+    <rect x="554" y="366" width="182" height="40" rx="20" fill="#c8f24a"/>
+    <text x="645" y="391" text-anchor="middle" fill="#37431d" font-size="13" font-weight="600">one card, “like on a shelf”</text>
+  </g>
+</svg>

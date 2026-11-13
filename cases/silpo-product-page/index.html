@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Silpo Product Page — Case · Ivan Shevchenko</title>
+  <meta name="description" content="Two Figma prototypes of Silpo's mobile product page (accordions vs chips) tested with 18 guests in moderated sessions: what guests look for, and why the container mattered less than the content." />
+  <meta name="theme-color" content="#37431d" />
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Silpo Product Page — Case · Ivan Shevchenko" />
+  <meta property="og:description" content="Two Figma prototypes of Silpo's mobile product page (accordions vs chips) tested with 18 guests in moderated sessions." />
+  <meta property="og:image" content="https://shevchenko-ivan.github.io/work/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" href="../../assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../styles/main.css?v=4b3d7dd9" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="../../" class="nav__brand" data-home>
+        <span class="nav__brand-mark">IS</span>
+        <span>Ivan Shevchenko</span>
+      </a>
+      <div class="nav__right">
+        <a href="../../" class="nav__meta nav__back" data-home data-i18n="nav.back">← Portfolio</a>
+        <a class="nav__cta" href="https://www.upwork.com/freelancers/~0138a475970ec656ad" target="_blank" rel="noopener" data-i18n="nav.ctaUpwork">Hire on Upwork ↗</a>
+        <button class="lang-switch" type="button">
+          <span class="lang-switch__opt" data-lang="en">EN</span>
+          <span class="lang-switch__opt" data-lang="ua">UA</span>
+          <span class="sr-only lang-switch__hint"> — Українська версія</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="sheet">
+    <section class="case-hero wrap">
+      <div class="case-hero__meta">
+        <span>2023</span><span>Fozzy Group · Silpo</span><span data-i18n="case.pp.meta.kind">Research-led iteration</span><span data-i18n="case.pp.meta.platform">Mobile web</span>
+      </div>
+      <h1 class="case-hero__title" data-i18n="case.pp.title">Silpo product page — two ways to hold the same facts.</h1>
+      <p class="case-hero__sub" data-i18n="case.pp.sub">
+        A research-led iteration on the product page of Silpo’s online shop. Two Figma prototypes — information grouped in accordions vs in chips — tested in moderated sessions with 18 guests on their phones.
+      </p>
+    </section>
+
+    <section class="case-cover">
+      <div class="wrap">
+        <div class="case-cover__inner">
+          <img src="../../assets/cases/silpo-product-page/cover.webp" srcset="../../assets/cases/silpo-product-page/cover-800.webp 800w, ../../assets/cases/silpo-product-page/cover.webp 1600w" sizes="(min-width: 1280px) 1200px, 100vw" width="1600" height="1186" alt="Three phone screens of the Silpo shop: a catalogue grid, a product page with accordions, and a product page with chips" fetchpriority="high" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="case-facts">
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value">2023</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.company">Company</div><div class="fact__value">Fozzy Group · Silpo</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value" data-i18n="case.pp.fact.role">Product designer · co-designed the prototypes</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.scope">Scope</div><div class="fact__value" data-i18n="case.pp.fact.scope">Product page · mobile web</div></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title" data-i18n="case.pp.context.title">The page guests open before they commit.</h2>
+        </div>
+        <div class="case-section__body">
+          <p data-i18n="case.pp.context.body1">
+            A grocery product page carries a lot: price, discount, nutrition, composition, description, storage, promo terms. Our first screen went picture → title → price → discount → nutrition → description → composition, with everything else tucked into groups.
+          </p>
+          <p data-i18n="case.pp.context.body2">
+            Nobody had checked whether that order — or grouping at all — matched what guests actually look for. So instead of arguing about layouts, we wrote the assumptions down and tested them.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title" data-i18n="case.pp.hyp.title">Three assumptions worth breaking.</h2>
+        </div>
+        <div class="case-section__body">
+          <ol class="case-list case-list--numbered">
+            <li><div><strong data-i18n="case.pp.hyp.s1">Maybe grouping isn’t needed</strong><span class="case-list__sub" data-i18n="case.pp.hyp.s1sub">Accordions and chips add taps. Would one long page serve guests better?</span></div></li>
+            <li><div><strong data-i18n="case.pp.hyp.s2">Maybe the order is wrong</strong><span class="case-list__sub" data-i18n="case.pp.hyp.s2sub">What does a guest expect to find on the page — and what do they look for first?</span></div></li>
+            <li><div><strong data-i18n="case.pp.hyp.s3">Maybe promo terms don’t matter</strong><span class="case-list__sub" data-i18n="case.pp.hyp.s3sub">Perhaps guests only want to see the benefit, not the conditions.</span></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title" data-i18n="case.pp.method.title">Two prototypes, 18 guests, one phone each.</h2>
+        </div>
+        <div class="case-section__body">
+          <ul class="case-list case-list--bullets">
+            <li><div><strong data-i18n="case.pp.method.s1">Prototype A vs B</strong><span class="case-list__sub" data-i18n="case.pp.method.s1sub">The same content, grouped in accordions (A) or in chips (B). Built in Figma and clicked through on a phone.</span></div></li>
+            <li><div><strong data-i18n="case.pp.method.s2">Two segments of nine</strong><span class="case-list__sub" data-i18n="case.pp.method.s2sub">Regular online shoppers who are not price-sensitive, and active promo hunters buying fresh categories. Ages 25–45, big cities, ordering through mobile web at least twice a month.</span></div></li>
+            <li><div><strong data-i18n="case.pp.method.s3">Moderated usability sessions</strong><span class="case-list__sub" data-i18n="case.pp.method.s3sub">Run together with Silpo’s guest-experience research team. Success measured by comments, the number of hints a guest needed, and a 1–5 rating.</span></div></li>
+          </ul>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-product-page/variants.webp" srcset="../../assets/cases/silpo-product-page/variants-800.webp 800w, ../../assets/cases/silpo-product-page/variants.webp 1600w" sizes="(min-width: 820px) 760px, 100vw" width="1600" height="1100" alt="Prototype A with collapsed accordions next to prototype B with chips: About, Characteristics, Promos" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption" data-i18n="case.pp.method.caption">Prototype A (accordions) and B (chips): the same facts, two containers.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title" data-i18n="case.pp.find.title">The container mattered less than the content.</h2>
+        </div>
+        <div class="case-section__body">
+          <div class="outcomes">
+            <div><span class="metric__value">18</span><span class="metric__label" data-i18n="case.pp.find.m1">Guests tested</span></div>
+            <div><span class="metric__value">8/9</span><span class="metric__label" data-i18n="case.pp.find.m2">Liked the accordion grouping</span></div>
+            <div><span class="metric__value">1/18</span><span class="metric__label" data-i18n="case.pp.find.m3">Wanted one long block</span></div>
+          </div>
+          <p class="outcomes__note" data-i18n="case.pp.find.body">
+            Every guest found what they needed in both prototypes. Accordions or chips — guests didn’t care. They cared that the facts were there and easy to find.
+          </p>
+          <ul class="case-list case-list--bullets">
+            <li><div><strong data-i18n="case.pp.find.s1">Grouping stays</strong><span class="case-list__sub" data-i18n="case.pp.find.s1sub">Only one guest out of 18 wanted everything in a single block. The preferred order: description, composition, nutrition, characteristics.</span></div></li>
+            <li><div><strong data-i18n="case.pp.find.s2">Facts are the must-haves</strong><span class="case-list__sub" data-i18n="case.pp.find.s2sub">Composition with allergens, country of origin, producer, energy and nutrition — including sugar and salt — and markers like kosher or vegan.</span></div></li>
+            <li><div><strong data-i18n="case.pp.find.s3">Marketing copy is noise for staples</strong><span class="case-list__sub" data-i18n="case.pp.find.s3sub">Guests know what milk is. A description earns its place only for new or specific products: wine, cakes, delicacies.</span></div></li>
+            <li><div><strong data-i18n="case.pp.find.s4">Guests read the discount, not the terms</strong><span class="case-list__sub" data-i18n="case.pp.find.s4sub">The size of the discount and the benefit came first. General promo copy on the page read as advertising, not as information about this product.</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title" data-i18n="case.pp.rec.title">What the test handed to the team.</h2>
+        </div>
+        <div class="case-section__body">
+          <ul class="case-list case-list--bullets">
+            <li><div><strong data-i18n="case.pp.rec.s1">Add what’s missing</strong><span class="case-list__sub" data-i18n="case.pp.rec.s1sub">Allergens, added sugar, vegan and lactose-free markers, price per kg or litre, the weight of one piece for goods sold by weight.</span></div></li>
+            <li><div><strong data-i18n="case.pp.rec.s2">Remove what misleads</strong><span class="case-list__sub" data-i18n="case.pp.rec.s2sub">Shelf life without a production date means nothing to a guest. The marketing description goes away for staples.</span></div></li>
+            <li><div><strong data-i18n="case.pp.rec.s3">Upgrade the small card</strong><span class="case-list__sub" data-i18n="case.pp.rec.s3sub">Show the full product name without truncation and add stock availability to the catalogue card.</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title" data-i18n="case.pp.learn.title">What I took from it.</h2>
+        </div>
+        <div class="case-section__body">
+          <ul class="case-list case-list--bullets">
+            <li><div><strong data-i18n="case.pp.learn.s1">Test the assumption, not the layout</strong><span class="case-list__sub" data-i18n="case.pp.learn.s1sub">Accordions vs chips was the question the team argued about most — and the one that mattered least.</span></div></li>
+            <li><div><strong data-i18n="case.pp.learn.s2">Content design beats container design</strong><span class="case-list__sub" data-i18n="case.pp.learn.s2sub">The biggest wins were facts we added or removed, not components we swapped.</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title" data-i18n="case.related.also">If you liked this, also see…</h2>
+        </div>
+        <div class="related">
+          <a class="related__card" href="../silpo-app/">
+            <div class="related__kicker">Consumer · Flutter</div>
+            <div class="related__title" data-i18n="t.71750523">Silpo App — the mobile side of the system</div>
+          </a>
+          <a class="related__card" href="../silpo-promo/">
+            <div class="related__kicker" data-i18n="case.promo.kicker">Admin + guest side</div>
+            <div class="related__title" data-i18n="case.promo.cardTitle">Silpo promotions — admin lifecycle + guest promo card</div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+      <section id="contact" class="contact">
+      <div class="wrap">
+        <h2 class="contact__title" data-i18n="fl.close.title">Found this through <em>Upwork</em>?</h2>
+        <p class="contact__lede" data-i18n="fl.close.body">Then you already know where to reach me. Send the brief through your Upwork job post or an invite — I usually reply within a working day.</p>
+        <div class="contact__row">
+          <a class="contact__link" href="https://www.upwork.com/freelancers/~0138a475970ec656ad" target="_blank" rel="noopener" data-i18n="fl.close.cta">My Upwork profile ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <span data-i18n="foot.copy">© Ivan Shevchenko · Senior Product Designer</span>
+  </footer>
+
+  <script src="../../scripts/anim.js?v=e52e3bde" defer></script>
+  <script src="../../scripts/i18n.js?v=02f16e28" defer></script>
+</body>
+</html>

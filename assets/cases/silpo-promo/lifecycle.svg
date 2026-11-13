@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif">
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.2" fill="#c8f24a" fill-opacity=".14"/></pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c8f24a"/></marker>
+    <marker id="arrs" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ffffff" fill-opacity=".55"/></marker>
+  </defs>
+  <rect width="800" height="500" fill="#37431d"/>
+  <rect width="800" height="500" fill="url(#dots)"/>
+  <text x="48" y="64" fill="#c8f24a" font-size="15" font-weight="600" letter-spacing="1.5">PROMO / LIFECYCLE</text>
+  <text x="48" y="88" fill="#ffffff" fill-opacity=".55" font-size="14">one status model instead of three admin tools</text>
+
+  <!-- main path -->
+  <g font-size="17" font-weight="600" text-anchor="middle">
+    <rect x="48" y="200" width="150" height="56" rx="28" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-dasharray="5 5"/>
+    <text x="123" y="234" fill="#ffffff">Draft</text>
+
+    <rect x="248" y="200" width="150" height="56" rx="28" fill="#ffffff" fill-opacity=".1" stroke="#ffffff" stroke-opacity=".35"/>
+    <text x="323" y="234" fill="#ffffff">Scheduled</text>
+
+    <rect x="448" y="200" width="150" height="56" rx="28" fill="#c8f24a"/>
+    <text x="523" y="234" fill="#37431d">Active</text>
+
+    <rect x="448" y="340" width="150" height="56" rx="28" fill="#e7e7f7"/>
+    <text x="523" y="374" fill="#37431d">Paused</text>
+
+    <rect x="636" y="130" width="130" height="50" rx="25" fill="#ffffff" fill-opacity=".1" stroke="#ffffff" stroke-opacity=".35"/>
+    <text x="701" y="161" fill="#ffffff" font-size="15">Stopped</text>
+    <rect x="636" y="276" width="130" height="50" rx="25" fill="#ffffff" fill-opacity=".1" stroke="#ffffff" stroke-opacity=".35"/>
+    <text x="701" y="307" fill="#ffffff" font-size="15">Ended</text>
+  </g>
+
+  <g stroke="#c8f24a" stroke-width="2" fill="none">
+    <path d="M198 228h46" marker-end="url(#arr)"/>
+    <path d="M398 228h46" marker-end="url(#arr)"/>
+    <path d="M598 218L632 168" marker-end="url(#arr)"/>
+    <path d="M598 238L632 290" marker-end="url(#arr)"/>
+    <path d="M505 256v80" marker-end="url(#arr)"/>
+    <path d="M541 340v-80" marker-end="url(#arr)"/>
+    <!-- edit on prod: loop back into Active -->
+    <path d="M478 200C478 150 568 150 568 196" stroke="#ffffff" stroke-opacity=".55" stroke-dasharray="4 5" marker-end="url(#arrs)"/>
+  </g>
+
+  <g font-size="12.5" fill="#ffffff" fill-opacity=".6">
+    <text x="221" y="218" text-anchor="middle">plan</text>
+    <text x="421" y="218" text-anchor="middle">start date</text>
+    <text x="523" y="142" text-anchor="middle">edit live</text>
+    <text x="492" y="300" text-anchor="end">pause</text>
+    <text x="554" y="300">resume</text>
+    <text x="701" y="200" text-anchor="middle">stop now</text>
+    <text x="701" y="346" text-anchor="middle">end date</text>
+  </g>
+
+  <text x="48" y="452" fill="#ffffff" fill-opacity=".55" font-size="13">Every state answers one manager question: “Is it live, and what can I do with it right now?”</text>
+</svg>

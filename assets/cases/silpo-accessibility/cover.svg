@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif">
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.2" fill="#c8f24a" fill-opacity=".14"/></pattern>
+  </defs>
+  <rect width="800" height="500" fill="#37431d"/>
+  <rect width="800" height="500" fill="url(#dots)"/>
+  <text x="48" y="64" fill="#c8f24a" font-size="15" font-weight="600" letter-spacing="1.5">WCAG 2.1 / DESIGN AUDIT</text>
+  <text x="48" y="88" fill="#ffffff" fill-opacity=".7" font-size="14">three issues that showed up on almost every screen</text>
+
+  <!-- Card 1: contrast -->
+  <g transform="translate(48 128)">
+    <rect width="216" height="300" rx="20" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".25"/>
+    <text x="20" y="36" fill="#c8f24a" font-size="13" font-weight="600">1.4.3 · Contrast</text>
+    <text x="20" y="72" fill="#ffffff" fill-opacity=".7" font-size="12">Before</text>
+    <rect x="20" y="84" width="88" height="36" rx="18" fill="#ff8500"/>
+    <text x="64" y="108" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">−20%</text>
+    <text x="122" y="100" fill="#ffffff" font-size="15" font-weight="600">2.44 : 1</text>
+    <text x="122" y="118" fill="#ffffff" fill-opacity=".7" font-size="12">fails AA</text>
+    <text x="20" y="168" fill="#ffffff" fill-opacity=".7" font-size="12">After</text>
+    <rect x="20" y="180" width="88" height="36" rx="18" fill="#b85000"/>
+    <text x="64" y="204" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">−20%</text>
+    <text x="122" y="196" fill="#c8f24a" font-size="15" font-weight="600">5.02 : 1</text>
+    <text x="122" y="214" fill="#ffffff" fill-opacity=".7" font-size="12">passes AA</text>
+    <text x="20" y="262" fill="#ffffff" fill-opacity=".7" font-size="12">Target: 4.5 : 1 for</text>
+    <text x="20" y="280" fill="#ffffff" fill-opacity=".7" font-size="12">normal text</text>
+  </g>
+
+  <!-- Card 2: target size -->
+  <g transform="translate(292 128)">
+    <rect width="216" height="300" rx="20" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".25"/>
+    <text x="20" y="36" fill="#c8f24a" font-size="13" font-weight="600">2.5.5 · Target size</text>
+    <rect x="48" y="72" width="120" height="120" rx="10" fill="none" stroke="#c8f24a" stroke-width="2" stroke-dasharray="6 5"/>
+    <rect x="76" y="100" width="64" height="64" rx="8" fill="#ffffff" fill-opacity=".9"/>
+    <path d="M96 132h24M108 120v24" stroke="#37431d" stroke-width="4" stroke-linecap="round"/>
+    <text x="108" y="214" fill="#ffffff" font-size="13" font-weight="600" text-anchor="middle">24 px icon → 44 px tap area</text>
+    <text x="20" y="262" fill="#ffffff" fill-opacity=".7" font-size="12">The hit area grows,</text>
+    <text x="20" y="280" fill="#ffffff" fill-opacity=".7" font-size="12">the visual stays the same</text>
+  </g>
+
+  <!-- Card 3: focus -->
+  <g transform="translate(536 128)">
+    <rect width="216" height="300" rx="20" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".25"/>
+    <text x="20" y="36" fill="#c8f24a" font-size="13" font-weight="600">2.4.7 · Focus visible</text>
+    <text x="20" y="72" fill="#ffffff" fill-opacity=".7" font-size="12">Default</text>
+    <rect x="20" y="84" width="176" height="40" rx="20" fill="#ffffff" fill-opacity=".9"/>
+    <text x="108" y="109" fill="#37431d" font-size="14" font-weight="600" text-anchor="middle">Add to cart</text>
+    <text x="20" y="168" fill="#ffffff" fill-opacity=".7" font-size="12">Focused (keyboard)</text>
+    <rect x="14" y="174" width="188" height="52" rx="26" fill="none" stroke="#c8f24a" stroke-width="3"/>
+    <rect x="20" y="180" width="176" height="40" rx="20" fill="#ffffff" fill-opacity=".9"/>
+    <text x="108" y="205" fill="#37431d" font-size="14" font-weight="600" text-anchor="middle">Add to cart</text>
+    <text x="20" y="262" fill="#ffffff" fill-opacity=".7" font-size="12">Designed first, then</text>
+    <text x="20" y="280" fill="#ffffff" fill-opacity=".7" font-size="12">handed to development</text>
+  </g>
+</svg>

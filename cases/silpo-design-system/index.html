@@ -13,10 +13,9 @@
   <meta property="og:description" content="Self-initiated cross-platform DS for Ukraine&#x27;s top-5 retailer. RICE prioritisation, WCAG 2.1 AA from day one, three abstraction levels, web + Flutter." />
   <meta property="og:image" content="https://shevchenko-ivan.github.io/work/assets/og.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Schibsted+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../styles/main.css?v=ce4e31c9" />
+  <link rel="preload" href="../../assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../styles/main.css?v=4b3d7dd9" />
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -95,6 +94,10 @@
             <li><div><strong data-i18n="case.sds.list1.s4">RICE prioritisation</strong><span class="case-list__sub" data-i18n="case.sds.list1.s4sub">Reach × Impact × Confidence / Effort. Made the roadmap defensible to anyone who asked.</span></div></li>
             <li><div><strong data-i18n="case.sds.list1.s5">WCAG 2.1 AA at the start</strong><span class="case-list__sub" data-i18n="case.sds.list1.s5sub">A hard requirement from day one — not a final-stage checklist.</span></div></li>
           </ol>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-design-system/research.webp" srcset="../../assets/cases/silpo-design-system/research-800.webp 800w, ../../assets/cases/silpo-design-system/research.webp 1600w" sizes="(min-width: 820px) 760px, 100vw" width="1600" height="1393" alt="Research board: descriptions of internal users and sticky notes with the CTO's requirements for the design system" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption" data-i18n="case.sds.research.caption">The stakeholder board: what designers, developers and the CTO needed from the system. Names hidden.</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -118,6 +121,24 @@
 
       <section class="case-section">
         <div class="case-section__head">
+          <h2 class="case-section__title" data-i18n="case.sds.tokens.title">Tokens that carry brand, theme and state.</h2>
+        </div>
+        <div class="case-section__body">
+          <p data-i18n="case.sds.tokens.body1">Every token name answers six questions: brand, theme, type, component, element, state. A raw hex becomes a primitive, and the primitive becomes a role — so one component can serve Silpo and LOKO, light and dark, without forking.</p>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-design-system/tokens.webp" srcset="../../assets/cases/silpo-design-system/tokens-800.webp 800w, ../../assets/cases/silpo-design-system/tokens.webp 1600w" sizes="(min-width: 820px) 760px, 100vw" width="1600" height="900" alt="Token structure: #2358D1 becomes Primary/500, then silpo.light.color.button.background.hovered, with the six naming levels labelled" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption" data-i18n="case.sds.tokens.caption1">From a hex value to a semantic token: brand · theme · type · component · element · state.</figcaption>
+          </figure>
+          <p data-i18n="case.sds.tokens.body2">The palette was rebuilt as 50–900 scales with the contrast ratio and its AA/AAA level marked on every step — so accessibility became a lookup, not a debate.</p>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-design-system/colors.webp" srcset="../../assets/cases/silpo-design-system/colors-800.webp 800w, ../../assets/cases/silpo-design-system/colors.webp 1600w" sizes="(min-width: 820px) 760px, 100vw" width="1600" height="900" alt="Colour scales from 50 to 900 for brand orange, blue, red, green and yellow, each swatch labelled with contrast and AA/AAA level" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption" data-i18n="case.sds.tokens.caption2">The new colour structure: five scales, contrast marked on every swatch.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
           <h2 class="case-section__title" data-i18n="case.sds.what.title">A documented, accessible, workshop-supported system.</h2>
         </div>
         <div class="case-section__body">
@@ -128,6 +149,10 @@
             <li><div><strong data-i18n="case.sds.what.s4">Governance for change</strong><span class="case-list__sub" data-i18n="case.sds.what.s4sub">Monthly changelog ritual, version-history saves before publishing, opt-in patterns over mandatory ones.</span></div></li>
             <li><div><strong data-i18n="case.sds.what.s5">Six design principles</strong><span class="case-list__sub" data-i18n="case.sds.what.s5sub">Clarity, Consistency, Scalability, Research, Collaboration, Beautiful expression.</span></div></li>
           </ul>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-design-system/components.webp" srcset="../../assets/cases/silpo-design-system/components-800.webp 800w, ../../assets/cases/silpo-design-system/components.webp 1600w" sizes="(min-width: 820px) 760px, 100vw" width="1600" height="900" alt="Grid of 16 documented components: avatar, button, icon button, checkbox, radio, toggle, input, textarea, select, multi-select, snackbar, notification, tooltip, chips, time picker and date range picker" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption" data-i18n="case.sds.what.caption2">The documented core: 16 components, from avatar to date-range picker.</figcaption>
+          </figure>
           <figure class="case-image">
             <img src="../../assets/cases/silpo-design-system/workflow.webp" srcset="../../assets/cases/silpo-design-system/workflow-800.webp 800w, ../../assets/cases/silpo-design-system/workflow.webp 1600w" sizes="(min-width: 820px) 760px, 100vw" width="1600" height="1788" alt="Design System workflow" loading="lazy" decoding="async">
             <figcaption class="case-image__caption" data-i18n="case.sds.what.caption">The workflow that kept the system alive — contribution flow, review, release, adoption.</figcaption>
@@ -197,6 +222,6 @@
   </footer>
 
   <script src="../../scripts/anim.js?v=e52e3bde" defer></script>
-  <script src="../../scripts/i18n.js?v=a47b8028" defer></script>
+  <script src="../../scripts/i18n.js?v=02f16e28" defer></script>
 </body>
 </html>

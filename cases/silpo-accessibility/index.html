@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Silpo Accessibility Audit — Case · Ivan Shevchenko</title>
+  <meta name="description" content="WCAG 2.1 accessibility guidelines and design audit for the Silpo website and mobile app: contrast, colour-only meaning, target size, focus states and a phased A → AA → AAA rollout plan." />
+  <meta name="theme-color" content="#37431d" />
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Silpo Accessibility Audit — Case · Ivan Shevchenko" />
+  <meta property="og:description" content="WCAG 2.1 accessibility guidelines and design audit for the Silpo website and mobile app: contrast, colour-only meaning, target size, focus states and a phased A → AA → AAA rollout plan." />
+  <meta property="og:image" content="https://shevchenko-ivan.github.io/work/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" href="../../assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../styles/main.css?v=4b3d7dd9" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="../../" class="nav__brand" data-home>
+        <span class="nav__brand-mark">IS</span>
+        <span>Ivan Shevchenko</span>
+      </a>
+      <div class="nav__right">
+        <a href="../../" class="nav__meta nav__back" data-home data-i18n="nav.back">← Portfolio</a>
+        <a class="nav__cta" href="https://www.upwork.com/freelancers/~0138a475970ec656ad" target="_blank" rel="noopener" data-i18n="nav.ctaUpwork">Hire on Upwork ↗</a>
+        <button class="lang-switch" type="button">
+          <span class="lang-switch__opt" data-lang="en">EN</span>
+          <span class="lang-switch__opt" data-lang="ua">UA</span>
+          <span class="sr-only lang-switch__hint"> — Українська версія</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="sheet">
+    <section class="case-hero wrap">
+      <div class="case-hero__meta">
+        <span>2022–2023</span><span>Fozzy Group · Silpo</span><span>Accessibility audit</span><span>Web + mobile app</span>
+      </div>
+      <h1 class="case-hero__title">Silpo — WCAG 2.1 guidelines and a design audit for web and app.</h1>
+      <p class="case-hero__sub">
+        Silpo is one of Ukraine’s largest grocery retailers, with a busy e-commerce site and a mobile app. Our team wrote Silpo’s own accessibility guidelines in Ukrainian, audited the design mockups of both products against WCAG 2.1, and turned the findings into a phased rollout plan for design, development and content teams.
+      </p>
+    </section>
+
+    <section class="case-cover">
+      <div class="wrap">
+        <div class="case-cover__inner case-cover__inner--art"><img src="../../assets/cases/silpo-accessibility/cover.svg" alt="Three recurring issues. Contrast: white discount text on orange at 2.44 to 1 fails AA, a darker orange at 5.02 to 1 passes. Target size: a 24 pixel icon gets a 44 pixel tap area. Focus visible: an Add to cart button with a visible keyboard focus ring." width="800" height="500" fetchpriority="high"></div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="case-facts">
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value">2022–2023</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.client">Client</div><div class="fact__value">Silpo (Fozzy Group)</div></div>
+        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value">Product Designer, audit team</div></div>
+        <div class="fact"><div class="fact__label">Standard</div><div class="fact__value">WCAG 2.1 A / AA / AAA</div></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">Two goals: a shared standard and a realistic plan.</h2>
+        </div>
+        <div class="case-section__body">
+          <p>
+            Silpo’s product teams had no common reference for accessibility. Each designer and developer relied on their own reading of WCAG, so the same issues kept returning on new screens.
+          </p>
+          <p>
+            The project had two goals. First, give the teams their own guideline for web and mobile, written in Ukrainian and tied to Silpo’s real screens. Second, check the current mockups and build a step-by-step plan that the teams could actually put into sprints. Every audit finding links back to a guideline page that explains the criterion and how to fix it.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">Four deliverables.</h2>
+        </div>
+        <div class="case-section__body">
+          <ol class="case-list case-list--numbered">
+            <li><div><strong>Web accessibility guideline</strong><span class="case-list__sub">13 guidelines and 78 WCAG 2.1 success criteria. For each criterion: level, 1–3 W3C techniques, Silpo-specific examples and a “How to check” section.</span></div></li>
+            <li><div><strong>Mobile app accessibility guideline</strong><span class="case-list__sub">52 practices in 12 categories, each typed as “Must”, “Should”, “Never” or “Avoid”. Separate notes for iOS and Android, plus a testing procedure.</span></div></li>
+            <li><div><strong>Website audit</strong><span class="case-list__sub">Home, category catalogue, product listing and product page, desktop and mobile widths, checked against six design-owned criteria: 1.3.4, 1.4.1, 1.4.3, 1.4.6, 2.4.7, 2.5.5.</span></div></li>
+            <li><div><strong>Mobile app audit</strong><span class="case-list__sub">Home, addresses, catalogue, profile, QR card, orders, self-checkout, store stock and more — checked for contrast, colour-only meaning, target size and focus states.</span></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">What the audit found.</h2>
+        </div>
+        <div class="case-section__body">
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Brand colours fail contrast (1.4.3)</strong><span class="case-list__sub">White text on Silpo’s orange and green gave 2.44 : 1 instead of 4.5 : 1 — on discounts, loyalty points, bonuses, promo labels and order statuses. Grey secondary text sat at 3.58 : 1. On the app, a disabled “Go to payment” button in self-checkout dropped to 1.64 : 1.</span></div></li>
+            <li><div><strong>Colour as the only signal (1.4.1)</strong><span class="case-list__sub">A green dot marked personal offers, a second price in green had no explanation, order statuses and “In stock / Running low” differed only by colour, and the active tab in the tab bar changed colour only.</span></div></li>
+            <li><div><strong>Tap targets too small (2.5.5)</strong><span class="case-list__sub">Most buttons, chips, tabs and icons were 24–40 px; footer links were 17 px high and breadcrumbs 16 px. The audit set 44 × 44 px as the floor on both platforms, even though WCAG 2.1 lists it as AAA.</span></div></li>
+            <li><div><strong>No visible focus (2.4.7)</strong><span class="case-list__sub">Almost no element on the site or in the app had a focus state — header, cards, carousels, pagination, footer, tab bar.</span></div></li>
+            <li><div><strong>A keyboard trap (2.1.2)</strong><span class="case-list__sub">The search field in the site header held keyboard focus: pressing Tab did not move on to the next element.</span></div></li>
+          </ul>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-accessibility/web-promos.webp" srcset="../../assets/cases/silpo-accessibility/web-promos-800.webp 800w, ../../assets/cases/silpo-accessibility/web-promos.webp 1600w" sizes="(min-width: 820px) 760px, 100vw" width="1600" height="503" alt="Promotions block on the Silpo website: product cards with orange discount badges and round promo labels" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Website promotions block. The orange discount badges and the round promo labels fell below 4.5 : 1.</figcaption>
+          </figure>
+          <figure class="case-image case-image--pair">
+            <img src="../../assets/cases/silpo-accessibility/app-order-status-badges.webp" width="640" height="1136" alt="Silpo app order history: order statuses shown as coloured labels" loading="lazy" decoding="async">
+            <img src="../../assets/cases/silpo-accessibility/app-store-stock-status.webp" width="640" height="1386" alt="Silpo app Near me screen: store list with stock levels shown by colour" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">App screens where colour carried the meaning alone: order statuses (1.76 : 1 for “Accepted”) and store stock levels. The fix was an icon or a text label next to the colour.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">Fixes that keep the brand.</h2>
+        </div>
+        <div class="case-section__body">
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Contrast</strong><span class="case-list__sub">A screen-by-screen table of every failing element with its current ratio, checked with a Figma contrast plugin, so designers could fix them in one pass.</span></div></li>
+            <li><div><strong>Meaning beyond colour</strong><span class="case-list__sub">An icon or text for statuses, a filled icon for the active tab, an underline or a button style for interactive address links, and a text alternative for the personal-offer dot.</span></div></li>
+            <li><div><strong>Invisible 44 × 44 hit areas</strong><span class="case-list__sub">An invisible touch container around small elements, so the tap area grows while the visual design stays the same. For banners, the whole banner becomes the target.</span></div></li>
+            <li><div><strong>Focus states designed first</strong><span class="case-list__sub">Designers draw the focus state for buttons, inputs, navigation, links, checkboxes, radio buttons and interactive icons. Material Design 3 served as the reference. Development implements only after the state exists in the mockup.</span></div></li>
+          </ul>
+          <figure class="case-image">
+            <img src="../../assets/cases/silpo-accessibility/web-header.webp" srcset="../../assets/cases/silpo-accessibility/web-header-800.webp 800w, ../../assets/cases/silpo-accessibility/web-header.webp 1600w" sizes="(min-width: 820px) 760px, 100vw" width="1600" height="219" alt="Silpo website header with address, Our services, search, Sign in and Cart" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Site header: “Our services” in orange at 2.44 : 1, 20 px menu items, no focus state, and the search field that trapped keyboard focus.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">A phased rollout, not a wall of tickets.</h2>
+        </div>
+        <div class="case-section__body">
+          <ol class="case-list case-list--numbered">
+            <li><div><strong>Fix the mockups</strong><span class="case-list__sub">Design owns contrast, colour use, target size, focus and orientation first, so development builds from correct screens.</span></div></li>
+            <li><div><strong>Level A in task descriptions</strong><span class="case-list__sub">13 level-A criteria — alt text for product images, labels and roles (4.1.2), the keyboard trap, filters that change context without confirmation (3.2.2), error prevention at checkout (3.3.1) — written into the acceptance criteria of each task.</span></div></li>
+            <li><div><strong>Animation and content checks</strong><span class="case-list__sub">Marketing checks banners for flashing (2.3.1). Content explains Silpo’s own words and abbreviations and adds short summaries to long articles (3.1.3–3.1.5).</span></div></li>
+            <li><div><strong>Level AA</strong><span class="case-list__sub">18 criteria, including autocomplete for checkout fields (1.3.5), text resize (1.4.4), reflow (1.4.10) and status messages for screen readers (4.1.3).</span></div></li>
+            <li><div><strong>Level AAA — only with evidence</strong><span class="case-list__sub">Survey users with disabilities first, then decide which AAA criteria are worth the cost.</span></div></li>
+          </ol>
+          <p>The app plan followed the same logic in four steps: fix the mockups, implement 23 “Must” practices, remove every “Never” pattern, then add the “Should” practices.</p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">A standard the teams can reuse.</h2>
+        </div>
+        <div class="case-section__body">
+          <div class="outcomes">
+            <div><span class="metric__value">78</span><span class="metric__label">WCAG 2.1 criteria documented for web</span></div>
+            <div><span class="metric__value">52</span><span class="metric__label">Mobile practices for iOS and Android</span></div>
+            <div><span class="metric__value">2</span><span class="metric__label">Products audited: website and app</span></div>
+          </div>
+          <p class="outcomes__note">
+            The work ran alongside the Silpo Design System, where WCAG 2.1 AA was a requirement from day one. The guidelines gave designers and developers one shared reference instead of personal readings of WCAG.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title" data-i18n="case.related.also">If you liked this, also see…</h2>
+        </div>
+        <div class="related">
+          <a class="related__card" href="../silpo-design-system/">
+            <div class="related__kicker">Cross-platform DS</div>
+            <div class="related__title" data-i18n="t.b6bec687">Silpo Design System — web + Flutter</div>
+          </a>
+          <a class="related__card" href="../miele-audit/">
+            <div class="related__kicker">Freelance · UX audit</div>
+            <div class="related__title" data-i18n="t.7ba4d620">Miele Ukraine — UX/UI audit of shop.miele.ua</div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+      <section id="contact" class="contact">
+      <div class="wrap">
+        <h2 class="contact__title" data-i18n="fl.close.title">Found this through <em>Upwork</em>?</h2>
+        <p class="contact__lede" data-i18n="fl.close.body">Then you already know where to reach me. Send the brief through your Upwork job post or an invite — I usually reply within a working day.</p>
+        <div class="contact__row">
+          <a class="contact__link" href="https://www.upwork.com/freelancers/~0138a475970ec656ad" target="_blank" rel="noopener" data-i18n="fl.close.cta">My Upwork profile ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <span data-i18n="foot.copy">© Ivan Shevchenko · Senior Product Designer</span>
+  </footer>
+
+  <script src="../../scripts/anim.js?v=e52e3bde" defer></script>
+  <script src="../../scripts/i18n.js?v=02f16e28" defer></script>
+</body>
+</html>
