@@ -1248,3 +1248,14 @@ a.case:hover .case__title { color: var(--accent-ink); }
 .ratio { font-style: italic; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .ratio--fail { color: #a84400; }
 .ratio--target { color: #1e7a3c; }
+
+/* Outlines over screenshots marking the element a caption talks about */
+.annot { position: relative; display: block; }
+.annot > img { display: block; }
+.annot__box {
+  position: absolute;
+  border: 2.5px solid #d92d20;
+  border-radius: 6px;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.85);
+  pointer-events: none;
+}
