@@ -1265,3 +1265,8 @@ a.case:hover .case__title { color: var(--accent-ink); }
 .spec__skills span { padding: 3px 9px; border-radius: var(--radius-pill); border: 1px solid var(--border); color: var(--text-soft); }
 .spec__grid--work .spec__row { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) auto; }
 .spec__grid--work .spec__row > span:first-child { font-weight: 600; }
+
+/* All case cards: cover image fills the whole thumbnail (no tinted padding frame) */
+.case__thumb:not(.case__thumb--art) { display: block; padding: 0; background: var(--surface); }
+.cases > .case:nth-child(even) .case__thumb:not(.case__thumb--art) { background: var(--surface); }
+.case__thumb:not(.case__thumb--art) img { height: 100%; max-height: none; border-radius: 0; box-shadow: none; }
