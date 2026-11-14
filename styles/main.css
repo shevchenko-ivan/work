@@ -1270,3 +1270,6 @@ a.case:hover .case__title { color: var(--accent-ink); }
 .case__thumb:not(.case__thumb--art) { display: block; padding: 0; background: var(--surface); }
 .cases > .case:nth-child(even) .case__thumb:not(.case__thumb--art) { background: var(--surface); }
 .case__thumb:not(.case__thumb--art) img { height: 100%; max-height: none; border-radius: 0; box-shadow: none; }
+
+/* Language-specific images and captions: html[lang] is set by the language switch */
+html:not([lang="uk"]) .only-ua, html[lang="uk"] .only-en { display: none !important; }
