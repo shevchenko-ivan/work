@@ -30,11 +30,11 @@ const TRANSLATIONS = {
     'landing.card.fl-saas.title':  'SaaS і дизайн-системи',
     'landing.card.fl-saas.desc':   'Для Upwork-брифів на SaaS, CRM, дашборди та адмінки. Веде Freight Genie (5★) і Silpo ERM.',
     'landing.card.fl-mob.title':   'Мобільні застосунки',
-    'landing.card.fl-mob.desc':    'Для Upwork-брифів на мобайл і cross-platform. Веде Silpo Flutter app і BOS mobile patterns.',
+    'landing.card.fl-mob.desc':    'Для Upwork-брифів на мобайл і cross-platform. Веде Silpo Flutter app і BitSvit mobile patterns.',
     'landing.card.ft-saas.title':  'Enterprise SaaS, ERM і DS',
-    'landing.card.ft-saas.desc':   'Для senior / lead Product Designer ролей на складних B2B-платформах. Веде Silpo ERM (−34% помилок) і BOS DS.',
+    'landing.card.ft-saas.desc':   'Для senior / lead Product Designer ролей на складних B2B-платформах. Веде Silpo ERM (−34% помилок) і BitSvit DS.',
     'landing.card.ft-mob.title':   'Мобайл і дизайн-системи',
-    'landing.card.ft-mob.desc':    'Для ролей з реальним мобайл-компонентом. Веде Silpo cross-platform DS і BOS mobile patterns.',
+    'landing.card.ft-mob.desc':    'Для ролей з реальним мобайл-компонентом. Веде Silpo cross-platform DS і BitSvit mobile patterns.',
 
     'landing.footer.copy':     '© Іван Шевченко · Валенсія',
 
@@ -50,16 +50,16 @@ const TRANSLATIONS = {
     'spec.work.t4':            'Аудит WCAG 2.1',
     'spec.work.r1':            '5★ відгук',
     'spec.work.r2':            '−34% помилок',
-    'spec.work.r3':            '4 продукти',
+    'spec.work.r3':            '255 компонентів',
     'spec.work.r4':            '153 екрани',
     'spec.work.metric':        'роки в продуктовому дизайні, B2B і consumer',
     'hero.fl-home.title':      'Я проєктую <em>SaaS і мобільні продукти</em>, які виходять і залишаються консистентними.',
-    'hero.fl-home.lede':       'Senior Product Designer з 7+ роками в enterprise B2B і споживчому ретейлі — дашборди, мульти-рольні CRM, продуктовий застосунок, яким користуються мільйони, аудити доступності й дизайн-системи за ними. П\'ять зірок на Upwork. Зараз веду BOS design system у TemaBit (Fozzy Group).',
+    'hero.fl-home.lede':       'Senior Product Designer з 7+ роками в enterprise B2B і споживчому ретейлі — дашборди, мульти-рольні CRM, продуктовий застосунок, яким користуються мільйони, аудити доступності й дизайн-системи за ними. П\'ять зірок на Upwork. Зараз відповідаю за BitSvit design system у TemaBit (Fozzy Group).',
     'fact.val.homeFit':        'SaaS · Mobile · DS · A11y',
     'sec.fl-home.workTitle':   'Вибрані роботи: SaaS, мобільні застосунки й дизайн-системи.',
     'sec.fl-home.howTitle':    'Три речі, які я приношу на кожен проєкт.',
     'hero.fl-saas.title':      'Я проектую <em>мульти&#8209;рольні SaaS</em>, які виходять і залишаються консистентними.',
-    'hero.fl-saas.lede':       'Senior Product Designer з 7+ роками в enterprise B2B — дашборди, адмінки, мульти-рольні CRM і дизайн-системи, що їх тримають разом. П\'ять зірок на Upwork. Зараз веду BOS design system у TemaBit (Fozzy Group).',
+    'hero.fl-saas.lede':       'Senior Product Designer з 7+ роками в enterprise B2B — дашборди, адмінки, мульти-рольні CRM і дизайн-системи, що їх тримають разом. П\'ять зірок на Upwork. Зараз відповідаю за BitSvit design system у TemaBit (Fozzy Group).',
     'hero.cta.work':           'Подивитись роботи →',
     'hero.cta.contactSecondary': 'або перейти до контактів',
 
@@ -72,13 +72,13 @@ const TRANSLATIONS = {
     // ── Hero: Full-time / SaaS ────────────────────────────
     'hero.ft-saas.kicker':     'Full-time · Enterprise SaaS і дизайн-системи',
     'hero.ft-saas.title':      'Senior Product Designer, що перетворює <em>enterprise-складність</em> на запущений продукт.',
-    'hero.ft-saas.lede':       '7+ років в enterprise B2B у топ-5 ритейлері України Fozzy Group. Спроектував 9-модульну ERM-платформу, що зменшила операційні помилки на 34%, заснував Silpo Design System без top-down мандата, зараз веду BOS design system для B2B-платформи TemaBit.',
+    'hero.ft-saas.lede':       '7+ років в enterprise B2B у топ-5 ритейлері України Fozzy Group. Спроектував 9-модульну ERM-платформу, що зменшила операційні помилки на 34%, заснував Silpo Design System без top-down мандата, зараз веду BitSvit design system для B2B-платформи TemaBit.',
     'hero.cta.aboutSecondary': 'або читати про мене',
 
     // ── Hero: Full-time / Mobile ──────────────────────────
     'hero.ft-mob.kicker':      'Full-time · Мобайл і дизайн-системи',
     'hero.ft-mob.title':       '<em>Mobile-aware</em> сеньйор, який може вести систему, а не лише ship-ити екран.',
-    'hero.ft-mob.lede':        'Senior Product Designer з глибоким cross-platform DS досвідом. Заснував Silpo Design System, що покриває веб і consumer Flutter-апку, і зараз веду BOS design system у TemaBit — де мобайл-патерни вважаються first-class citizens, а не desktop afterthought-ами.',
+    'hero.ft-mob.lede':        'Senior Product Designer з глибоким cross-platform DS досвідом. Заснував Silpo Design System, що покриває веб і consumer Flutter-апку, і зараз веду BitSvit design system у TemaBit — де мобайл-патерни вважаються first-class citizens, а не desktop afterthought-ами.',
 
     // ── Status: available / open ──────────────────────────
     'status.available':        'Доступний · 5 год перетин з ЄС / США-Схід',
@@ -520,8 +520,8 @@ const TRANSLATIONS = {
     'case.erm.l.s5':           'Зроби фідбек інструментом',
     'case.erm.l.s5sub':        'Збирай, маршрутизуй, закривай петлю. Інакше він розчиняється.',
 
-    // ── BOS Design System ────────────────────────────────
-    'case.bos.title':          'BOS Design System — DS за B2B-платформою.',
+    // ── BitSvit Design System ────────────────────────────────
+    'case.bos.title':          'BitSvit Design System — DS за B2B-платформою.',
     'case.bos.sub':            'Активна дизайн-система, що обслуговує B2B-платформу TemaBit: BitCore IAM (у проді), BitSubscription, BitAuth і Bit Billing. Storybook як джерело правди, тижневі readiness-ритуали, Claude-Skills автоматизації та governance-модель, побудована під крос-командну швидкість.',
     'case.bos.fact.year':      '2026 (активний)',
     'case.bos.fact.company':   'TemaBit (Fozzy Group)',
@@ -625,7 +625,7 @@ const TRANSLATIONS = {
     'case.sds.outcome.m3':     'Рівнів абстракції',
     'case.sds.outcome.body':   'Видимі результати — швидша поставка продуктових фіч, менше консистентних помилок між веб і мобайлом, щасливіша команда дизайнерів і інженерів. Невидимий — і той, що, як я тепер знаю, важить найбільше — у дизайнерів повернувся час на ресерч.',
 
-    'case.sds.learnings.title': 'Що я взяв із цього в BOS DS через три роки.',
+    'case.sds.learnings.title': 'Що я взяв із цього в BitSvit DS через три роки.',
     'case.sds.l.s1':           'Stakeholder alignment — не обговорюється',
     'case.sds.l.s1sub':        'DS без buy-in від C-level — це просто Figma-бібліотека, що швидко старіє.',
     'case.sds.l.s2':           'Ітеруй, а не доводь до досконалості',
@@ -827,13 +827,13 @@ const TRANSLATIONS = {
     't.55c24095': "Незалежне підтвердження, що enterprise-навички працюють і поза Fozzy: п'ятизірковий Upwork-проєкт — CRM для вантажної логістики з мульти‑рольними дашбордами.",
     't.575ee4a7': "Заснував DS без мандата згори. Три рівні абстракції: патерни (максимальна гнучкість), компоненти + патерни (cross-platform), повне перевикористання коду (під платформу). Веб жив у стилі Bootstrap, Flutter — з native-відчуттям. Одна мова їх об'єднала.",
     't.5d113f20': 'Обсяг',
-    't.5f754da2': 'BOS Design System — DS для B2B-платформи',
+    't.5f754da2': 'BitSvit Design System — DS для B2B-платформи',
     't.64c6da24': 'Стадія',
     't.65ef5598': "Одна ERM, що координує маркетологів, бухгалтерів, кур'єрів, BA і PO в дев'яти модулях: E-commerce, GEO, Billing, CORE, Payments, Loyalty, CityRyder, DAMS, Profile. Інтерв'ю зі стейкхолдерами → сценарні карти → єдина дизайн-система → доставка разом з інженерами.",
     't.6ab794e1': "Інтерв'ю з CTO, Solution Architect, Flutter Architect і Head of Design. Пріоритизація за RICE, WCAG 2.1 AA з першого дня, три рівні абстракції, документація в Zeroheight + Storybook, воркшопи для дизайнерів та інженерів.",
     't.6cb1f8e6': 'Спроєктував мобільний drawer, навігацію, empty states і календарні bottom sheets як повноцінні частини DS — а не розтягнуті десктопні екрани. Governance, lifecycle, щотижневий readiness-трекер, Storybook як джерело правди.',
     't.71750523': 'Silpo App — мобільний бік системи',
-    't.74c847d0': 'BOS DS — мобільні патерни всередині enterprise-системи',
+    't.74c847d0': 'BitSvit DS — мобільні патерни всередині enterprise-системи',
     't.794efed3': 'Топ-5',
     't.7a59ed11': 'Storybook · ADR · Токени',
     't.7b73273d': 'Власний MVP',
@@ -863,7 +863,7 @@ const TRANSLATIONS = {
     't.bc49c2ce': 'Freight Genie — SaaS CRM для вантажної логістики',
     't.c0124c48': 'Silpo App — consumer-бік системи',
     't.c152ef96': 'B2B-продукти на системі',
-    't.c1a23518': 'BOS DS — мобільні патерни в enterprise-масштабі',
+    't.c1a23518': 'BitSvit DS — мобільні патерни в enterprise-масштабі',
     't.c26dc6cd': 'DS для B2B-платформи',
     't.c690efe2': '2024 · Фріланс',
     't.c6bb6b21': 'Критичні поверхні в аудиті',
