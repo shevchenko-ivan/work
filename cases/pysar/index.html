@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pysar — Case · Ivan Shevchenko</title>
+  <meta name="description" content="Pysar: a native macOS app I designed and built that records meetings, transcribes them on the device and answers questions about them with cited sources. Includes an MCP server and a CLI for AI agents." />
+  <meta name="theme-color" content="#37431d" />
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pysar — Case · Ivan Shevchenko" />
+  <meta property="og:description" content="Pysar: a native macOS app I designed and built that records meetings, transcribes them on the device and answers questions about them with cited sources. Includes an MCP server and a CLI for AI agents." />
+  <meta property="og:image" content="https://shevchenko-ivan.github.io/work/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" href="../../assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../styles/main.css?v=11bd6e19" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="../../" class="nav__brand" data-home>
+        <span class="nav__brand-mark">IS</span>
+        <span>Ivan Shevchenko</span>
+      </a>
+      <div class="nav__right">
+        <a href="../../" class="nav__meta nav__back" data-home data-i18n="nav.back">← Portfolio</a>
+        <a class="nav__cta" href="https://www.upwork.com/freelancers/~0138a475970ec656ad" target="_blank" rel="noopener" data-i18n="nav.ctaUpwork">Hire on Upwork ↗</a>
+        <button class="lang-switch" type="button">
+          <span class="lang-switch__opt" data-lang="en">EN</span>
+          <span class="lang-switch__opt" data-lang="ua">UA</span>
+          <span class="sr-only lang-switch__hint"> — Українська версія</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="sheet">
+    <section class="case-hero wrap">
+      <div class="case-hero__meta">
+        <span>2026</span><span>Own product</span><span>Designer and builder</span><span>AI · macOS</span>
+      </div>
+      <h1 class="case-hero__title">Pysar — an AI meeting memory that shows its sources.</h1>
+      <p class="case-hero__sub">
+        A native macOS app I designed and built: it records meetings, transcribes them on the device, summarises them and answers questions about everything that was said — with a link to the exact moment behind every claim. AI agents can read the same data through an MCP server and a command-line tool.
+      </p>
+    </section>
+
+    <section class="case-cover">
+      <div class="wrap">
+        <div class="case-cover__inner case-cover__inner--art"><img src="../../assets/cases/pysar/cover.webp" srcset="../../assets/cases/pysar/cover-800.webp 800w, ../../assets/cases/pysar/cover.webp 1600w" sizes="(min-width: 1280px) 1200px, 100vw" width="1600" height="971" alt="Pysar graph view: a knowledge base of Markdown notes drawn as connected dots on a dark background" fetchpriority="high" decoding="async"></div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="case-facts">
+        <div class="fact"><div class="fact__label">Year</div><div class="fact__value">2026</div></div>
+        <div class="fact"><div class="fact__label">Role</div><div class="fact__value">Designer and builder, solo</div></div>
+        <div class="fact"><div class="fact__label">Stage</div><div class="fact__value">In daily use · signed build</div></div>
+        <div class="fact"><div class="fact__label">Stack</div><div class="fact__value">SwiftUI · on-device ASR · Claude API · MCP</div></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">The problem: what was decided, and who said it?</h2>
+        </div>
+        <div class="case-section__body">
+          <p>I spend a large part of the week in meetings. Decisions and promises are made there and then lost: nobody rereads a recording, and notes written from memory are wrong in the details that matter.</p>
+          <p>I wanted a tool that answers a plain question — “what did we decide about the release?” — and lets me check the answer in seconds. It also had to keep recordings of work meetings on my own machine. The tool I used before did not fit the way I work, so I built my own.</p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">What it does.</h2>
+        </div>
+        <div class="case-section__body">
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Records the meeting</strong><span class="case-list__sub">Microphone and system sound as separate tracks. It notices a call in Teams, Zoom, Slack, Webex, FaceTime, Discord or a browser and offers to record it.</span></div></li>
+            <li><div><strong>Transcribes on the device</strong><span class="case-list__sub">Speech recognition and speaker separation run locally. No audio leaves the Mac.</span></div></li>
+            <li><div><strong>Summarises</strong><span class="case-list__sub">With a local model or with Claude — the user chooses. Every point in a summary links to its moment in the recording.</span></div></li>
+            <li><div><strong>Answers questions across all meetings</strong><span class="case-list__sub">“Ask AI” searches titles, summaries and transcripts, gives the model the most relevant meetings and returns an answer with sources.</span></div></li>
+            <li><div><strong>Shows the shape of the work</strong><span class="case-list__sub">A graph of meetings, people and tags — and a second graph that reads a folder of Markdown notes and draws the links between them.</span></div></li>
+            <li><div><strong>Works for agents too</strong><span class="case-list__sub">An MCP server and a CLI give AI agents read-only access: list meetings, search, open a transcript or a summary.</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">Key design decision: an answer you can check.</h2>
+        </div>
+        <div class="case-section__body">
+          <p>An AI answer about a meeting is only useful if the reader can trust it. So the interface never shows a bare claim.</p>
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Every claim carries its source</strong><span class="case-list__sub">The meeting name and the timestamp are links. One click opens the recording at that second.</span></div></li>
+            <li><div><strong>Gaps are shown, not hidden</strong><span class="case-list__sub">If a task has no owner in the transcript, the answer says so under its own heading instead of guessing a name.</span></div></li>
+            <li><div><strong>The model is named</strong><span class="case-list__sub">Each answer shows which model produced it and reminds the reader to check important things in the meeting itself.</span></div></li>
+            <li><div><strong>The limit is stated</strong><span class="case-list__sub">Search is by words today, not by meaning. I chose to say that in the product notes and plan semantic search next, not to pretend it is there.</span></div></li>
+          </ul>
+          <figure class="case-image">
+            <img src="../../assets/cases/pysar/ask-ai.webp" width="1620" height="480" alt="Ask AI answer to the question What did we decide about the release: a statement with links to the meeting and timestamps, a list of what is left, and a separate heading Without an owner" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">“Ask AI” on demo data (interface in Ukrainian). Each line links to a meeting and a timestamp; a task without an owner is listed separately.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">Meetings and a knowledge base as a graph.</h2>
+        </div>
+        <div class="case-section__body">
+          <p>The graph is drawn natively, without a library. Positions come from a formula — angle from the group, radius from the type of node — so the picture is stable and readable instead of floating.</p>
+          <figure class="case-image case-image--diagram">
+            <img src="../../assets/cases/pysar/graph-meetings.webp" width="960" height="780" alt="Graph of meetings grouped around three tags, with lines to people; the names of people are blurred" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Meetings, tags and people on demo data. Names are hidden.</figcaption>
+          </figure>
+          <figure class="case-image">
+            <img src="../../assets/cases/pysar/graph-knowledge.webp" width="874" height="870" alt="Dark graph of a Markdown knowledge base: 140 notes in 5 folders with 289 links, one note highlighted with its two links" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">The same view over a folder of Markdown notes: 140 notes, 5 folders, 289 links. A click opens the note.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">How I built it.</h2>
+        </div>
+        <div class="case-section__body">
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Design first, then code</strong><span class="case-list__sub">I wrote user stories with acceptance criteria and a glossary of interface terms before the first screen. The backlog grew to about 90 stories.</span></div></li>
+            <li><div><strong>AI as a pair, not as an author</strong><span class="case-list__sub">I built it with Claude Code. I set the design rules, review every screen in snapshots and decide what ships.</span></div></li>
+            <li><div><strong>Tests from the start</strong><span class="case-list__sub">158 unit tests and a self-test of 377 checks run on a separate test store with seed data — the same data as in the screenshots here.</span></div></li>
+            <li><div><strong>Direct LLM integration</strong><span class="case-list__sub">Claude is called through its HTTP API without an SDK, with the key in the system keychain. Local models run through llama.cpp.</span></div></li>
+            <li><div><strong>A real distribution</strong><span class="case-list__sub">A signed installer and launch at login. From the first commit to the version shown here took about two weeks.</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">The same thinking outside the app.</h2>
+        </div>
+        <div class="case-section__body">
+          <p>Pysar is one part of how I work with knowledge and AI every day.</p>
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>A local RAG over product documentation</strong><span class="case-list__sub">I built a retrieval tool over a Confluence space: local multilingual embeddings for search, a Claude model for the answer, and a link to the source page in every reply.</span></div></li>
+            <li><div><strong>An LLM-maintained wiki</strong><span class="case-list__sub">My notes, meetings and project decisions live in a Markdown knowledge base that an agent keeps up to date every night and reads through an index, not through guesswork.</span></div></li>
+            <li><div><strong>MCP in daily work</strong><span class="case-list__sub">I connect agents to Figma, Jira, Confluence and my own tools through MCP, and I write the skills that tell them how to use each one.</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">Where it stands — and what it is not.</h2>
+        </div>
+        <div class="case-section__body">
+          <div class="outcomes">
+            <div><span class="metric__value">158</span><span class="metric__label">Unit tests</span></div>
+            <div><span class="metric__value">377</span><span class="metric__label">Self-test checks</span></div>
+            <div><span class="metric__value">4</span><span class="metric__label">MCP tools for agents</span></div>
+          </div>
+          <p class="outcomes__note">Pysar is a personal product in daily use, not a company-wide rollout. It detects calls in Teams and Slack but is not a bot inside them, and its search is keyword-based for now. I have shown it to colleagues in a live demo; the next steps are semantic search and a wider test.</p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">What it taught me about AI products.</h2>
+        </div>
+        <div class="case-section__body">
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Trust is an interface problem</strong><span class="case-list__sub">The model was good enough early. What made the answers usable was showing where each one came from.</span></div></li>
+            <li><div><strong>“I don’t know” needs a design</strong><span class="case-list__sub">An honest gap, shown clearly, is worth more than a confident guess.</span></div></li>
+            <li><div><strong>Agents are users</strong><span class="case-list__sub">The CLI and the MCP server got the same care as the screens: clear names, read-only access, predictable output.</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title" data-i18n="case.related.also">If you liked this, also see…</h2>
+        </div>
+        <div class="related">
+          <a class="related__card" href="../diez/">
+            <div class="related__kicker">Own product · Live</div>
+            <div class="related__title">Diez — a chord service for guitar players</div>
+          </a>
+          <a class="related__card" href="../bos-design-system/">
+            <div class="related__kicker">Enterprise B2B platform</div>
+            <div class="related__title">BitSvit Platform</div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+      <section id="contact" class="contact">
+      <div class="wrap">
+        <h2 class="contact__title" data-i18n="fl.close.title">Found this through <em>Upwork</em>?</h2>
+        <p class="contact__lede" data-i18n="fl.close.body">Then you already know where to reach me. Send the brief through your Upwork job post or an invite — I usually reply within a working day.</p>
+        <div class="contact__row">
+          <a class="contact__link" href="https://www.upwork.com/freelancers/~0138a475970ec656ad" target="_blank" rel="noopener" data-i18n="fl.close.cta">My Upwork profile ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <span data-i18n="foot.copy">© Ivan Shevchenko · Senior Product Designer</span>
+  </footer>
+
+  <script src="../../scripts/anim.js?v=e52e3bde" defer></script>
+  <script src="../../scripts/i18n.js?v=66ebcf98" defer></script>
+</body>
+</html>
