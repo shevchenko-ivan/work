@@ -52,7 +52,7 @@
 
     <section class="case-cover">
       <div class="wrap">
-        <div class="case-cover__inner case-cover__inner--art"><img src="../../assets/cases/pysar/cover.webp" srcset="../../assets/cases/pysar/cover-800.webp 800w, ../../assets/cases/pysar/cover.webp 1600w" sizes="(min-width: 1280px) 1200px, 100vw" width="1600" height="971" alt="Pysar graph view: a knowledge base of Markdown notes drawn as connected dots on a dark background" fetchpriority="high" decoding="async"></div>
+        <div class="case-cover__inner case-cover__inner--art"><img src="../../assets/cases/pysar/cover.webp" srcset="../../assets/cases/pysar/cover-800.webp 800w, ../../assets/cases/pysar/cover.webp 1600w" sizes="(min-width: 1280px) 1200px, 100vw" width="1600" height="971" alt="A laptop showing Pysar: the meeting library in front of the knowledge-base graph, with a dictation indicator under the camera notch" fetchpriority="high" decoding="async"></div>
       </div>
     </section>
 
@@ -89,6 +89,31 @@
             <li><div><strong>Shows the shape of the work</strong><span class="case-list__sub">A graph of meetings, people and tags — and a second graph that reads a folder of Markdown notes and draws the links between them.</span></div></li>
             <li><div><strong>Works for agents too</strong><span class="case-list__sub">An MCP server and a CLI give AI agents read-only access: list meetings, search, open a transcript or a summary.</span></div></li>
           </ul>
+          <figure class="case-image">
+            <img src="../../assets/cases/pysar/meetings.webp" width="1600" height="1313" alt="Pysar main window: a sidebar with Meetings, Ask AI, Dictation and Graph, and a library of meeting cards grouped by month with status labels" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">The library on demo data (interface in Ukrainian): meetings by month, each with its status — processing, interrupted or ready with a summary.</figcaption>
+          </figure>
+          <figure class="case-image">
+            <img src="../../assets/cases/pysar/recording.webp" width="1600" height="1313" alt="Pysar while recording: a red Stop recording button with a timer in the toolbar and a note that the transcript appears after the recording stops" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">While a meeting is recorded the window stays quiet: one red button with the timer, and a plain line about what happens next.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">From a recording to something you can read.</h2>
+        </div>
+        <div class="case-section__body">
+          <p>A finished meeting has two views of the same audio. The summary gives the essence, the decisions and the tasks. The transcript gives every line with its speaker. Both are tied to the player at the top, so any line can be heard again.</p>
+          <figure class="case-image">
+            <img src="../../assets/cases/pysar/summary.webp" width="1600" height="1313" alt="Meeting summary in dark mode: a waveform player, then the sections Essence, Decisions and Tasks, with a timestamp link next to a decision" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">A summary in dark mode: essence, decisions with a timestamp link, and tasks as checkboxes. The footer names the model that wrote it.</figcaption>
+          </figure>
+          <figure class="case-image">
+            <img src="../../assets/cases/pysar/transcript.webp" width="1600" height="1313" alt="Meeting transcript in light mode: lines by two speakers with timestamps, one line highlighted" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">The transcript of the same meeting: speakers, timestamps, and a highlighted line that matches the position in the player.</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -105,7 +130,7 @@
             <li><div><strong>The limit is stated</strong><span class="case-list__sub">Search is by words today, not by meaning. I chose to say that in the product notes and plan semantic search next, not to pretend it is there.</span></div></li>
           </ul>
           <figure class="case-image">
-            <img src="../../assets/cases/pysar/ask-ai.webp" width="1620" height="480" alt="Ask AI answer to the question What did we decide about the release: a statement with links to the meeting and timestamps, a list of what is left, and a separate heading Without an owner" loading="lazy" decoding="async">
+            <img src="../../assets/cases/pysar/ask-ai.webp" width="1600" height="1313" alt="Ask AI answer to the question What did we decide about the release: a statement with links to the meeting and timestamps, a list of what is left, and a separate heading Without an owner" loading="lazy" decoding="async">
             <figcaption class="case-image__caption">“Ask AI” on demo data (interface in Ukrainian). Each line links to a meeting and a timestamp; a task without an owner is listed separately.</figcaption>
           </figure>
         </div>
@@ -117,12 +142,12 @@
         </div>
         <div class="case-section__body">
           <p>The graph is drawn natively, without a library. Positions come from a formula — angle from the group, radius from the type of node — so the picture is stable and readable instead of floating.</p>
-          <figure class="case-image case-image--diagram">
-            <img src="../../assets/cases/pysar/graph-meetings.webp" width="960" height="780" alt="Graph of meetings grouped around three tags, with lines to people; the names of people are blurred" loading="lazy" decoding="async">
-            <figcaption class="case-image__caption">Meetings, tags and people on demo data. Names are hidden.</figcaption>
+          <figure class="case-image">
+            <img src="../../assets/cases/pysar/graph-meetings.webp" width="1600" height="1313" alt="Graph view in light mode: one person in the centre with coloured lines to the meetings they took part in, coloured by tag" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Meetings, tags and people on demo data: the links view, centred on one participant.</figcaption>
           </figure>
           <figure class="case-image">
-            <img src="../../assets/cases/pysar/graph-knowledge.webp" width="874" height="870" alt="Dark graph of a Markdown knowledge base: 140 notes in 5 folders with 289 links, one note highlighted with its two links" loading="lazy" decoding="async">
+            <img src="../../assets/cases/pysar/graph-knowledge.webp" width="1600" height="1313" alt="Dark graph of a Markdown knowledge base: 140 notes in 5 folders with 289 links, one note highlighted with its two links" loading="lazy" decoding="async">
             <figcaption class="case-image__caption">The same view over a folder of Markdown notes: 140 notes, 5 folders, 289 links. A click opens the note.</figcaption>
           </figure>
         </div>
