@@ -98,7 +98,7 @@ const TRANSLATIONS = {
 
     'fact.val.spain':          'Валенсія, Іспанія',
     'fact.val.cet':            'CET · async-friendly',
-    'fact.val.upwork':         '★★★★★ · 4 відгуки',
+    'fact.val.upwork':         '★★★★★<br><span class="nowrap">4&nbsp;відгуки</span>',
     'fact.val.saasFit':        'SaaS · CRM · Адмінки · DS',
     'fact.val.mobileFit':      'Consumer app · DS · A11y',
     'fact.val.platforms':      'iOS · Android · Flutter',

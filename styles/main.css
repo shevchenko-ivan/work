@@ -1273,3 +1273,8 @@ a.case:hover .case__title { color: var(--accent-ink); }
 
 /* Language-specific images and captions: html[lang] is set by the language switch */
 html:not([lang="uk"]) .only-ua, html[lang="uk"] .only-en { display: none !important; }
+
+/* Upwork badge: never squeezed by the facts row; keep "4 reviews" on one line */
+.fact--cert .cert { flex-shrink: 0; }
+.cert img { width: 84px; }
+.nowrap { white-space: nowrap; }
