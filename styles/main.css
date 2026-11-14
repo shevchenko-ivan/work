@@ -739,7 +739,7 @@ a.case:hover .case__title { color: var(--accent-ink); }
 @media (min-width: 760px) {
   .cases { grid-template-columns: repeat(2, 1fr); }
   /* an odd card out spans the row instead of leaving a hole */
-  .cases:not(.cases--featured) > .case:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .cases:not(.cases--featured):not(.cases--plain) > .case:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
 
 @media (min-width: 1000px) {
@@ -749,7 +749,7 @@ a.case:hover .case__title { color: var(--accent-ink); }
   /* full-row cards go horizontal: picture left, story right */
   .cases--featured > .case:first-child,
   .cases--featured > .case:last-child:nth-child(even),
-  .cases:not(.cases--featured) > .case:last-child:nth-child(odd) {
+  .cases:not(.cases--featured):not(.cases--plain) > .case:last-child:nth-child(odd) {
     display: grid;
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
     grid-template-rows: auto auto auto 1fr;
@@ -758,7 +758,7 @@ a.case:hover .case__title { color: var(--accent-ink); }
   }
   .cases--featured > .case:first-child .case__thumb,
   .cases--featured > .case:last-child:nth-child(even) .case__thumb,
-  .cases:not(.cases--featured) > .case:last-child:nth-child(odd) .case__thumb {
+  .cases:not(.cases--featured):not(.cases--plain) > .case:last-child:nth-child(odd) .case__thumb {
     grid-column: 1;
     grid-row: 1 / -1;
     margin: calc(-1 * var(--space-4)) 0;
@@ -769,7 +769,7 @@ a.case:hover .case__title { color: var(--accent-ink); }
   }
   .cases--featured > .case:first-child > :not(.case__thumb),
   .cases--featured > .case:last-child:nth-child(even) > :not(.case__thumb),
-  .cases:not(.cases--featured) > .case:last-child:nth-child(odd) > :not(.case__thumb) { grid-column: 2; }
+  .cases:not(.cases--featured):not(.cases--plain) > .case:last-child:nth-child(odd) > :not(.case__thumb) { grid-column: 2; }
   .cases--featured > .case:first-child .case__meta { padding-top: var(--space-2); }
   .cases--featured > .case:first-child .case__title { font-size: clamp(2rem, 3vw, 2.625rem); }
 }
