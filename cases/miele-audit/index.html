@@ -5,12 +5,12 @@
   <meta name="robots" content="noindex" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Miele Ukraine UX Audit — Case · Ivan Shevchenko</title>
-  <meta name="description" content="UX/UI audit of shop.miele.ua. Nielsen 10 heuristics, competitor benchmark across five premium brands, RICE-prioritised roadmap of recommendations." />
+  <meta name="description" content="UX audit of shop.miele.ua before a planned redesign: 37 findings across checkout, home, search and product page, each with its impact and a recommendation." />
   <meta name="theme-color" content="#37431d" />
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Miele Ukraine UX Audit — Case · Ivan Shevchenko" />
-  <meta property="og:description" content="UX/UI audit of shop.miele.ua. Nielsen 10 heuristics, competitor benchmark across five premium brands, RICE-prioritised roadmap of recommendations." />
+  <meta property="og:description" content="UX audit of shop.miele.ua before a planned redesign: 37 findings across checkout, home, search and product page, each with its impact and a recommendation." />
   <meta property="og:image" content="https://shevchenko-ivan.github.io/work/assets/og.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preload" href="../../assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -42,10 +42,12 @@
   <main id="main" class="sheet">
     <section class="case-hero wrap">
       <div class="case-hero__meta">
-        <span>2024</span><span data-i18n="t.0f28fe83">Freelance</span><span data-i18n="t.193d237b">UX Audit</span><span data-i18n="t.a0fb65dc">Premium e-commerce</span>
+        <span>2025</span><span>Freelance</span><span>UX audit</span><span>Premium e-commerce</span>
       </div>
-      <h1 class="case-hero__title" data-i18n="case.miele.title">Miele Ukraine — a pre-redesign UX audit.</h1>
-      <p class="case-hero__sub" data-i18n="case.miele.sub">A structured audit of shop.miele.ua before a planned B2C portal redesign. Nielsen 10 heuristics, competitor benchmark across Bosch, Siemens, AEG, Gaggenau and Smeg, RICE-prioritised recommendations — packaged as a Notion deliverable the client could act on directly.</p>
+      <h1 class="case-hero__title">Miele Ukraine — a UX audit before the redesign.</h1>
+      <p class="case-hero__sub">
+        An expert review of shop.miele.ua ahead of a planned migration and redesign of the B2C shop. Four key surfaces, 37 findings, each with its impact on the buyer and a concrete recommendation — delivered as a document the client could act on directly.
+      </p>
     </section>
 
     <section class="case-cover">
@@ -58,84 +60,79 @@
 
     <div class="wrap">
       <div class="case-facts">
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value" data-i18n="case.miele.fact.year">2024</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.client">Client</div><div class="fact__value" data-i18n="case.miele.fact.client">Miele Ukraine</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value" data-i18n="case.miele.fact.role">UX Auditor</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.surfaces">Surfaces audited</div><div class="fact__value" data-i18n="case.miele.fact.surfaces">4</div></div>
+        <div class="fact"><div class="fact__label">Year</div><div class="fact__value">2025</div></div>
+        <div class="fact"><div class="fact__label">Client</div><div class="fact__value">Miele Ukraine</div></div>
+        <div class="fact"><div class="fact__label">Role</div><div class="fact__value">UX auditor, solo</div></div>
+        <div class="fact"><div class="fact__label">Findings</div><div class="fact__value">37 on 4 surfaces</div></div>
       </div>
     </div>
 
     <div class="wrap">
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title" data-i18n="case.miele.context.title">A premium brand planning a redesign.</h2>
+          <h2 class="case-section__title">The business problem: where does a premium shop lose buyers?</h2>
         </div>
         <div class="case-section__body">
-          <p data-i18n="case.miele.context.body1">
-            Miele Ukraine is the local distributor of a German premium home-appliance brand. They were planning a B2C portal migration and redesign, and wanted an outside expert read on what was actually broken before scoping the project.
-          </p>
-          <p data-i18n="case.miele.context.body2">
-            The client’s target audience is upper-middle income — people who already trust the brand and expect the digital experience to match. The pre-redesign hypothesis: conversion and trust were being eroded by specific surfaces, but it wasn’t clear which ones, in what order, with what return.
-          </p>
+          <p>Miele Ukraine sells premium home appliances to buyers who already trust the brand and expect the online shop to match it. The company was planning a migration and redesign of its B2C shop and wanted an outside view first: what exactly hurts conversion and trust, and what should be fixed first.</p>
+          <p>In the brief the client named the two funnels with the highest drop-off — the product page and checkout. That set the priorities of the audit before I opened the site.</p>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title" data-i18n="case.miele.method.title">Heuristics, competitors, technical, RICE.</h2>
+          <h2 class="case-section__title">How I scoped and ran it.</h2>
         </div>
         <div class="case-section__body">
           <ol class="case-list case-list--numbered">
-            <li><div><strong data-i18n="case.miele.m.s1">Heuristic evaluation</strong><span class="case-list__sub" data-i18n="case.miele.m.s1sub">Nielsen 10 usability heuristics applied to four critical surfaces.</span></div></li>
-            <li><div><strong data-i18n="case.miele.m.s2">Competitor benchmark</strong><span class="case-list__sub" data-i18n="case.miele.m.s2sub">Bosch, Siemens, AEG, Gaggenau, Smeg — premium-segment patterns for product, search and checkout.</span></div></li>
-            <li><div><strong data-i18n="case.miele.m.s3">Technical audit</strong><span class="case-list__sub" data-i18n="case.miele.m.s3sub">Loading performance, responsiveness, UI correctness across breakpoints.</span></div></li>
-            <li><div><strong data-i18n="case.miele.m.s4">RICE prioritisation</strong><span class="case-list__sub" data-i18n="case.miele.m.s4sub">Reach × Impact × Confidence / Effort — a defensible ranking the client could share with stakeholders.</span></div></li>
+            <li><div><strong>A short brief and a kickoff call</strong><span class="case-list__sub">Business goals, audience, competitors and problem funnels were fixed in a brief. The scope was agreed as a fixed-price package covering four surfaces.</span></div></li>
+            <li><div><strong>Scenario walkthroughs</strong><span class="case-list__sub">The key buyer scenarios — viewing a product, the cart, checkout — checked against usability heuristics and e-commerce conventions.</span></div></li>
+            <li><div><strong>Competitor patterns</strong><span class="case-list__sub">Product page structure, calls to action and information blocks compared with Bosch, Siemens and Gaggenau.</span></div></li>
+            <li><div><strong>Technical and accessibility checks</strong><span class="case-list__sub">Page speed for the home and product pages, responsive behaviour, and colour contrast against WCAG AA. One example: the price text measured <span class="ratio ratio--fail">3.59 : 1</span>.</span></div></li>
+            <li><div><strong>One format for every finding</strong><span class="case-list__sub">A screenshot with the problem marked, then three lines: the problem, its impact, the recommendation. 47 annotated screenshots in total.</span></div></li>
           </ol>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title" data-i18n="case.miele.findings.title">Four surfaces, ranked by impact.</h2>
+          <h2 class="case-section__title">Four surfaces, ranked by impact.</h2>
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong data-i18n="case.miele.f.s1">Checkout — critical</strong><span class="case-list__sub" data-i18n="case.miele.f.s1sub">Complex and opaque flow, redundant fields, weak validation. Direct hit on conversion and trust.</span></div></li>
-            <li><div><strong data-i18n="case.miele.f.s2">Homepage — high</strong><span class="case-list__sub" data-i18n="case.miele.f.s2sub">Missing appliance-category block above the fold. Users couldn’t orient quickly. First-screen order needed revisiting.</span></div></li>
-            <li><div><strong data-i18n="case.miele.f.s3">Search flow — high</strong><span class="case-list__sub" data-i18n="case.miele.f.s3sub">Auto-complete and filter gaps that frustrated intent-driven shoppers — the most valuable segment.</span></div></li>
-            <li><div><strong data-i18n="case.miele.f.s4">Product page — medium</strong><span class="case-list__sub" data-i18n="case.miele.f.s4sub">Competing CTAs creating decision friction. Cognitive load at the moment of choice.</span></div></li>
+            <li><div><strong>Checkout — critical, 11 findings</strong><span class="case-list__sub">Four separate steps, errors shown before the buyer types anything and away from the fields, the name asked twice, an account created without a clear notice.</span></div></li>
+            <li><div><strong>Home, sign-in and registration — high, 17 findings</strong><span class="case-list__sub">The catalogue hidden in a burger menu, three pop-up widgets at once, and banners that speak only about discounts with no premium positioning.</span></div></li>
+            <li><div><strong>Search — high, 4 findings</strong><span class="case-list__sub">A narrow search field that overlaps the header icons, a search icon that is easy to miss, unclear pagination.</span></div></li>
+            <li><div><strong>Product page — medium, 6 findings</strong><span class="case-list__sub">Three competing purchase buttons, a barely visible old price, and hidden strengths such as the 3D view and the warranty.</span></div></li>
           </ul>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title" data-i18n="case.miele.rec.title">A roadmap the client could act on directly.</h2>
+          <h2 class="case-section__title">A roadmap the client could act on.</h2>
         </div>
         <div class="case-section__body">
           <ol class="case-list case-list--numbered">
-            <li><div><strong data-i18n="case.miele.r.s1">Redesign checkout end-to-end</strong><span class="case-list__sub" data-i18n="case.miele.r.s1sub">Fewer steps, linked actions, proper feedback.</span></div></li>
-            <li><div><strong data-i18n="case.miele.r.s2">Add a category block on the homepage</strong><span class="case-list__sub" data-i18n="case.miele.r.s2sub">Update first-screen IA to help users orient in &lt; 3 seconds.</span></div></li>
-            <li><div><strong data-i18n="case.miele.r.s3">Fix search auto-complete and filters</strong><span class="case-list__sub" data-i18n="case.miele.r.s3sub">Critical for users who arrive with intent.</span></div></li>
-            <li><div><strong data-i18n="case.miele.r.s4">Resolve CTA competition on product pages</strong><span class="case-list__sub" data-i18n="case.miele.r.s4sub">A single primary action, supporting actions de-emphasised.</span></div></li>
-            <li><div><strong data-i18n="case.miele.r.s5">A/B test the critical changes</strong><span class="case-list__sub" data-i18n="case.miele.r.s5sub">Measure impact on conversion before extending the redesign further.</span></div></li>
+            <li><div><strong>Rebuild checkout end to end</strong><span class="case-list__sub">Fewer steps, inline validation, no repeated fields.</span></div></li>
+            <li><div><strong>Bring the catalogue to the first screen</strong><span class="case-list__sub">A category block on the home page, so a buyer finds their appliance type in seconds.</span></div></li>
+            <li><div><strong>Make search visible</strong><span class="case-list__sub">A wider field and a clear icon first; autocomplete and filters as the next stage.</span></div></li>
+            <li><div><strong>One primary action on the product page</strong><span class="case-list__sub">A single main button, with supporting actions de-emphasised.</span></div></li>
+            <li><div><strong>Test the critical changes</strong><span class="case-list__sub">Measure the effect on conversion before extending the redesign.</span></div></li>
           </ol>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title" data-i18n="case.miele.outcome.title">A clear redesign scope, scoped by impact.</h2>
+          <h2 class="case-section__title">Outcome — and its limits.</h2>
         </div>
         <div class="case-section__body">
           <div class="outcomes">
-            <div><span class="metric__value">4</span><span class="metric__label" data-i18n="case.miele.outcome.m1">Critical surfaces audited</span></div>
-            <div><span class="metric__value">5</span><span class="metric__label" data-i18n="case.miele.outcome.m2">Competitors benchmarked</span></div>
-            <div><span class="metric__value metric__value--text">Nielsen 10 + RICE</span><span class="metric__label" data-i18n="case.miele.outcome.m3">Method</span></div>
+            <div><span class="metric__value">37</span><span class="metric__label">Findings with recommendations</span></div>
+            <div><span class="metric__value">4</span><span class="metric__label">Key surfaces</span></div>
+            <div><span class="metric__value">47</span><span class="metric__label">Annotated screenshots</span></div>
           </div>
-          <p class="outcomes__note" data-i18n="case.miele.outcome.body">
-            The deliverable was a Notion document the client could navigate: surface-by-surface findings, ranked recommendations, and a starting point for whoever they hired to execute the redesign.
-          </p>
+          <p class="outcomes__note">The client received a document to navigate: findings by surface, priorities, and a starting point for whoever builds the redesign. This was an expert review, not a study with users — so the report recommends testing the new checkout with real buyers as the next step.</p>
         </div>
       </section>
 
@@ -172,6 +169,6 @@
   </footer>
 
   <script src="../../scripts/anim.js?v=e52e3bde" defer></script>
-  <script src="../../scripts/i18n.js?v=22139a7b" defer></script>
+  <script src="../../scripts/i18n.js?v=c6b8717d" defer></script>
 </body>
 </html>

@@ -5,12 +5,12 @@
   <meta name="robots" content="noindex" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Freight Genie — Case · Ivan Shevchenko</title>
-  <meta name="description" content="Multi-role SaaS CRM for freight logistics. Five-star Upwork project — dashboards and complex workflows for dispatchers, drivers and back-office." />
+  <meta name="description" content="Freight Genie: an MVP of a multi-role sales CRM for freight companies — lead pipeline, tasks, documents, roles and permissions. A fixed-price Upwork project with a five-star review." />
   <meta name="theme-color" content="#37431d" />
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Freight Genie — Case · Ivan Shevchenko" />
-  <meta property="og:description" content="Multi-role SaaS CRM for freight logistics. Five-star Upwork project — dashboards and complex workflows for dispatchers, drivers and back-office." />
+  <meta property="og:description" content="Freight Genie: an MVP of a multi-role sales CRM for freight companies — lead pipeline, tasks, documents, roles and permissions. A fixed-price Upwork project with a five-star review." />
   <meta property="og:image" content="https://shevchenko-ivan.github.io/work/assets/og.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preload" href="../../assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -42,10 +42,12 @@
   <main id="main" class="sheet">
     <section class="case-hero wrap">
       <div class="case-hero__meta">
-        <span>2024</span><span>Upwork</span><span data-i18n="t.8d062ce5">Multi-role SaaS CRM</span>
+        <span>2020</span><span>Upwork</span><span>Fixed price</span><span>Multi-role SaaS CRM</span>
       </div>
-      <h1 class="case-hero__title" data-i18n="case.fg.title">Freight Genie</h1>
-      <p class="case-hero__sub" data-i18n="case.fg.sub">A multi-role SaaS CRM for the freight logistics industry. Dashboards and complex workflows for dispatchers, drivers and back-office — earned a five-star Upwork review and the language clients still quote back at me in proposals.</p>
+      <h1 class="case-hero__title">Freight Genie — a sales CRM for freight companies.</h1>
+      <p class="case-hero__sub">
+        An MVP of a multi-role SaaS CRM where freight sales teams move shippers from a first call to a recurring customer. Three user roles, a lead pipeline, tasks, documents and permissions — designed solo as a fixed-price Upwork project that earned a five-star review.
+      </p>
     </section>
 
     <section class="case-cover">
@@ -58,83 +60,90 @@
 
     <div class="wrap">
       <div class="case-facts">
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value" data-i18n="case.fg.fact.year">2024</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.client">Client</div><div class="fact__value" data-i18n="case.fg.fact.client">Upwork (confidential)</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value" data-i18n="case.fg.fact.role">Product Designer</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.domain">Domain</div><div class="fact__value" data-i18n="case.fg.fact.domain">Logistics · Freight</div></div>
+        <div class="fact"><div class="fact__label">Year</div><div class="fact__value">2020</div></div>
+        <div class="fact"><div class="fact__label">Client</div><div class="fact__value">Upwork (confidential)</div></div>
+        <div class="fact"><div class="fact__label">Role</div><div class="fact__value">Product Designer, solo</div></div>
+        <div class="fact"><div class="fact__label">Scope</div><div class="fact__value">MVP · 3 roles</div></div>
       </div>
     </div>
 
     <div class="wrap">
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title" data-i18n="case.fg.context.title">A freight CRM that had outgrown its early UI.</h2>
+          <h2 class="case-section__title">The business problem: a sales process that lived in people’s heads.</h2>
         </div>
         <div class="case-section__body">
-          <p data-i18n="case.fg.context.body1">
-            The client was scaling a freight management product and ran into a familiar problem — the same screens served too many different roles. Dispatchers needed dense, scannable views; drivers needed a stripped-down, mobile-friendly take; back-office wanted reconciliation and reporting. The original UI tried to be everything to everyone, which meant nobody was happy.
-          </p>
-          <p data-i18n="case.fg.context.body2">
-            My job was to redesign the SaaS web app around real role flows — and to do it quickly enough to fit a fixed-price Upwork engagement.
-          </p>
+          <p>The client was building a product for freight companies. Their sales people win shippers through a long chain of calls, quotes and first shipments. Without a system, nobody could see which leads were moving and which had gone quiet.</p>
+          <p>The client came with a written specification for an MVP and a fixed budget. My job was to turn that specification into a complete, buildable design — without the scope growing along the way.</p>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title" data-i18n="case.fg.approach.title">Role flows first, screens second.</h2>
+          <h2 class="case-section__title">Three roles, three views of the same data.</h2>
         </div>
         <div class="case-section__body">
-          <p data-i18n="case.fg.approach.body">I started from the workflow side rather than from the screens. For each role I documented the canonical task chain, then asked: what is the smallest interface that supports it?</p>
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Admin</strong><span class="case-list__sub">The product’s own staff: manages customer companies and can see their dashboards.</span></div></li>
+            <li><div><strong>Customer Owner</strong><span class="case-list__sub">Runs a freight company’s account: leads, company settings, sales users and analytics.</span></div></li>
+            <li><div><strong>Customer Sales</strong><span class="case-list__sub">Works the leads assigned to them, day by day.</span></div></li>
+          </ul>
+          <p>I started from this permission map and not from screens. For every role I wrote down what they must see, what they may change and where they enter the product. The screens followed from that.</p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">How I worked inside a fixed price.</h2>
+        </div>
+        <div class="case-section__body">
           <ol class="case-list case-list--numbered">
-            <li><div><strong data-i18n="case.fg.list1.s1">Role mapping</strong><span class="case-list__sub" data-i18n="case.fg.list1.s1sub">Dispatcher, driver, back-office — entry points, primary actions, data needs.</span></div></li>
-            <li><div><strong data-i18n="case.fg.list1.s2">Information architecture</strong><span class="case-list__sub" data-i18n="case.fg.list1.s2sub">A navigation model that scaled across roles without forcing one to live inside another’s mental model.</span></div></li>
-            <li><div><strong data-i18n="case.fg.list1.s3">Dashboard layouts</strong><span class="case-list__sub" data-i18n="case.fg.list1.s3sub">Role-specific landing screens — KPI cards for back-office, dispatch board for ops, route view for drivers.</span></div></li>
-            <li><div><strong data-i18n="case.fg.list1.s4">Workflow screens</strong><span class="case-list__sub" data-i18n="case.fg.list1.s4sub">Order creation, dispatch, status updates, reconciliation — designed as flows, not isolated forms.</span></div></li>
-            <li><div><strong data-i18n="case.fg.list1.s5">Hand-off package</strong><span class="case-list__sub" data-i18n="case.fg.list1.s5sub">Component states, edge cases, empty states and engineering notes ready for the client’s dev team.</span></div></li>
+            <li><div><strong>Specification to flows</strong><span class="case-list__sub">I turned the client’s document into a mind map of flows and confirmed it with the client before opening Figma.</span></div></li>
+            <li><div><strong>A shared board</strong><span class="case-list__sub">Every screen was a card on a board the client could see, with a clear done state. Nothing moved forward on assumptions.</span></div></li>
+            <li><div><strong>States, not only screens</strong><span class="case-list__sub">Empty, first-use and error states were designed together with the main flow, so developers did not have to invent them.</span></div></li>
           </ol>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title" data-i18n="case.fg.what.title">Three role-shaped products inside one CRM.</h2>
+          <h2 class="case-section__title">What I designed.</h2>
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong data-i18n="case.fg.what.s1">Dispatcher dashboard</strong><span class="case-list__sub" data-i18n="case.fg.what.s1sub">Live ops board with high-density data, filterable by status, region and driver.</span></div></li>
-            <li><div><strong data-i18n="case.fg.what.s2">Driver view</strong><span class="case-list__sub" data-i18n="case.fg.what.s2sub">Mobile-first, stripped to the day’s assignments, route details and one-tap status updates.</span></div></li>
-            <li><div><strong data-i18n="case.fg.what.s3">Back-office tools</strong><span class="case-list__sub" data-i18n="case.fg.what.s3sub">Order management, reconciliation, reporting and exports — built around batch actions and audit trails.</span></div></li>
-            <li><div><strong data-i18n="case.fg.what.s4">Shared component states</strong><span class="case-list__sub" data-i18n="case.fg.what.s4sub">Empty, loading, error and edge states defined for every workflow surface.</span></div></li>
+            <li><div><strong>Pipeline dashboard</strong><span class="case-list__sub">Leads counted by stage — from first contact to recurring customer or closed-lost — so an owner sees the health of sales at a glance.</span></div></li>
+            <li><div><strong>Lead page</strong><span class="case-list__sub">One place for a shipper’s details, the history of contact and notes.</span></div></li>
+            <li><div><strong>Lead pool and assignment</strong><span class="case-list__sub">A shared pool of leads and a simple way to assign a lead to a sales person.</span></div></li>
+            <li><div><strong>Tasks</strong><span class="case-list__sub">A task creation dialog and a list of all tasks sorted by date.</span></div></li>
+            <li><div><strong>Deals and documents</strong><span class="case-list__sub">Deal screens, and documents organised in folders.</span></div></li>
+            <li><div><strong>Roles and permissions</strong><span class="case-list__sub">A settings screen for roles, adding employees, and sign-in and sign-up flows.</span></div></li>
           </ul>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title" data-i18n="case.fg.outcome.title">A five-star review that became a proposal template.</h2>
+          <h2 class="case-section__title">Outcome.</h2>
         </div>
         <div class="case-section__body">
-          <p data-i18n="case.fg.outcome.body">
-            The client closed the project with a five-star Upwork review — my first one on the platform. The line they wrote back has become the canonical opening I use in proposals for similar briefs.
-          </p>
           <div class="outcomes">
-            <div><span class="metric__value">5★</span><span class="metric__label" data-i18n="case.fg.outcome.m1">Upwork rating</span></div>
-            <div><span class="metric__value">3</span><span class="metric__label" data-i18n="case.fg.outcome.m2">User roles redesigned</span></div>
-            <div><span class="metric__value">1</span><span class="metric__label" data-i18n="case.fg.outcome.m3">Fixed-price delivery</span></div>
+            <div><span class="metric__value">5★</span><span class="metric__label">Upwork review</span></div>
+            <div><span class="metric__value">3</span><span class="metric__label">User roles</span></div>
+            <div><span class="metric__value">1</span><span class="metric__label">Fixed-price delivery</span></div>
           </div>
+          <p class="outcomes__note">The client closed the contract with a five-star review — my first on the platform. The full scope was delivered within the agreed price.</p>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title" data-i18n="case.fg.learnings.title">What I would carry into the next freight CRM.</h2>
+          <h2 class="case-section__title">What I carry into multi-role products today.</h2>
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong data-i18n="case.fg.l.s1">Roles, not personas</strong><span class="case-list__sub" data-i18n="case.fg.l.s1sub">In logistics SaaS, the role someone holds at a moment matters more than their persona. Design for the role they’re in right now.</span></div></li>
-            <li><div><strong data-i18n="case.fg.l.s2">Data density is a feature</strong><span class="case-list__sub" data-i18n="case.fg.l.s2sub">For dispatch users, less white space and more visible data is the right answer. Mobile-style spacing is wrong here.</span></div></li>
-            <li><div><strong data-i18n="case.fg.l.s3">Status changes are the product</strong><span class="case-list__sub" data-i18n="case.fg.l.s3sub">The whole CRM is a state machine. Every workflow screen is just a place where a status transitions.</span></div></li>
+            <li><div><strong>Permissions first</strong><span class="case-list__sub">In a multi-role product, the permission map is the real information architecture. Draw it before any screen.</span></div></li>
+            <li><div><strong>A pipeline is a state machine</strong><span class="case-list__sub">Every screen in a CRM is a place where a status changes. Designing the statuses first makes the screens obvious.</span></div></li>
+            <li><div><strong>Fixed price needs a visible scope</strong><span class="case-list__sub">A shared board with a done state protects both sides better than any contract clause.</span></div></li>
           </ul>
         </div>
       </section>
@@ -172,6 +181,6 @@
   </footer>
 
   <script src="../../scripts/anim.js?v=e52e3bde" defer></script>
-  <script src="../../scripts/i18n.js?v=22139a7b" defer></script>
+  <script src="../../scripts/i18n.js?v=c6b8717d" defer></script>
 </body>
 </html>

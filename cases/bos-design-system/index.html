@@ -5,12 +5,12 @@
   <meta name="robots" content="noindex" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BitSvit Platform — Case · Ivan Shevchenko</title>
-  <meta name="description" content="BitSvit, TemaBit’s B2B platform, and its design system: token pipeline, Code Connect, Storybook ↔ Figma sync, design reviews against code and patterns for people and AI agents." />
+  <meta name="description" content="BitSvit, an enterprise B2B platform by TemaBit: access management with roles, groups and tenants, two languages, WCAG 2.1 AA as a requirement, and the design system that keeps Figma and React code in sync." />
   <meta name="theme-color" content="#37431d" />
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="BitSvit Platform — Case · Ivan Shevchenko" />
-  <meta property="og:description" content="BitSvit, TemaBit’s B2B platform, and its design system: token pipeline, Code Connect, Storybook ↔ Figma sync, design reviews against code and patterns for people and AI agents." />
+  <meta property="og:description" content="BitSvit, an enterprise B2B platform by TemaBit: access management with roles, groups and tenants, two languages, WCAG 2.1 AA as a requirement, and the design system that keeps Figma and React code in sync." />
   <meta property="og:image" content="https://shevchenko-ivan.github.io/work/assets/og.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preload" href="../../assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -42,11 +42,11 @@
   <main id="main" class="sheet">
     <section class="case-hero wrap">
       <div class="case-hero__meta">
-        <span>2024 – now</span><span>TemaBit · Fozzy Group</span><span>Senior Product Designer</span><span data-i18n="t.4d3d769b">Active</span>
+        <span>2024 – now</span><span>TemaBit · Fozzy Group</span><span>Senior Product Designer</span><span>Enterprise B2B platform</span>
       </div>
       <h1 class="case-hero__title">BitSvit Platform — one portal for all of a group’s business apps.</h1>
       <p class="case-hero__sub">
-        BitSvit is TemaBit’s platform that brings Fozzy Group’s business apps into one web and mobile portal: identity and access, subscriptions, billing and dozens of internal tools. I design the platform shell — sign-in, home, navigation, app switcher, notifications — and own the design system it runs on: the Figma library, the React UI kit in Storybook and the process that keeps them in sync.
+        BitSvit brings the business apps of Fozzy Group into one web portal that works on desktop, tablet and phone. I own its design system and design platform and access-management screens together with a second designer — from principles and requirements to reviews of the shipped React code.
       </p>
     </section>
 
@@ -58,40 +58,41 @@
 
     <div class="wrap">
       <div class="case-facts">
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.year">Year</div><div class="fact__value">2024 – now</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.company">Company</div><div class="fact__value">TemaBit (Fozzy Group)</div></div>
-        <div class="fact"><div class="fact__label" data-i18n="caseFacts.role">Role</div><div class="fact__value">Senior PD, design system owner</div></div>
-        <div class="fact"><div class="fact__label">Library</div><div class="fact__value">255 components · 488 stories</div></div>
+        <div class="fact"><div class="fact__label">Year</div><div class="fact__value">2024 – now</div></div>
+        <div class="fact"><div class="fact__label">Company</div><div class="fact__value">TemaBit (Fozzy Group)</div></div>
+        <div class="fact"><div class="fact__label">Role</div><div class="fact__value">Senior Product Designer, design system owner</div></div>
+        <div class="fact"><div class="fact__label">Team</div><div class="fact__value">PO, BA, 2 designers, React frontend, QA</div></div>
       </div>
     </div>
 
     <div class="wrap">
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">A platform that replaces a desktop client.</h2>
+          <h2 class="case-section__title">The business problem: dozens of tools, one way in.</h2>
         </div>
         <div class="case-section__body">
-          <p>TemaBit is the IT company of Fozzy Group and writes most of the holding’s software. BitSvit replaces an old desktop client with an API-first web and mobile portal that works on any device. Identity and access (BitCore IAM) is in production; subscriptions, billing and HR tools are built on the same foundation by different product teams.</p>
-          <p>One design system has to keep all of them consistent. The team started with two designers; today I run the system on my own, working with product designers, business analysts, product owners, frontend developers and architects.</p>
+          <p>TemaBit is the IT company of Fozzy Group and builds most of the holding’s software. For years employees worked in a desktop client, where a typical user had about 26 separate products. BitSvit replaces it with an API-first web platform: one sign-in, one home screen, one navigation model — on any device, including personal ones.</p>
+          <p>Several companies of the group use the platform as separate tenants with isolated data. The first product in production is BitCore IAM, which authorises users for every other product on the platform. Subscriptions, billing and further business apps are built on the same foundation by different product teams.</p>
           <figure class="case-image">
             <img src="../../assets/cases/bos-design-system/platform-main.webp" width="1440" height="949" alt="BitSvit home screen: business apps grouped by domain — operations, administration and HR — as cards with icons and short descriptions" loading="lazy" decoding="async">
             <figcaption class="case-image__caption">The BitSvit home screen: every business app of the group in one place, grouped by domain. User details are hidden.</figcaption>
           </figure>
         </div>
       </section>
+
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">Principles before components.</h2>
+          <h2 class="case-section__title">My role and how the team works.</h2>
         </div>
         <div class="case-section__body">
-          <p>In September 2024 I ran workshops where the design team agreed on five principles. They became the tie-breaker for every later decision: when two solutions look equally good, the one that serves the principles wins.</p>
-          <ol class="case-list case-list--numbered">
-            <li><div><strong>Clarity and familiarity</strong><span class="case-list__sub">A new user understands the screen at a glance and reaches the target action without training.</span></div></li>
-            <li><div><strong>Consistency</strong><span class="case-list__sub">Unified visual patterns and terminology make the platform predictable and lower cognitive load.</span></div></li>
-            <li><div><strong>Scalability and modularity</strong><span class="case-list__sub">Components work across apps, pages and devices without losing usability.</span></div></li>
-            <li><div><strong>Research and efficiency</strong><span class="case-list__sub">Decisions rest on research and on business and user data.</span></div></li>
-            <li><div><strong>Collaboration</strong><span class="case-list__sub">Developers, analysts, managers and stakeholders shape the solution together.</span></div></li>
-          </ol>
+          <p>I am the designer responsible for the design system: the Figma library, the React UI kit in Storybook and the rules for using them. I also design platform and access-management flows together with a second product designer. The team includes a product owner, a business analyst, a frontend tech lead with developers, and QA.</p>
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Scrum rhythm</strong><span class="case-list__sub">Sprints with planning, refinement, estimates in story points, demo and retrospective, plus a weekly design sync.</span></div></li>
+            <li><div><strong>Design before refinement</strong><span class="case-list__sub">Developers see the mockup before the task is refined, so estimates rest on the real solution and not on a guess.</span></div></li>
+            <li><div><strong>One place for approved design</strong><span class="case-list__sub">A marked section in Figma holds only the final, approved version. Every development ticket links to its design task.</span></div></li>
+            <li><div><strong>AI drafts need a designer</strong><span class="case-list__sub">Prototypes generated by AI move forward only after a design review.</span></div></li>
+          </ul>
+          <p>In September 2024 I ran workshops where the design team agreed on five principles. They work as the tie-breaker in later decisions: when two solutions look equally good, the one that serves the principles wins.</p>
           <figure class="case-image case-image--diagram">
             <img class="only-en" src="../../assets/cases/bos-design-system/principles-en.svg" width="1600" height="900" alt="Slide with the five design principles: clarity and familiarity, consistency and predictability, scalability and modularity, research and efficiency, collaboration" loading="lazy" decoding="async">
             <img class="only-ua" src="../../assets/cases/bos-design-system/principles-ua.svg" width="1600" height="900" alt="Слайд з п’ятьма дизайн-принципами: зрозумілість та знайомість, консистентність та послідовність, масштабованість та модульність, дослідження та ефективність, колаборація" loading="lazy" decoding="async">
@@ -99,17 +100,56 @@
           </figure>
         </div>
       </section>
+
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">Tokens and a Figma ↔ code pipeline.</h2>
+          <h2 class="case-section__title">Access management: roles, groups and tenants.</h2>
         </div>
         <div class="case-section__body">
-          <p>The system runs on three layers of tokens and keeps Figma and code in step with tooling rather than manual checks.</p>
+          <p>The business goal of BitCore IAM is to hand day-to-day access administration to the access-management department. These are not engineers, so the interface has to make a complex model clear: users, groups, tenants, roles that each product defines, and attribute-based rules on top of role-based ones.</p>
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Token releases without hand-offs</strong><span class="case-list__sub">I agreed the publishing flow with the developers — Tokens Studio, a merge request, style-dictionary, an automatic release of the UI kit — and wrote an AI skill that prepares the release in one command.</span></div></li>
-            <li><div><strong>Code Connect</strong><span class="case-list__sub">550 links between Figma and code: 55 components and 495 icons. A developer opens a component in Figma and sees the real React usage, not a guess.</span></div></li>
-            <li><div><strong>Storybook → Figma registry</strong><span class="case-list__sub">A mapping of 59 story tags and 265 prop rules. 617 of 628 tags resolve to a real Figma variant, so a screen described in code can be rebuilt in Figma from library components.</span></div></li>
-            <li><div><strong>My own Figma plugin</strong><span class="case-list__sub">A plugin with a local bridge that lets scripts and AI agents edit the 255-component library about 150 times faster than the first version.</span></div></li>
+            <li><div><strong>Bulk role assignment</strong><span class="case-list__sub">A master-detail screen for assigning roles to many users or groups at once, with an explicit choice between adding to existing roles and replacing them — the costly mistake in this flow.</span></div></li>
+            <li><div><strong>Scale cases</strong><span class="case-list__sub">Role copying between users and group import, designed for a real case with more than 2,000 groups.</span></div></li>
+            <li><div><strong>A first version that did not work</strong><span class="case-list__sub">After an early demo the team admitted the permissions flow was inconvenient. We listed more than 30 issues and reworked it. I treat that demo as the cheapest test we ran.</span></div></li>
+            <li><div><strong>How decisions are validated</strong><span class="case-list__sub">Designs are reviewed with the access-management team and the frontend tech lead; the product owner collects feedback from current users. Before choosing a save pattern I compared how ten enterprise systems handle saving. Moderated usability tests with end users are the next step and have not been run yet.</span></div></li>
+          </ul>
+          <figure class="case-image">
+            <img src="../../assets/cases/bos-design-system/form-2col.webp" width="1440" height="922" alt="BitSvit administration: a service creation form with a two-column layout, an empty state for roles and editable tags" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">A two-column form, an empty state and editable tags — all from kit components. Internal names are hidden.</figcaption>
+          </figure>
+          <figure class="case-image">
+            <img src="../../assets/cases/bos-design-system/notif-popover.webp" width="1200" height="694" alt="BitSvit app launcher with a notifications popover: platform updates, documents to sign and access requests with Allow and Decline buttons" loading="lazy" decoding="async">
+            <figcaption class="case-image__caption">Notifications: one popover pattern for platform updates, documents to sign and access requests.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">Accessibility, languages and devices are requirements, not extras.</h2>
+        </div>
+        <div class="case-section__body">
+          <p>These three topics are written into the platform’s non-functional requirements, so every component and screen is designed against them.</p>
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>WCAG 2.1 AA</strong><span class="case-list__sub">The requirement covers contrast of <span class="ratio ratio--target">4.5 : 1</span> for text and <span class="ratio ratio--target">3 : 1</span> for interface elements, full keyboard operation, and state that never depends on colour alone. The honest status: it is a target in progress. An internal review in October 2026 found gaps — missing alt texts, keyboard navigation in places, no automated tests — and accessibility became a separate work stream.</span></div></li>
+            <li><div><strong>My part in it</strong><span class="case-list__sub">A contrast analysis of ten status colours that replaced semi-transparent badge tokens with opaque ones (text contrast now holds at 5.9–7.5 : 1 on any row background) and flagged the badge edge against WCAG 1.4.11. A component review that caught a disabled link still reachable from the keyboard. A typography pass that moved 857 text layers from 10 px to 12 px.</span></div></li>
+            <li><div><strong>Two languages</strong><span class="case-list__sub">Ukrainian and English, with user settings for language, date format, money format and currency. Two rules follow from that: no button has a width fixed to one translation, and every text reaches a component through props, never hard-coded.</span></div></li>
+            <li><div><strong>Three device classes</strong><span class="case-list__sub">The same functions from a 360 px phone and a 640 px tablet to a 1366 px desktop. Every platform page is designed at 1440 and at 375 px, and components were checked at 125% browser zoom.</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section__head">
+          <h2 class="case-section__title">A design system that stays in sync with React code.</h2>
+        </div>
+        <div class="case-section__body">
+          <p>The UI kit is a React and TypeScript library built on accessible primitives and documented in Storybook. My job is to make sure Figma and code describe the same thing — with tooling, not with manual checks.</p>
+          <ul class="case-list case-list--bullets">
+            <li><div><strong>Token releases</strong><span class="case-list__sub">Three token layers, published through a flow I agreed with the developers: Tokens Studio, a merge request, an automatic release of the kit.</span></div></li>
+            <li><div><strong>Code Connect</strong><span class="case-list__sub">550 links between Figma and code. A developer opens a component in Figma and sees its real React usage.</span></div></li>
+            <li><div><strong>Storybook → Figma</strong><span class="case-list__sub">A mapping that resolves 617 of 628 story tags to real Figma variants, so a screen described in code can be rebuilt in Figma from library components.</span></div></li>
+            <li><div><strong>Reviews against the build</strong><span class="case-list__sub">I compare each implemented component with its spec in the browser: computed styles, every state, keyboard behaviour. The Link review alone found 8 mismatches.</span></div></li>
           </ul>
           <figure class="case-image case-image--diagram">
             <img src="../../assets/cases/bos-design-system/tokens.svg" width="760" height="420" alt="Diagram: 205 primitive tokens, 245 semantic tokens for light and dark themes, 1,029 component tokens; a Figma library of 255 components; 550 Code Connect links; 617 of 628 Storybook tags resolved to Figma variants" loading="lazy" decoding="async">
@@ -117,67 +157,49 @@
           </figure>
         </div>
       </section>
+
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">Design reviews against the real code.</h2>
+          <h2 class="case-section__title">Documentation that people and AI agents can follow.</h2>
         </div>
         <div class="case-section__body">
-          <p>A component is done when it ships correctly, not when the Figma frame looks right. I review every implemented component in Storybook against the Figma spec: computed styles in the browser, every state, keyboard behaviour.</p>
+          <p>Components alone do not make screens consistent. I analysed 158 production screens and turned them into 32 patterns — page templates, filters, bulk actions, saving, notifications. Every rule carries a status: approved, default, hypothesis or open.</p>
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Link</strong><span class="case-list__sub">8 mismatches, one of them a blocker: a disabled link could still be opened from the keyboard. The review added an <code>isUnderlined</code> prop and new tokens.</span></div></li>
-            <li><div><strong>Pagination and SimpleTable</strong><span class="case-list__sub">Four fixes for pagination; the new simple table was approved for implementation after one review round.</span></div></li>
-            <li><div><strong>Typography audit</strong><span class="case-list__sub">857 text layers across atoms, molecules and organisms moved from 10 px to 12 px styles, with six before/after tickets for frontend.</span></div></li>
-            <li><div><strong>Accessible status badges</strong><span class="case-list__sub">Semi-transparent badge colours changed contrast with every row background. Opaque tokens keep text contrast steady at 5.9–7.5 : 1, and the review flagged the badge edge for WCAG 1.4.11 with a dedicated border token.</span></div></li>
-          </ul>
-          <figure class="case-image">
-            <img src="../../assets/cases/bos-design-system/form-2col.webp" width="1440" height="922" alt="BitSvit administration: a service creation form with a two-column layout, an empty state for roles and editable tags" loading="lazy" decoding="async">
-            <figcaption class="case-image__caption">A two-column form, an empty state and editable tags — all from kit components. Internal names are hidden.</figcaption>
-          </figure>
-        </div>
-      </section>
-      <section class="case-section">
-        <div class="case-section__head">
-          <h2 class="case-section__title">Patterns that people and AI agents can follow.</h2>
-        </div>
-        <div class="case-section__body">
-          <p>Components alone do not make screens consistent. I analysed 158 production screens and turned them into 32 patterns — page templates, filters, bulk actions, saving, notifications — with every rule marked as approved, default, hypothesis or open.</p>
-          <ul class="case-list case-list--bullets">
-            <li><div><strong>Written for humans and machines</strong><span class="case-list__sub">The patterns live as Markdown next to Storybook, so AI coding agents read the same rules as designers. Clickable prototypes are now built by AI from real kit components, then reviewed by design as a formal step.</span></div></li>
+            <li><div><strong>Written next to the code</strong><span class="case-list__sub">The patterns live as Markdown beside Storybook, so designers, developers and AI coding agents read the same rules. Clickable prototypes are now assembled from real kit components and reviewed by design as a formal step.</span></div></li>
             <li><div><strong>A decision log</strong><span class="case-list__sub">21 recorded decisions with context and trade-offs: a 12-column grid with 1024 / 1440 / 1920 breakpoints, filters in a drawer as the standard, a data-grid base font of 12 px with a 14 px option, accessibility as its own work stream.</span></div></li>
           </ul>
-          <figure class="case-image">
-            <img src="../../assets/cases/bos-design-system/notif-popover.webp" width="1200" height="694" alt="BitSvit app launcher with a notifications popover: platform updates, documents to sign and access requests with Allow and Decline buttons" loading="lazy" decoding="async">
-            <figcaption class="case-image__caption">Notifications: one popover pattern for platform updates, documents to sign and access requests.</figcaption>
-          </figure>
         </div>
       </section>
+
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">Closing the gap between design and code.</h2>
+          <h2 class="case-section__title">Closing the gap between design and delivery.</h2>
         </div>
         <div class="case-section__body">
-          <p>I audited two years of design tasks against frontend tickets. The audit showed that a large share of finished design work never reached code — not because of quality, but because hand-off had no owner. The answer was process, not more components:</p>
+          <p>I audited two years of design tasks against frontend tickets. A large share of finished design had never reached code — not because of quality, but because hand-off had no owner. The fix was process, not more components.</p>
           <ul class="case-list case-list--bullets">
-            <li><div><strong>A live readiness page</strong><span class="case-list__sub">Every component with its status in Figma, Storybook and production, updated as part of the team’s rituals.</span></div></li>
+            <li><div><strong>A live readiness page</strong><span class="case-list__sub">Every component with its status in Figma, Storybook and production.</span></div></li>
             <li><div><strong>A showcase</strong><span class="case-list__sub">48 component cards, each linked to its Storybook story and its Figma master, so nobody has to ask what exists.</span></div></li>
-            <li><div><strong>Design review in the delivery flow</strong><span class="case-list__sub">A component or an AI prototype moves forward only after a design review against the real code.</span></div></li>
+            <li><div><strong>Design review inside delivery</strong><span class="case-list__sub">A component or prototype moves forward only after a review against the real code.</span></div></li>
           </ul>
           <div class="outcomes">
             <div><span class="metric__value">255</span><span class="metric__label">Figma components</span></div>
             <div><span class="metric__value">488</span><span class="metric__label">Storybook stories</span></div>
             <div><span class="metric__value">550</span><span class="metric__label">Code Connect links</span></div>
           </div>
+          <p class="outcomes__note">I do not have adoption or speed metrics yet, and I would rather say so than invent them. What I can show is the system itself and the process around it.</p>
         </div>
       </section>
+
       <section class="case-section">
         <div class="case-section__head">
           <h2 class="case-section__title">Three lessons I’m carrying forward.</h2>
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Storybook beats Figma as the source of truth</strong><span class="case-list__sub">Code is what users get. Specs that do not live next to code drift within weeks.</span></div></li>
+            <li><div><strong>Requirements first</strong><span class="case-list__sub">Accessibility, languages and devices cost little when they are constraints from day one, and a lot when they arrive as fixes.</span></div></li>
             <li><div><strong>Measure the hand-off, not the library</strong><span class="case-list__sub">The number of components says little. The share of design that reaches production says a lot.</span></div></li>
-            <li><div><strong>AI needs written rules</strong><span class="case-list__sub">Agents follow patterns well when the patterns are explicit, versioned and stored next to the code.</span></div></li>
+            <li><div><strong>Show unfinished work early</strong><span class="case-list__sub">The demo that exposed an inconvenient permissions flow saved months of polishing the wrong thing.</span></div></li>
           </ul>
         </div>
       </section>
@@ -215,6 +237,6 @@
   </footer>
 
   <script src="../../scripts/anim.js?v=e52e3bde" defer></script>
-  <script src="../../scripts/i18n.js?v=22139a7b" defer></script>
+  <script src="../../scripts/i18n.js?v=c6b8717d" defer></script>
 </body>
 </html>
