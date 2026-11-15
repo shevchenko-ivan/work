@@ -42,12 +42,10 @@
   <main id="main" class="sheet">
     <section class="case-hero wrap">
       <div class="case-hero__meta">
-        <span>2026</span><span>Own product</span><span>Designer and builder</span><span>AI · macOS</span>
+        <span>2026</span><span><span class="only-en">Own product</span><span class="only-ua">Власний продукт</span></span><span><span class="only-en">Designer and builder</span><span class="only-ua">Дизайнер і розробник</span></span><span><span class="only-en">AI · macOS</span><span class="only-ua">ШІ · macOS</span></span>
       </div>
-      <h1 class="case-hero__title">Pysar — an AI meeting memory that shows its sources.</h1>
-      <p class="case-hero__sub">
-        A native macOS app I designed and built: it records meetings, transcribes them on the device, summarises them and answers questions about everything that was said — with a link to the exact moment behind every claim. AI agents can read the same data through an MCP server and a command-line tool.
-      </p>
+      <h1 class="case-hero__title"><span class="only-en">Pysar — an AI meeting memory that shows its sources.</span><span class="only-ua">Писар — пам’ять зустрічей на основі ШІ, яка показує свої джерела.</span></h1>
+      <p class="case-hero__sub"><span class="only-en">A native macOS app I designed and built: it records meetings, transcribes them on the device, summarises them and answers questions about everything that was said — with a link to the exact moment behind every claim. AI agents can read the same data through an MCP server and a command-line tool.</span><span class="only-ua">Нативний застосунок для macOS, який я спроєктував і створив. Він записує зустрічі, розпізнає їх на пристрої, складає резюме й відповідає на запитання про все, що прозвучало, — з посиланням на точний момент за кожним твердженням. ШІ-агенти читають ті самі дані через MCP-сервер і інструмент командного рядка.</span></p>
     </section>
 
     <section class="case-cover">
@@ -58,153 +56,153 @@
 
     <div class="wrap">
       <div class="case-facts">
-        <div class="fact"><div class="fact__label">Year</div><div class="fact__value">2026</div></div>
-        <div class="fact"><div class="fact__label">Role</div><div class="fact__value">Designer and builder, solo</div></div>
-        <div class="fact"><div class="fact__label">Stage</div><div class="fact__value">In daily use · signed build</div></div>
-        <div class="fact"><div class="fact__label">Stack</div><div class="fact__value">SwiftUI · on-device ASR · Claude API · MCP</div></div>
+        <div class="fact"><div class="fact__label"><span class="only-en">Year</span><span class="only-ua">Рік</span></div><div class="fact__value">2026</div></div>
+        <div class="fact"><div class="fact__label"><span class="only-en">Role</span><span class="only-ua">Роль</span></div><div class="fact__value"><span class="only-en">Designer and builder, solo</span><span class="only-ua">Дизайнер і розробник, самостійно</span></div></div>
+        <div class="fact"><div class="fact__label"><span class="only-en">Stage</span><span class="only-ua">Стадія</span></div><div class="fact__value"><span class="only-en">In daily use · signed build</span><span class="only-ua">Щоденне використання · підписана збірка</span></div></div>
+        <div class="fact"><div class="fact__label"><span class="only-en">Stack</span><span class="only-ua">Стек</span></div><div class="fact__value"><span class="only-en">SwiftUI · on-device ASR · Claude API · MCP</span><span class="only-ua">SwiftUI · розпізнавання мовлення на пристрої · Claude API · MCP</span></div></div>
       </div>
     </div>
 
     <div class="wrap">
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">The problem: what was decided, and who said it?</h2>
+          <h2 class="case-section__title"><span class="only-en">The problem: what was decided, and who said it?</span><span class="only-ua">Проблема: що вирішили і хто це сказав?</span></h2>
         </div>
         <div class="case-section__body">
-          <p>I spend a large part of the week in meetings. Decisions and promises are made there and then lost: nobody rereads a recording, and notes written from memory are wrong in the details that matter.</p>
-          <p>I wanted a tool that answers a plain question — “what did we decide about the release?” — and lets me check the answer in seconds. It also had to keep recordings of work meetings on my own machine. The tool I used before did not fit the way I work, so I built my own.</p>
+          <p><span class="only-en">I spend a large part of the week in meetings. Decisions and promises are made there and then lost: nobody rereads a recording, and notes written from memory are wrong in the details that matter.</span><span class="only-ua">Значну частину тижня я проводжу на зустрічах. Там ухвалюють рішення й дають обіцянки, а потім їх гублять: ніхто не переслуховує запис, а нотатки з пам’яті хибні саме в тих деталях, які важливі.</span></p>
+          <p><span class="only-en">I wanted a tool that answers a plain question — “what did we decide about the release?” — and lets me check the answer in seconds. It also had to keep recordings of work meetings on my own machine. The tool I used before did not fit the way I work, so I built my own.</span><span class="only-ua">Я хотів інструмент, який відповідає на просте запитання — «що ми вирішили щодо релізу?» — і дає перевірити відповідь за секунди. Він також мав зберігати записи робочих зустрічей на моєму комп’ютері. Інструмент, яким я користувався раніше, не відповідав моєму способу роботи, тож я створив власний.</span></p>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">What it does.</h2>
+          <h2 class="case-section__title"><span class="only-en">What it does.</span><span class="only-ua">Що він робить.</span></h2>
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Records the meeting</strong><span class="case-list__sub">Microphone and system sound as separate tracks. It notices a call in Teams, Zoom, Slack, Webex, FaceTime, Discord or a browser and offers to record it.</span></div></li>
-            <li><div><strong>Transcribes on the device</strong><span class="case-list__sub">Speech recognition and speaker separation run locally. No audio leaves the Mac.</span></div></li>
-            <li><div><strong>Summarises</strong><span class="case-list__sub">With a local model or with Claude — the user chooses. Every point in a summary links to its moment in the recording.</span></div></li>
-            <li><div><strong>Answers questions across all meetings</strong><span class="case-list__sub">“Ask AI” searches titles, summaries and transcripts, gives the model the most relevant meetings and returns an answer with sources.</span></div></li>
-            <li><div><strong>Shows the shape of the work</strong><span class="case-list__sub">A graph of meetings, people and tags — and a second graph that reads a folder of Markdown notes and draws the links between them.</span></div></li>
-            <li><div><strong>Works for agents too</strong><span class="case-list__sub">An MCP server and a CLI give AI agents read-only access: list meetings, search, open a transcript or a summary.</span></div></li>
+            <li><div><strong><span class="only-en">Records the meeting</span><span class="only-ua">Записує зустріч</span></strong><span class="case-list__sub"><span class="only-en">Microphone and system sound as separate tracks. It notices a call in Teams, Zoom, Slack, Webex, FaceTime, Discord or a browser and offers to record it.</span><span class="only-ua">Мікрофон і системний звук — окремими доріжками. Писар помічає дзвінок у Teams, Zoom, Slack, Webex, FaceTime, Discord або браузері й пропонує його записати.</span></span></div></li>
+            <li><div><strong><span class="only-en">Transcribes on the device</span><span class="only-ua">Розпізнає на пристрої</span></strong><span class="case-list__sub"><span class="only-en">Speech recognition and speaker separation run locally. No audio leaves the Mac.</span><span class="only-ua">Розпізнавання мовлення й розділення мовців працюють локально. Жоден звук не залишає Mac.</span></span></div></li>
+            <li><div><strong><span class="only-en">Summarises</span><span class="only-ua">Складає резюме</span></strong><span class="case-list__sub"><span class="only-en">With a local model or with Claude — the user chooses. Every point in a summary links to its moment in the recording.</span><span class="only-ua">Локальною моделлю або через Claude — на вибір користувача. Кожен пункт резюме веде до свого моменту в записі.</span></span></div></li>
+            <li><div><strong><span class="only-en">Answers questions across all meetings</span><span class="only-ua">Відповідає на запитання за всіма зустрічами</span></strong><span class="case-list__sub"><span class="only-en">“Ask AI” searches titles, summaries and transcripts, gives the model the most relevant meetings and returns an answer with sources.</span><span class="only-ua">«Запитати ШІ» шукає в назвах, резюме й транскриптах, передає моделі найрелевантніші зустрічі й повертає відповідь із джерелами.</span></span></div></li>
+            <li><div><strong><span class="only-en">Shows the shape of the work</span><span class="only-ua">Показує структуру роботи</span></strong><span class="case-list__sub"><span class="only-en">A graph of meetings, people and tags — and a second graph that reads a folder of Markdown notes and draws the links between them.</span><span class="only-ua">Граф зустрічей, людей і тегів — і другий граф, який читає теку з нотатками Markdown і малює зв’язки між ними.</span></span></div></li>
+            <li><div><strong><span class="only-en">Works for agents too</span><span class="only-ua">Працює й для агентів</span></strong><span class="case-list__sub"><span class="only-en">An MCP server and a CLI give AI agents read-only access: list meetings, search, open a transcript or a summary.</span><span class="only-ua">MCP-сервер і CLI дають ШІ-агентам доступ лише на читання: список зустрічей, пошук, транскрипт або резюме.</span></span></div></li>
           </ul>
           <figure class="case-image">
             <img src="../../assets/cases/pysar/meetings.webp" width="1600" height="1313" alt="Pysar main window: a sidebar with Meetings, Ask AI, Dictation and Graph, and a library of meeting cards grouped by month with status labels" loading="lazy" decoding="async">
-            <figcaption class="case-image__caption">The library on demo data (interface in Ukrainian): meetings by month, each with its status — processing, interrupted or ready with a summary.</figcaption>
+            <figcaption class="case-image__caption"><span class="only-en">The library on demo data (interface in Ukrainian): meetings by month, each with its status — processing, interrupted or ready with a summary.</span><span class="only-ua">Бібліотека на тестових даних: зустрічі за місяцями, кожна зі своїм статусом — обробляється, перервана або готова з резюме.</span></figcaption>
           </figure>
           <figure class="case-image">
             <img src="../../assets/cases/pysar/recording.webp" width="1600" height="1313" alt="Pysar while recording: a red Stop recording button with a timer in the toolbar and a note that the transcript appears after the recording stops" loading="lazy" decoding="async">
-            <figcaption class="case-image__caption">While a meeting is recorded the window stays quiet: one red button with the timer, and a plain line about what happens next.</figcaption>
+            <figcaption class="case-image__caption"><span class="only-en">While a meeting is recorded the window stays quiet: one red button with the timer, and a plain line about what happens next.</span><span class="only-ua">Під час запису зустрічі вікно лишається спокійним: одна червона кнопка з таймером і простий рядок про те, що буде далі.</span></figcaption>
           </figure>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">From a recording to something you can read.</h2>
+          <h2 class="case-section__title"><span class="only-en">From a recording to something you can read.</span><span class="only-ua">Від запису до тексту, який можна прочитати.</span></h2>
         </div>
         <div class="case-section__body">
-          <p>A finished meeting has two views of the same audio. The summary gives the essence, the decisions and the tasks. The transcript gives every line with its speaker. Both are tied to the player at the top, so any line can be heard again.</p>
+          <p><span class="only-en">A finished meeting has two views of the same audio. The summary gives the essence, the decisions and the tasks. The transcript gives every line with its speaker. Both are tied to the player at the top, so any line can be heard again.</span><span class="only-ua">Завершена зустріч має два подання того самого аудіо. Резюме дає суть, рішення й задачі. Транскрипт дає кожну репліку з мовцем. Обидва пов’язані з плеєром угорі, тож будь-яку репліку можна прослухати знову.</span></p>
           <figure class="case-image">
             <img src="../../assets/cases/pysar/summary.webp" width="1600" height="1313" alt="Meeting summary in dark mode: a waveform player, then the sections Essence, Decisions and Tasks, with a timestamp link next to a decision" loading="lazy" decoding="async">
-            <figcaption class="case-image__caption">A summary in dark mode: essence, decisions with a timestamp link, and tasks as checkboxes. The footer names the model that wrote it.</figcaption>
+            <figcaption class="case-image__caption"><span class="only-en">A summary in dark mode: essence, decisions with a timestamp link, and tasks as checkboxes. The footer names the model that wrote it.</span><span class="only-ua">Резюме в темній темі: суть, рішення з посиланням на час і задачі як чекбокси. Унизу вказано модель, яка його написала.</span></figcaption>
           </figure>
           <figure class="case-image">
             <img src="../../assets/cases/pysar/transcript.webp" width="1600" height="1313" alt="Meeting transcript in light mode: lines by two speakers with timestamps, one line highlighted" loading="lazy" decoding="async">
-            <figcaption class="case-image__caption">The transcript of the same meeting: speakers, timestamps, and a highlighted line that matches the position in the player.</figcaption>
+            <figcaption class="case-image__caption"><span class="only-en">The transcript of the same meeting: speakers, timestamps, and a highlighted line that matches the position in the player.</span><span class="only-ua">Транскрипт тієї самої зустрічі: мовці, позначки часу й виділена репліка, що відповідає позиції в плеєрі.</span></figcaption>
           </figure>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">Key design decision: an answer you can check.</h2>
+          <h2 class="case-section__title"><span class="only-en">Key design decision: an answer you can check.</span><span class="only-ua">Ключове дизайн-рішення: відповідь, яку можна перевірити.</span></h2>
         </div>
         <div class="case-section__body">
-          <p>An AI answer about a meeting is only useful if the reader can trust it. So the interface never shows a bare claim.</p>
+          <p><span class="only-en">An AI answer about a meeting is only useful if the reader can trust it. So the interface never shows a bare claim.</span><span class="only-ua">Відповідь ШІ про зустріч корисна, лише якщо читач може їй довіряти. Тому інтерфейс ніколи не показує голе твердження.</span></p>
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Every claim carries its source</strong><span class="case-list__sub">The meeting name and the timestamp are links. One click opens the recording at that second.</span></div></li>
-            <li><div><strong>Gaps are shown, not hidden</strong><span class="case-list__sub">If a task has no owner in the transcript, the answer says so under its own heading instead of guessing a name.</span></div></li>
-            <li><div><strong>The model is named</strong><span class="case-list__sub">Each answer shows which model produced it and reminds the reader to check important things in the meeting itself.</span></div></li>
-            <li><div><strong>The limit is stated</strong><span class="case-list__sub">Search is by words today, not by meaning. I chose to say that in the product notes and plan semantic search next, not to pretend it is there.</span></div></li>
+            <li><div><strong><span class="only-en">Every claim carries its source</span><span class="only-ua">Кожне твердження має джерело</span></strong><span class="case-list__sub"><span class="only-en">The meeting name and the timestamp are links. One click opens the recording at that second.</span><span class="only-ua">Назва зустрічі й позначка часу — це посилання. Один клік відкриває запис на цій секунді.</span></span></div></li>
+            <li><div><strong><span class="only-en">Gaps are shown, not hidden</span><span class="only-ua">Прогалини видно, а не приховано</span></strong><span class="case-list__sub"><span class="only-en">If a task has no owner in the transcript, the answer says so under its own heading instead of guessing a name.</span><span class="only-ua">Якщо в транскрипті задача не має виконавця, відповідь каже про це під окремим заголовком, а не вгадує ім’я.</span></span></div></li>
+            <li><div><strong><span class="only-en">The model is named</span><span class="only-ua">Модель названо</span></strong><span class="case-list__sub"><span class="only-en">Each answer shows which model produced it and reminds the reader to check important things in the meeting itself.</span><span class="only-ua">Кожна відповідь показує, яка модель її дала, і нагадує перевіряти важливе в самій зустрічі.</span></span></div></li>
+            <li><div><strong><span class="only-en">The limit is stated</span><span class="only-ua">Обмеження сказано прямо</span></strong><span class="case-list__sub"><span class="only-en">Search is by words today, not by meaning. I chose to say that in the product notes and plan semantic search next, not to pretend it is there.</span><span class="only-ua">Пошук поки що працює за словами, а не за змістом. Я вирішив написати про це в нотатках до продукту й запланувати семантичний пошук, а не вдавати, що він уже є.</span></span></div></li>
           </ul>
           <figure class="case-image">
             <img src="../../assets/cases/pysar/ask-ai.webp" width="1600" height="1313" alt="Ask AI answer to the question What did we decide about the release: a statement with links to the meeting and timestamps, a list of what is left, and a separate heading Without an owner" loading="lazy" decoding="async">
-            <figcaption class="case-image__caption">“Ask AI” on demo data (interface in Ukrainian). Each line links to a meeting and a timestamp; a task without an owner is listed separately.</figcaption>
+            <figcaption class="case-image__caption"><span class="only-en">“Ask AI” on demo data (interface in Ukrainian). Each line links to a meeting and a timestamp; a task without an owner is listed separately.</span><span class="only-ua">«Запитати ШІ» на тестових даних. Кожен рядок веде до зустрічі й позначки часу; задачу без виконавця винесено окремо.</span></figcaption>
           </figure>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">Meetings and a knowledge base as a graph.</h2>
+          <h2 class="case-section__title"><span class="only-en">Meetings and a knowledge base as a graph.</span><span class="only-ua">Зустрічі й база знань як граф.</span></h2>
         </div>
         <div class="case-section__body">
-          <p>The graph is drawn natively, without a library. Positions come from a formula — angle from the group, radius from the type of node — so the picture is stable and readable instead of floating.</p>
+          <p><span class="only-en">The graph is drawn natively, without a library. Positions come from a formula — angle from the group, radius from the type of node — so the picture is stable and readable instead of floating.</span><span class="only-ua">Граф намальовано нативно, без бібліотеки. Позиції задає формула — кут залежить від групи, радіус від типу вузла, — тож картинка стабільна й читабельна, а не пливе.</span></p>
           <figure class="case-image">
             <img src="../../assets/cases/pysar/graph-meetings.webp" width="1600" height="1313" alt="Graph view in light mode: one person in the centre with coloured lines to the meetings they took part in, coloured by tag" loading="lazy" decoding="async">
-            <figcaption class="case-image__caption">Meetings, tags and people on demo data: the links view, centred on one participant.</figcaption>
+            <figcaption class="case-image__caption"><span class="only-en">Meetings, tags and people on demo data: the links view, centred on one participant.</span><span class="only-ua">Зустрічі, теги й люди на тестових даних: подання зв’язків із центром на одному учасникові.</span></figcaption>
           </figure>
           <figure class="case-image">
             <img src="../../assets/cases/pysar/graph-knowledge.webp" width="1600" height="1313" alt="Dark graph of a Markdown knowledge base: 140 notes in 5 folders with 289 links, one note highlighted with its two links" loading="lazy" decoding="async">
-            <figcaption class="case-image__caption">The same view over a folder of Markdown notes: 140 notes, 5 folders, 289 links. A click opens the note.</figcaption>
+            <figcaption class="case-image__caption"><span class="only-en">The same view over a folder of Markdown notes: 140 notes, 5 folders, 289 links. A click opens the note.</span><span class="only-ua">Те саме подання для теки з нотатками Markdown: 140 нотаток, 5 тек, 289 зв’язків. Клік відкриває нотатку.</span></figcaption>
           </figure>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">How I built it.</h2>
+          <h2 class="case-section__title"><span class="only-en">How I built it.</span><span class="only-ua">Як я це створив.</span></h2>
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Design first, then code</strong><span class="case-list__sub">I wrote user stories with acceptance criteria and a glossary of interface terms before the first screen. The backlog grew to about 90 stories.</span></div></li>
-            <li><div><strong>AI as a pair, not as an author</strong><span class="case-list__sub">I built it with Claude Code. I set the design rules, review every screen in snapshots and decide what ships.</span></div></li>
-            <li><div><strong>Tests from the start</strong><span class="case-list__sub">158 unit tests and a self-test of 377 checks run on a separate test store with seed data — the same data as in the screenshots here.</span></div></li>
-            <li><div><strong>Direct LLM integration</strong><span class="case-list__sub">Claude is called through its HTTP API without an SDK, with the key in the system keychain. Local models run through llama.cpp.</span></div></li>
-            <li><div><strong>A real distribution</strong><span class="case-list__sub">A signed installer and launch at login. From the first commit to the version shown here took about two weeks.</span></div></li>
+            <li><div><strong><span class="only-en">Design first, then code</span><span class="only-ua">Спершу дизайн, потім код</span></strong><span class="case-list__sub"><span class="only-en">I wrote user stories with acceptance criteria and a glossary of interface terms before the first screen. The backlog grew to about 90 stories.</span><span class="only-ua">До першого екрана я написав user stories з критеріями приймання й глосарій термінів інтерфейсу. Беклог виріс приблизно до 90 історій.</span></span></div></li>
+            <li><div><strong><span class="only-en">AI as a pair, not as an author</span><span class="only-ua">ШІ як напарник, а не автор</span></strong><span class="case-list__sub"><span class="only-en">I built it with Claude Code. I set the design rules, review every screen in snapshots and decide what ships.</span><span class="only-ua">Я створив Писар разом із Claude Code. Я задаю правила дизайну, переглядаю кожен екран на знімках і вирішую, що йде в реліз.</span></span></div></li>
+            <li><div><strong><span class="only-en">Tests from the start</span><span class="only-ua">Тести від самого початку</span></strong><span class="case-list__sub"><span class="only-en">158 unit tests and a self-test of 377 checks run on a separate test store with seed data — the same data as in the screenshots here.</span><span class="only-ua">158 модульних тестів і самотест на 377 перевірок працюють на окремому тестовому сховищі з тестовими даними — тими самими, що на цих знімках екрана.</span></span></div></li>
+            <li><div><strong><span class="only-en">Direct LLM integration</span><span class="only-ua">Пряма інтеграція з LLM</span></strong><span class="case-list__sub"><span class="only-en">Claude is called through its HTTP API without an SDK, with the key in the system keychain. Local models run through llama.cpp.</span><span class="only-ua">Claude викликається через HTTP API без SDK, а ключ зберігається в системній зв’язці ключів. Локальні моделі працюють через llama.cpp.</span></span></div></li>
+            <li><div><strong><span class="only-en">A real distribution</span><span class="only-ua">Справжнє розповсюдження</span></strong><span class="case-list__sub"><span class="only-en">A signed installer and launch at login. From the first commit to the version shown here took about two weeks.</span><span class="only-ua">Підписаний інсталятор і запуск під час входу в систему. Від першого коміту до показаної тут версії минуло близько двох тижнів.</span></span></div></li>
           </ul>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">The same thinking outside the app.</h2>
+          <h2 class="case-section__title"><span class="only-en">The same thinking outside the app.</span><span class="only-ua">Той самий підхід поза застосунком.</span></h2>
         </div>
         <div class="case-section__body">
-          <p>Pysar is one part of how I work with knowledge and AI every day.</p>
+          <p><span class="only-en">Pysar is one part of how I work with knowledge and AI every day.</span><span class="only-ua">Писар — одна частина того, як я щодня працюю зі знаннями та ШІ.</span></p>
           <ul class="case-list case-list--bullets">
-            <li><div><strong>A local RAG over product documentation</strong><span class="case-list__sub">I built a retrieval tool over a Confluence space: local multilingual embeddings for search, a Claude model for the answer, and a link to the source page in every reply.</span></div></li>
-            <li><div><strong>An LLM-maintained wiki</strong><span class="case-list__sub">My notes, meetings and project decisions live in a Markdown knowledge base that an agent keeps up to date every night and reads through an index, not through guesswork.</span></div></li>
-            <li><div><strong>MCP in daily work</strong><span class="case-list__sub">I connect agents to Figma, Jira, Confluence and my own tools through MCP, and I write the skills that tell them how to use each one.</span></div></li>
+            <li><div><strong><span class="only-en">A local RAG over product documentation</span><span class="only-ua">Локальний RAG над документацією продукту</span></strong><span class="case-list__sub"><span class="only-en">I built a retrieval tool over a Confluence space: local multilingual embeddings for search, a Claude model for the answer, and a link to the source page in every reply.</span><span class="only-ua">Я створив інструмент пошуку по простору Confluence: локальні багатомовні embeddings для пошуку, модель Claude для відповіді й посилання на сторінку-джерело в кожній відповіді.</span></span></div></li>
+            <li><div><strong><span class="only-en">An LLM-maintained wiki</span><span class="only-ua">Вікі, яку веде LLM</span></strong><span class="case-list__sub"><span class="only-en">My notes, meetings and project decisions live in a Markdown knowledge base that an agent keeps up to date every night and reads through an index, not through guesswork.</span><span class="only-ua">Мої нотатки, зустрічі й рішення щодо проєктів живуть у базі знань на Markdown. Агент щоночі її оновлює й читає через індекс, а не навмання.</span></span></div></li>
+            <li><div><strong><span class="only-en">MCP in daily work</span><span class="only-ua">MCP у щоденній роботі</span></strong><span class="case-list__sub"><span class="only-en">I connect agents to Figma, Jira, Confluence and my own tools through MCP, and I write the skills that tell them how to use each one.</span><span class="only-ua">Я під’єдную агентів до Figma, Jira, Confluence і власних інструментів через MCP і пишу скіли, які пояснюють їм, як користуватися кожним.</span></span></div></li>
           </ul>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">Where it stands — and what it is not.</h2>
+          <h2 class="case-section__title"><span class="only-en">Where it stands — and what it is not.</span><span class="only-ua">Де він зараз — і чим він не є.</span></h2>
         </div>
         <div class="case-section__body">
           <div class="outcomes">
-            <div><span class="metric__value">158</span><span class="metric__label">Unit tests</span></div>
-            <div><span class="metric__value">377</span><span class="metric__label">Self-test checks</span></div>
-            <div><span class="metric__value">4</span><span class="metric__label">MCP tools for agents</span></div>
+            <div><span class="metric__value">158</span><span class="metric__label"><span class="only-en">Unit tests</span><span class="only-ua">Модульні тести</span></span></div>
+            <div><span class="metric__value">377</span><span class="metric__label"><span class="only-en">Self-test checks</span><span class="only-ua">Перевірки самотесту</span></span></div>
+            <div><span class="metric__value">4</span><span class="metric__label"><span class="only-en">MCP tools for agents</span><span class="only-ua">MCP-інструменти для агентів</span></span></div>
           </div>
-          <p class="outcomes__note">Pysar is a personal product in daily use, not a company-wide rollout. It detects calls in Teams and Slack but is not a bot inside them, and its search is keyword-based for now. I have shown it to colleagues in a live demo; the next steps are semantic search and a wider test.</p>
+          <p class="outcomes__note"><span class="only-en">Pysar is a personal product in daily use, not a company-wide rollout. It detects calls in Teams and Slack but is not a bot inside them, and its search is keyword-based for now. I have shown it to colleagues in a live demo; the next steps are semantic search and a wider test.</span><span class="only-ua">Писар — особистий продукт, яким я користуюся щодня, а не впровадження на всю компанію. Він розпізнає дзвінки в Teams і Slack, але не є ботом усередині них, а пошук поки що працює за словами. Я показав його колегам на живому демо; наступні кроки — семантичний пошук і ширше тестування.</span></p>
         </div>
       </section>
 
       <section class="case-section">
         <div class="case-section__head">
-          <h2 class="case-section__title">What it taught me about AI products.</h2>
+          <h2 class="case-section__title"><span class="only-en">What it taught me about AI products.</span><span class="only-ua">Чого він навчив мене про ШІ-продукти.</span></h2>
         </div>
         <div class="case-section__body">
           <ul class="case-list case-list--bullets">
-            <li><div><strong>Trust is an interface problem</strong><span class="case-list__sub">The model was good enough early. What made the answers usable was showing where each one came from.</span></div></li>
-            <li><div><strong>“I don’t know” needs a design</strong><span class="case-list__sub">An honest gap, shown clearly, is worth more than a confident guess.</span></div></li>
-            <li><div><strong>Agents are users</strong><span class="case-list__sub">The CLI and the MCP server got the same care as the screens: clear names, read-only access, predictable output.</span></div></li>
+            <li><div><strong><span class="only-en">Trust is an interface problem</span><span class="only-ua">Довіра — це задача інтерфейсу</span></strong><span class="case-list__sub"><span class="only-en">The model was good enough early. What made the answers usable was showing where each one came from.</span><span class="only-ua">Модель рано стала достатньо доброю. Відповіді стали корисними тоді, коли я почав показувати, звідки кожна з них.</span></span></div></li>
+            <li><div><strong><span class="only-en">“I don’t know” needs a design</span><span class="only-ua">«Не знаю» теж треба спроєктувати</span></strong><span class="case-list__sub"><span class="only-en">An honest gap, shown clearly, is worth more than a confident guess.</span><span class="only-ua">Чесна прогалина, показана чітко, варта більше, ніж упевнена здогадка.</span></span></div></li>
+            <li><div><strong><span class="only-en">Agents are users</span><span class="only-ua">Агенти — теж користувачі</span></strong><span class="case-list__sub"><span class="only-en">The CLI and the MCP server got the same care as the screens: clear names, read-only access, predictable output.</span><span class="only-ua">CLI і MCP-сервер отримали ту саму увагу, що й екрани: зрозумілі назви, доступ лише на читання, передбачуваний вивід.</span></span></div></li>
           </ul>
         </div>
       </section>
@@ -215,12 +213,12 @@
         </div>
         <div class="related">
           <a class="related__card" href="../diez/">
-            <div class="related__kicker">Own product · Live</div>
-            <div class="related__title">Diez — a chord service for guitar players</div>
+            <div class="related__kicker"><span class="only-en">Own product · Live</span><span class="only-ua">Власний продукт · Працює</span></div>
+            <div class="related__title"><span class="only-en">Diez — a chord service for guitar players</span><span class="only-ua">Diez — сервіс акордів для гітаристів</span></div>
           </a>
           <a class="related__card" href="../bos-design-system/">
-            <div class="related__kicker">Enterprise B2B platform</div>
-            <div class="related__title">BitSvit Platform</div>
+            <div class="related__kicker"><span class="only-en">Enterprise B2B platform</span><span class="only-ua">Корпоративна B2B-платформа</span></div>
+            <div class="related__title"><span class="only-en">BitSvit Platform</span><span class="only-ua">BitSvit Platform</span></div>
           </a>
         </div>
       </section>
